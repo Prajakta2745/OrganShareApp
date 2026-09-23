@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Theme Colors (Medical Teal & Deep Blue) -->
+    <color name="primary">#006A6A</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="primary_container">#6FF7F6</color>
+    <color name="on_primary_container">#002020</color>
+
+    <color name="secondary">#4A6363</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="secondary_container">#CCE8E7</color>
+    <color name="on_secondary_container">#051F1F</color>
+
+    <color name="tertiary">#4A607C</color>
+    <color name="on_tertiary">#FFFFFF</color>
+    <color name="tertiary_container">#D2E4FF</color>
+    <color name="on_tertiary_container">#041C35</color>
+
+    <!-- Backgrounds & Surfaces -->
+    <color name="background">#F4F7F6</color>
+    <color name="on_background">#161D1D</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="on_surface">#161D1D</color>
+    <color name="surface_variant">#DAE5E4</color>
+    <color name="on_surface_variant">#3F4948</color>
+    <color name="card_background">#FFFFFF</color>
+
+    <!-- Medical & Status Colors -->
+    <color name="organ_red">#B3261E</color>
+    <color name="organ_red_light">#F9DEDC</color>
+    <color name="emergency_red">#DC2626</color>
+    <color name="urgent_orange">#EA580C</color>
+    <color name="normal_blue">#0284C7</color>
+    
+    <color name="status_available">#16A34A</color>
+    <color name="status_available_bg">#DCFCE7</color>
+    <color name="status_pending">#D97706</color>
+    <color name="status_pending_bg">#FEF3C7</color>
+    <color name="status_in_transit">#2563EB</color>
+    <color name="status_in_transit_bg">#DBEAFE</color>
+    <color name="status_delivered">#059669</color>
+    <color name="status_delivered_bg">#D1FAE5</color>
+    <color name="status_delayed">#E11D48</color>
+    <color name="status_delayed_bg">#FFE4E6</color>
+
+    <!-- Neutral & Border -->
+    <color name="divider">#E2E8F0</color>
+    <color name="outline">#6F7979</color>
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="text_muted">#94A3B8</color>
+    
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+</resources>

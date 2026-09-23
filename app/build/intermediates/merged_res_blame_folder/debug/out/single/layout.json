@@ -1,0 +1,198 @@
+[
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/item_registered_organ.xml",
+        "source": "com.example.organshare.app-main-7:/layout/item_registered_organ.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/fragment_bank_inventory.xml",
+        "source": "com.example.organshare.app-main-7:/layout/fragment_bank_inventory.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/activity_delivery_dashboard.xml",
+        "source": "com.example.organshare.app-main-7:/layout/activity_delivery_dashboard.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/item_user_management.xml",
+        "source": "com.example.organshare.app-main-7:/layout/item_user_management.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/activity_donor_dashboard.xml",
+        "source": "com.example.organshare.app-main-7:/layout/activity_donor_dashboard.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/activity_audit_logs.xml",
+        "source": "com.example.organshare.app-main-7:/layout/activity_audit_logs.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/item_inventory.xml",
+        "source": "com.example.organshare.app-main-7:/layout/item_inventory.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/activity_hospital_order_details.xml",
+        "source": "com.example.organshare.app-main-7:/layout/activity_hospital_order_details.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/fragment_bank_orders.xml",
+        "source": "com.example.organshare.app-main-7:/layout/fragment_bank_orders.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/item_notification.xml",
+        "source": "com.example.organshare.app-main-7:/layout/item_notification.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/activity_register.xml",
+        "source": "com.example.organshare.app-main-7:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/activity_add_edit_inventory.xml",
+        "source": "com.example.organshare.app-main-7:/layout/activity_add_edit_inventory.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/activity_search_donors.xml",
+        "source": "com.example.organshare.app-main-7:/layout/activity_search_donors.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/dialog_report_delay.xml",
+        "source": "com.example.organshare.app-main-7:/layout/dialog_report_delay.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/item_bank_order.xml",
+        "source": "com.example.organshare.app-main-7:/layout/item_bank_order.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/item_checkpoint.xml",
+        "source": "com.example.organshare.app-main-7:/layout/item_checkpoint.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/activity_notifications.xml",
+        "source": "com.example.organshare.app-main-7:/layout/activity_notifications.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/item_hospital_order.xml",
+        "source": "com.example.organshare.app-main-7:/layout/item_hospital_order.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/fragment_hospital_home.xml",
+        "source": "com.example.organshare.app-main-7:/layout/fragment_hospital_home.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/item_hospital_request.xml",
+        "source": "com.example.organshare.app-main-7:/layout/item_hospital_request.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/activity_update_checkpoint.xml",
+        "source": "com.example.organshare.app-main-7:/layout/activity_update_checkpoint.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/activity_track_delivery_map.xml",
+        "source": "com.example.organshare.app-main-7:/layout/activity_track_delivery_map.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/fragment_bank_home.xml",
+        "source": "com.example.organshare.app-main-7:/layout/fragment_bank_home.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/activity_splash.xml",
+        "source": "com.example.organshare.app-main-7:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/item_donor_search.xml",
+        "source": "com.example.organshare.app-main-7:/layout/item_donor_search.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/activity_donation_info.xml",
+        "source": "com.example.organshare.app-main-7:/layout/activity_donation_info.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/fragment_donor_home.xml",
+        "source": "com.example.organshare.app-main-7:/layout/fragment_donor_home.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/activity_login.xml",
+        "source": "com.example.organshare.app-main-7:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/fragment_admin_stats.xml",
+        "source": "com.example.organshare.app-main-7:/layout/fragment_admin_stats.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/activity_allocate_organ.xml",
+        "source": "com.example.organshare.app-main-7:/layout/activity_allocate_organ.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/fragment_bank_requests.xml",
+        "source": "com.example.organshare.app-main-7:/layout/fragment_bank_requests.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/activity_request_details.xml",
+        "source": "com.example.organshare.app-main-7:/layout/activity_request_details.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/item_bank_request.xml",
+        "source": "com.example.organshare.app-main-7:/layout/item_bank_request.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/activity_delivery_details.xml",
+        "source": "com.example.organshare.app-main-7:/layout/activity_delivery_details.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/activity_forgot_password.xml",
+        "source": "com.example.organshare.app-main-7:/layout/activity_forgot_password.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/activity_organ_bank_dashboard.xml",
+        "source": "com.example.organshare.app-main-7:/layout/activity_organ_bank_dashboard.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/dialog_add_checkpoint.xml",
+        "source": "com.example.organshare.app-main-7:/layout/dialog_add_checkpoint.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/activity_donor_profile.xml",
+        "source": "com.example.organshare.app-main-7:/layout/activity_donor_profile.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/dialog_compatibility_check.xml",
+        "source": "com.example.organshare.app-main-7:/layout/dialog_compatibility_check.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/activity_assign_delivery.xml",
+        "source": "com.example.organshare.app-main-7:/layout/activity_assign_delivery.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/item_audit_log.xml",
+        "source": "com.example.organshare.app-main-7:/layout/item_audit_log.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/activity_create_request.xml",
+        "source": "com.example.organshare.app-main-7:/layout/activity_create_request.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/fragment_hospital_requests.xml",
+        "source": "com.example.organshare.app-main-7:/layout/fragment_hospital_requests.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/fragment_hospital_orders.xml",
+        "source": "com.example.organshare.app-main-7:/layout/fragment_hospital_orders.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/activity_hospital_dashboard.xml",
+        "source": "com.example.organshare.app-main-7:/layout/activity_hospital_dashboard.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/activity_user_management.xml",
+        "source": "com.example.organshare.app-main-7:/layout/activity_user_management.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/activity_admin_dashboard.xml",
+        "source": "com.example.organshare.app-main-7:/layout/activity_admin_dashboard.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/item_delivery.xml",
+        "source": "com.example.organshare.app-main-7:/layout/item_delivery.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-mergeDebugResources-4:/layout/fragment_delivery_home.xml",
+        "source": "com.example.organshare.app-main-7:/layout/fragment_delivery_home.xml"
+    }
+]

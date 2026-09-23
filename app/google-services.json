@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1060853526884",
+    "project_id": "organshare-72bfd",
+    "storage_bucket": "organshare-72bfd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1060853526884:android:5a7c9108f32d9ebed4ca71",
+        "android_client_info": {
+          "package_name": "com.example.organshare"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzBqYN6A6RzMQoN5bPQE97M8QkZiagVcY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,116 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    function getUserData() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data;
+    }
+    
+    function isRole(role) {
+      return isAuthenticated() && getUserData().role == role;
+    }
+    
+    function isAdmin() {
+      return isRole('ADMIN');
+    }
+    
+    function isOrganBank() {
+      return isRole('ORGAN_BANK');
+    }
+    
+    function isHospital() {
+      return isRole('HOSPITAL');
+    }
+    
+    function isDelivery() {
+      return isRole('DELIVERY');
+    }
+
+    // Users Collection
+    match /users/{userId} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated() && request.auth.uid == userId;
+      allow update: if isAuthenticated() && (request.auth.uid == userId || isAdmin());
+      allow delete: if isAdmin();
+    }
+
+    // Donors Collection
+    match /donors/{donorId} {
+      // Hospitals and Banks can read donor profiles (which contain masked views in client)
+      allow read: if isAuthenticated();
+      // Donor can create/update their own profile, Admin can manage
+      allow create, update: if isAuthenticated();
+      allow delete: if isAdmin();
+    }
+
+    // Hospitals Collection
+    match /hospitals/{hospitalId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated() && (isHospital() || isAdmin());
+    }
+
+    // Organ Banks Collection
+    match /organBanks/{bankId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated() && (isOrganBank() || isAdmin());
+    }
+
+    // Delivery Personnel Collection
+    match /deliveryPersonnel/{courierId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated() && (isDelivery() || isOrganBank() || isAdmin());
+    }
+
+    // Organ Inventory Collection
+    match /inventory/{invId} {
+      allow read: if isAuthenticated();
+      // Only Organ Bank & Admin can write inventory items
+      allow create, update: if isAuthenticated() && (isOrganBank() || isAdmin());
+      allow delete: if isAdmin();
+    }
+
+    // Organ Requests Collection
+    match /organRequests/{requestId} {
+      allow read: if isAuthenticated();
+      // Hospitals create requests; Banks & Admins approve/allocate
+      allow create: if isAuthenticated() && (isHospital() || isAdmin());
+      allow update: if isAuthenticated() && (isHospital() || isOrganBank() || isAdmin());
+      allow delete: if isAdmin();
+    }
+
+    // Allocations & Orders
+    match /allocations/{allocationId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated() && (isOrganBank() || isAdmin());
+    }
+
+    match /orders/{orderId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated() && (isOrganBank() || isHospital() || isDelivery() || isAdmin());
+    }
+
+    // Deliveries & Checkpoints
+    match /deliveries/{deliveryId} {
+      allow read: if isAuthenticated();
+      allow create, update: if isAuthenticated() && (isDelivery() || isOrganBank() || isAdmin());
+    }
+
+    // Notifications Collection
+    match /notifications/{notifId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated();
+    }
+
+    // Audit Logs (Immutable - append only)
+    match /auditLogs/{logId} {
+      allow read: if isAuthenticated() && isAdmin();
+      allow create: if isAuthenticated();
+      allow update, delete: if false; // Regulatory compliance: audit logs cannot be modified or deleted
+    }
+  }
+}

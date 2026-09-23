@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_delivery_home"
+        android:icon="@drawable/ic_delivery"
+        android:title="Dashboard" />
+    <item
+        android:id="@+id/nav_delivery_active"
+        android:icon="@drawable/ic_map_pin"
+        android:title="In Transit" />
+    <item
+        android:id="@+id/nav_delivery_history"
+        android:icon="@drawable/ic_inventory"
+        android:title="Completed" />
+</menu>

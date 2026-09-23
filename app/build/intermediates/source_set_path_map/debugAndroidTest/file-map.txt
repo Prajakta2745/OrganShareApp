@@ -1,0 +1,6 @@
+com.example.organshare.test.app-androidTest-0 C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\build\generated\res\resValues\androidTest\debug
+com.example.organshare.test.app-mergeDebugAndroidTestResources-1 C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.organshare.test.app-mergeDebugAndroidTestResources-2 C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.organshare.test.app-merged_res-3 C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\build\intermediates\merged_res\debugAndroidTest
+com.example.organshare.test.app-jetified-core-1.5.0-4 C:\Users\Dell\.gradle\caches\transforms-3\f5ef2759df6b5aedc3ec7ae75e40328d\transformed\jetified-core-1.5.0\res
+com.example.organshare.test.app-jetified-annotation-experimental-1.3.0-5 C:\Users\Dell\.gradle\caches\transforms-3\fb415cb99ebcec4ea96ed469a7eeac4c\transformed\jetified-annotation-experimental-1.3.0\res

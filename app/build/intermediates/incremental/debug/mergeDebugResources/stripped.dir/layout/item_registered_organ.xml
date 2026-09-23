@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.chip.Chip xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chipOrgan"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="6dp"
+    android:layout_marginBottom="6dp"
+    android:text="Kidney"
+    android:textColor="@color/primary"
+    app:chipBackgroundColor="@color/secondary_container"
+    app:chipCornerRadius="8dp"
+    app:chipIcon="@drawable/ic_heart"
+    app:chipIconTint="@color/organ_red"
+    app:chipStrokeColor="@color/primary"
+    app:chipStrokeWidth="1dp" />

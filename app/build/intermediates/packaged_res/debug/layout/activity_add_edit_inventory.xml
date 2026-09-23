@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log Harvested Organ"
+            android:textColor="@color/text_primary"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Enter cold storage, blood type, and preservation parameters"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp" />
+
+        <!-- Organ Type Dropdown -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Organ Type">
+
+            <AutoCompleteTextView
+                android:id="@+id/actvInvOrganType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:text="Kidney" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Blood Group Dropdown -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Blood Group">
+
+            <AutoCompleteTextView
+                android:id="@+id/actvInvBloodGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:text="O+" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Donor Ref ID -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Source Donor Ref ID (e.g. DNR-1001)">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etInvDonorRef"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Storage Location & Vault Bay -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Storage Facility / Bay No.">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etInvStorageLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cryo Preservation Vault 1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Preservation Technique -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Preservation Solution &amp; Temperature">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etInvStorageTemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4°C Machine Perfusion" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSaveInventoryItem"
+            style="@style/Widget.OrganShare.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Save to Active Inventory" />
+
+    </LinearLayout>
+
+</ScrollView>

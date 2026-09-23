@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#F4F7F6</color>
+    <color name="black">#000000</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="divider">#E2E8F0</color>
+    <color name="emergency_red">#DC2626</color>
+    <color name="normal_blue">#0284C7</color>
+    <color name="on_background">#161D1D</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_primary_container">#002020</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="on_secondary_container">#051F1F</color>
+    <color name="on_surface">#161D1D</color>
+    <color name="on_surface_variant">#3F4948</color>
+    <color name="on_tertiary">#FFFFFF</color>
+    <color name="on_tertiary_container">#041C35</color>
+    <color name="organ_red">#B3261E</color>
+    <color name="organ_red_light">#F9DEDC</color>
+    <color name="outline">#6F7979</color>
+    <color name="primary">#006A6A</color>
+    <color name="primary_container">#6FF7F6</color>
+    <color name="secondary">#4A6363</color>
+    <color name="secondary_container">#CCE8E7</color>
+    <color name="status_available">#16A34A</color>
+    <color name="status_available_bg">#DCFCE7</color>
+    <color name="status_delayed">#E11D48</color>
+    <color name="status_delayed_bg">#FFE4E6</color>
+    <color name="status_delivered">#059669</color>
+    <color name="status_delivered_bg">#D1FAE5</color>
+    <color name="status_in_transit">#2563EB</color>
+    <color name="status_in_transit_bg">#DBEAFE</color>
+    <color name="status_pending">#D97706</color>
+    <color name="status_pending_bg">#FEF3C7</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#DAE5E4</color>
+    <color name="tertiary">#4A607C</color>
+    <color name="tertiary_container">#D2E4FF</color>
+    <color name="text_muted">#94A3B8</color>
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="transparent">#00000000</color>
+    <color name="urgent_orange">#EA580C</color>
+    <color name="white">#FFFFFF</color>
+    <dimen name="button_corner_radius">12dp</dimen>
+    <dimen name="card_corner_radius">16dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="input_corner_radius">12dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="spacing_medium">16dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_xlarge">32dp</dimen>
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_xxs">2dp</dimen>
+    <dimen name="text_badge">11sp</dimen>
+    <dimen name="text_body">14sp</dimen>
+    <dimen name="text_caption">12sp</dimen>
+    <dimen name="text_headline">24sp</dimen>
+    <dimen name="text_subtitle">14sp</dimen>
+    <dimen name="text_title">18sp</dimen>
+    <string name="action_check_inventory">Check Inventory</string>
+    <string name="action_contact_coordinator">Contact Coordinator</string>
+    <string name="action_contact_delivery">Contact Delivery Person</string>
+    <string name="action_request_organ">Request Organ</string>
+    <string name="action_seed_sample_data">Seed Realistic Sample Data</string>
+    <string name="action_track_delivery">Track Delivery</string>
+    <string name="action_update_status">Update Status</string>
+    <string name="action_view_requests">View Requests</string>
+    <string name="add_checkpoint">Record Checkpoint</string>
+    <string name="additional_notes_hint">Clinical Notes / Priority Details</string>
+    <string name="admin_dashboard">Admin Control Center</string>
+    <string name="already_have_account">Already have an account? Login</string>
+    <string name="app_name">OrganShare</string>
+    <string name="app_tagline">Secure Organ Donation &amp; Allocation Management</string>
+    <string name="approve">Approve</string>
+    <string name="audit_logs">System Audit Logs</string>
+    <string name="blood_group_hint">Blood Group</string>
+    <string name="city_hint">City</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="consent_terms">I voluntarily consent to register as an organ donor and agree that this pledge is managed ethically under applicable transplantation guidelines.</string>
+    <string name="create_request_title">Create Organ Request</string>
+    <string name="current_status">Current Status</string>
+    <string name="destination_hospital">Destination Hospital</string>
+    <string name="dob_hint">Date of Birth (YYYY-MM-DD)</string>
+    <string name="dont_have_account">Don\'t have an account? Register</string>
+    <string name="email_hint">Email Address</string>
+    <string name="emergency_contact_hint">Emergency Contact (Name &amp; Phone)</string>
+    <string name="emergency_level_hint">Emergency Level</string>
+    <string name="estimated_arrival">Estimated Arrival</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="gcm_defaultSenderId" translatable="false">1060853526884</string>
+    <string name="gender_hint">Gender</string>
+    <string name="google_api_key" translatable="false">AIzaSyBzBqYN6A6RzMQoN5bPQE97M8QkZiagVcY</string>
+    <string name="google_app_id" translatable="false">1:1060853526884:android:5a7c9108f32d9ebed4ca71</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBzBqYN6A6RzMQoN5bPQE97M8QkZiagVcY</string>
+    <string name="google_maps_key" translatable="false">AIzaSyAPYGS0LfuqC3LZI7p6cHsqwtKUow83yHQ</string>
+    <string name="google_storage_bucket" translatable="false">organshare-72bfd.firebasestorage.app</string>
+    <string name="hospital_address_hint">Complete Address</string>
+    <string name="hospital_contact_hint">Official Contact Number</string>
+    <string name="hospital_emergency_hotline_hint">Transplant Coordination Hotline</string>
+    <string name="hospital_license_hint">Hospital License / Reg No.</string>
+    <string name="hospital_name_hint">Hospital Name</string>
+    <string name="last_checkpoint">Last Checkpoint</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="location_hint">General Location / District</string>
+    <string name="login_title">Sign In to OrganShare</string>
+    <string name="logout">Logout</string>
+    <string name="mark_delivered">Confirm Delivery Receipt</string>
+    <string name="medical_disclaimer_text">This software acts as an administrative coordination and matching aid. Final medical eligibility, HLA tissue crossmatching, and allocation decisions must be independently validated and authorized by licensed transplant surgeons and regulatory medical boards.</string>
+    <string name="medical_disclaimer_title">Notice on Medical Allocation</string>
+    <string name="no_notifications">No notifications found.</string>
+    <string name="notifications">Notifications</string>
+    <string name="organ_required_hint">Organ Required</string>
+    <string name="organs_willing_donate">Organs Willing to Donate</string>
+    <string name="password_hint">Password</string>
+    <string name="patient_ref_id_hint">Patient Reference ID / Hospital Case ID</string>
+    <string name="phone_hint">Phone Number</string>
+    <string name="pickup_location">Pickup Organ Bank</string>
+    <string name="project_id" translatable="false">organshare-72bfd</string>
+    <string name="quantity_hint">Quantity</string>
+    <string name="register">Register</string>
+    <string name="register_title">Create an Account</string>
+    <string name="reject">Reject</string>
+    <string name="report_delay">Report Delay</string>
+    <string name="reports">Transplantation &amp; Request Reports</string>
+    <string name="required_date_hint">Required By Date</string>
+    <string name="required_time_hint">Required By Time</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="role_admin">Administrator</string>
+    <string name="role_delivery">Delivery Personnel</string>
+    <string name="role_donor">Donor</string>
+    <string name="role_hospital">Hospital</string>
+    <string name="role_organ_bank">Organ Bank / Coordinator</string>
+    <string name="select_role">Select Your Role</string>
+    <string name="send_reset_link">Send Reset Link</string>
+    <string name="sign_in">Sign In</string>
+    <string name="state_hint">State</string>
+    <string name="submit_request">Submit Organ Request</string>
+    <string name="suspend">Suspend</string>
+    <string name="track_delivery_title">Real-Time Delivery Route</string>
+    <string name="user_management">User &amp; Institution Verification</string>
+    <style name="Theme.OrganShare" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorPrimaryContainer">@color/primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/on_primary_container</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/on_secondary</item>
+        <item name="colorTertiary">@color/tertiary</item>
+        <item name="android:statusBarColor">@color/surface</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:colorBackground">@color/background</item>
+    </style>
+    <style name="Theme.OrganShare.Splash" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:colorBackground">@color/primary</item>
+    </style>
+    <style name="Widget.OrganShare.Button" parent="Widget.Material3.Button">
+        <item name="cornerRadius">@dimen/button_corner_radius</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Widget.OrganShare.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="cardBackgroundColor">@color/card_background</item>
+    </style>
+</resources>
