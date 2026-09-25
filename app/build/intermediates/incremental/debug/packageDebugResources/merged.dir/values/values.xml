@@ -3,6 +3,7 @@
     <color name="background">#F4F7F6</color>
     <color name="black">#000000</color>
     <color name="card_background">#FFFFFF</color>
+    <color name="critical_red">#D32F2F</color>
     <color name="divider">#E2E8F0</color>
     <color name="emergency_red">#DC2626</color>
     <color name="normal_blue">#0284C7</color>
@@ -20,6 +21,7 @@
     <color name="outline">#6F7979</color>
     <color name="primary">#006A6A</color>
     <color name="primary_container">#6FF7F6</color>
+    <color name="primary_teal">#00897B</color>
     <color name="secondary">#4A6363</color>
     <color name="secondary_container">#CCE8E7</color>
     <color name="status_available">#16A34A</color>
@@ -71,7 +73,7 @@
     <string name="admin_dashboard">Admin Control Center</string>
     <string name="already_have_account">Already have an account? Login</string>
     <string name="app_name">OrganShare</string>
-    <string name="app_tagline">Secure Organ Donation &amp; Allocation Management</string>
+    <string name="app_tagline">Give Life • Share Hope</string>
     <string name="approve">Approve</string>
     <string name="audit_logs">System Audit Logs</string>
     <string name="blood_group_hint">Blood Group</string>

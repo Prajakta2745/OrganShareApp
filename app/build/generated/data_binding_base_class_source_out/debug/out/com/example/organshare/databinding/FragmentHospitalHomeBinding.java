@@ -26,7 +26,19 @@ public final class FragmentHospitalHomeBinding implements ViewBinding {
   public final ImageButton btnLogoutHospital;
 
   @NonNull
+  public final MaterialCardView cardCreateBloodRequest;
+
+  @NonNull
   public final MaterialCardView cardCreateRequest;
+
+  @NonNull
+  public final MaterialCardView cardHospitalDeliveryTracking;
+
+  @NonNull
+  public final MaterialCardView cardHospitalNotif;
+
+  @NonNull
+  public final MaterialCardView cardHospitalRequestsHub;
 
   @NonNull
   public final MaterialCardView cardSearchDonors;
@@ -41,12 +53,20 @@ public final class FragmentHospitalHomeBinding implements ViewBinding {
   public final TextView tvVerificationBadge;
 
   private FragmentHospitalHomeBinding(@NonNull ScrollView rootView,
-      @NonNull ImageButton btnLogoutHospital, @NonNull MaterialCardView cardCreateRequest,
-      @NonNull MaterialCardView cardSearchDonors, @NonNull ImageView ivHospIcon,
-      @NonNull TextView tvHospitalWelcome, @NonNull TextView tvVerificationBadge) {
+      @NonNull ImageButton btnLogoutHospital, @NonNull MaterialCardView cardCreateBloodRequest,
+      @NonNull MaterialCardView cardCreateRequest,
+      @NonNull MaterialCardView cardHospitalDeliveryTracking,
+      @NonNull MaterialCardView cardHospitalNotif,
+      @NonNull MaterialCardView cardHospitalRequestsHub, @NonNull MaterialCardView cardSearchDonors,
+      @NonNull ImageView ivHospIcon, @NonNull TextView tvHospitalWelcome,
+      @NonNull TextView tvVerificationBadge) {
     this.rootView = rootView;
     this.btnLogoutHospital = btnLogoutHospital;
+    this.cardCreateBloodRequest = cardCreateBloodRequest;
     this.cardCreateRequest = cardCreateRequest;
+    this.cardHospitalDeliveryTracking = cardHospitalDeliveryTracking;
+    this.cardHospitalNotif = cardHospitalNotif;
+    this.cardHospitalRequestsHub = cardHospitalRequestsHub;
     this.cardSearchDonors = cardSearchDonors;
     this.ivHospIcon = ivHospIcon;
     this.tvHospitalWelcome = tvHospitalWelcome;
@@ -86,9 +106,33 @@ public final class FragmentHospitalHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.cardCreateBloodRequest;
+      MaterialCardView cardCreateBloodRequest = ViewBindings.findChildViewById(rootView, id);
+      if (cardCreateBloodRequest == null) {
+        break missingId;
+      }
+
       id = R.id.cardCreateRequest;
       MaterialCardView cardCreateRequest = ViewBindings.findChildViewById(rootView, id);
       if (cardCreateRequest == null) {
+        break missingId;
+      }
+
+      id = R.id.cardHospitalDeliveryTracking;
+      MaterialCardView cardHospitalDeliveryTracking = ViewBindings.findChildViewById(rootView, id);
+      if (cardHospitalDeliveryTracking == null) {
+        break missingId;
+      }
+
+      id = R.id.cardHospitalNotif;
+      MaterialCardView cardHospitalNotif = ViewBindings.findChildViewById(rootView, id);
+      if (cardHospitalNotif == null) {
+        break missingId;
+      }
+
+      id = R.id.cardHospitalRequestsHub;
+      MaterialCardView cardHospitalRequestsHub = ViewBindings.findChildViewById(rootView, id);
+      if (cardHospitalRequestsHub == null) {
         break missingId;
       }
 
@@ -117,7 +161,9 @@ public final class FragmentHospitalHomeBinding implements ViewBinding {
       }
 
       return new FragmentHospitalHomeBinding((ScrollView) rootView, btnLogoutHospital,
-          cardCreateRequest, cardSearchDonors, ivHospIcon, tvHospitalWelcome, tvVerificationBadge);
+          cardCreateBloodRequest, cardCreateRequest, cardHospitalDeliveryTracking,
+          cardHospitalNotif, cardHospitalRequestsHub, cardSearchDonors, ivHospIcon,
+          tvHospitalWelcome, tvVerificationBadge);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

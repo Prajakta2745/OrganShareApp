@@ -14,6 +14,7 @@ import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.organshare.R;
 import com.google.android.material.button.MaterialButton;
+import com.google.android.material.card.MaterialCardView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -26,44 +27,120 @@ public final class FragmentAdminStatsBinding implements ViewBinding {
   public final MaterialButton btnAdminManageUsers;
 
   @NonNull
+  public final MaterialButton btnAdminReports;
+
+  @NonNull
   public final MaterialButton btnAdminViewAuditLogs;
 
   @NonNull
   public final ImageButton btnLogoutAdmin;
 
   @NonNull
+  public final MaterialCardView cardStatActiveDel;
+
+  @NonNull
+  public final MaterialCardView cardStatActiveReq;
+
+  @NonNull
+  public final MaterialCardView cardStatAvailOrgans;
+
+  @NonNull
+  public final MaterialCardView cardStatCompletedDel;
+
+  @NonNull
+  public final MaterialCardView cardStatDelayedDel;
+
+  @NonNull
+  public final MaterialCardView cardStatDonors;
+
+  @NonNull
+  public final MaterialCardView cardStatFulfilledReq;
+
+  @NonNull
+  public final MaterialCardView cardStatHospitals;
+
+  @NonNull
+  public final MaterialCardView cardStatPendingDel;
+
+  @NonNull
+  public final MaterialCardView cardStatPendingReq;
+
+  @NonNull
   public final ImageView ivAdminIcon;
+
+  @NonNull
+  public final TextView tvAdminActiveDelCount;
+
+  @NonNull
+  public final TextView tvAdminActiveReqCount;
+
+  @NonNull
+  public final TextView tvAdminAvailOrgansCount;
+
+  @NonNull
+  public final TextView tvAdminCompletedDelCount;
+
+  @NonNull
+  public final TextView tvAdminDelayedDelCount;
 
   @NonNull
   public final TextView tvAdminDonorsCount;
 
   @NonNull
+  public final TextView tvAdminFulfilledReqCount;
+
+  @NonNull
   public final TextView tvAdminHospitalsCount;
 
   @NonNull
-  public final TextView tvAdminInventoryCount;
+  public final TextView tvAdminPendingDelCount;
 
   @NonNull
-  public final TextView tvAdminRequestsCount;
+  public final TextView tvAdminPendingReqCount;
 
   @NonNull
   public final TextView tvAdminWelcome;
 
   private FragmentAdminStatsBinding(@NonNull ScrollView rootView,
-      @NonNull MaterialButton btnAdminManageUsers, @NonNull MaterialButton btnAdminViewAuditLogs,
-      @NonNull ImageButton btnLogoutAdmin, @NonNull ImageView ivAdminIcon,
-      @NonNull TextView tvAdminDonorsCount, @NonNull TextView tvAdminHospitalsCount,
-      @NonNull TextView tvAdminInventoryCount, @NonNull TextView tvAdminRequestsCount,
-      @NonNull TextView tvAdminWelcome) {
+      @NonNull MaterialButton btnAdminManageUsers, @NonNull MaterialButton btnAdminReports,
+      @NonNull MaterialButton btnAdminViewAuditLogs, @NonNull ImageButton btnLogoutAdmin,
+      @NonNull MaterialCardView cardStatActiveDel, @NonNull MaterialCardView cardStatActiveReq,
+      @NonNull MaterialCardView cardStatAvailOrgans, @NonNull MaterialCardView cardStatCompletedDel,
+      @NonNull MaterialCardView cardStatDelayedDel, @NonNull MaterialCardView cardStatDonors,
+      @NonNull MaterialCardView cardStatFulfilledReq, @NonNull MaterialCardView cardStatHospitals,
+      @NonNull MaterialCardView cardStatPendingDel, @NonNull MaterialCardView cardStatPendingReq,
+      @NonNull ImageView ivAdminIcon, @NonNull TextView tvAdminActiveDelCount,
+      @NonNull TextView tvAdminActiveReqCount, @NonNull TextView tvAdminAvailOrgansCount,
+      @NonNull TextView tvAdminCompletedDelCount, @NonNull TextView tvAdminDelayedDelCount,
+      @NonNull TextView tvAdminDonorsCount, @NonNull TextView tvAdminFulfilledReqCount,
+      @NonNull TextView tvAdminHospitalsCount, @NonNull TextView tvAdminPendingDelCount,
+      @NonNull TextView tvAdminPendingReqCount, @NonNull TextView tvAdminWelcome) {
     this.rootView = rootView;
     this.btnAdminManageUsers = btnAdminManageUsers;
+    this.btnAdminReports = btnAdminReports;
     this.btnAdminViewAuditLogs = btnAdminViewAuditLogs;
     this.btnLogoutAdmin = btnLogoutAdmin;
+    this.cardStatActiveDel = cardStatActiveDel;
+    this.cardStatActiveReq = cardStatActiveReq;
+    this.cardStatAvailOrgans = cardStatAvailOrgans;
+    this.cardStatCompletedDel = cardStatCompletedDel;
+    this.cardStatDelayedDel = cardStatDelayedDel;
+    this.cardStatDonors = cardStatDonors;
+    this.cardStatFulfilledReq = cardStatFulfilledReq;
+    this.cardStatHospitals = cardStatHospitals;
+    this.cardStatPendingDel = cardStatPendingDel;
+    this.cardStatPendingReq = cardStatPendingReq;
     this.ivAdminIcon = ivAdminIcon;
+    this.tvAdminActiveDelCount = tvAdminActiveDelCount;
+    this.tvAdminActiveReqCount = tvAdminActiveReqCount;
+    this.tvAdminAvailOrgansCount = tvAdminAvailOrgansCount;
+    this.tvAdminCompletedDelCount = tvAdminCompletedDelCount;
+    this.tvAdminDelayedDelCount = tvAdminDelayedDelCount;
     this.tvAdminDonorsCount = tvAdminDonorsCount;
+    this.tvAdminFulfilledReqCount = tvAdminFulfilledReqCount;
     this.tvAdminHospitalsCount = tvAdminHospitalsCount;
-    this.tvAdminInventoryCount = tvAdminInventoryCount;
-    this.tvAdminRequestsCount = tvAdminRequestsCount;
+    this.tvAdminPendingDelCount = tvAdminPendingDelCount;
+    this.tvAdminPendingReqCount = tvAdminPendingReqCount;
     this.tvAdminWelcome = tvAdminWelcome;
   }
 
@@ -100,6 +177,12 @@ public final class FragmentAdminStatsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btnAdminReports;
+      MaterialButton btnAdminReports = ViewBindings.findChildViewById(rootView, id);
+      if (btnAdminReports == null) {
+        break missingId;
+      }
+
       id = R.id.btnAdminViewAuditLogs;
       MaterialButton btnAdminViewAuditLogs = ViewBindings.findChildViewById(rootView, id);
       if (btnAdminViewAuditLogs == null) {
@@ -112,9 +195,99 @@ public final class FragmentAdminStatsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.cardStatActiveDel;
+      MaterialCardView cardStatActiveDel = ViewBindings.findChildViewById(rootView, id);
+      if (cardStatActiveDel == null) {
+        break missingId;
+      }
+
+      id = R.id.cardStatActiveReq;
+      MaterialCardView cardStatActiveReq = ViewBindings.findChildViewById(rootView, id);
+      if (cardStatActiveReq == null) {
+        break missingId;
+      }
+
+      id = R.id.cardStatAvailOrgans;
+      MaterialCardView cardStatAvailOrgans = ViewBindings.findChildViewById(rootView, id);
+      if (cardStatAvailOrgans == null) {
+        break missingId;
+      }
+
+      id = R.id.cardStatCompletedDel;
+      MaterialCardView cardStatCompletedDel = ViewBindings.findChildViewById(rootView, id);
+      if (cardStatCompletedDel == null) {
+        break missingId;
+      }
+
+      id = R.id.cardStatDelayedDel;
+      MaterialCardView cardStatDelayedDel = ViewBindings.findChildViewById(rootView, id);
+      if (cardStatDelayedDel == null) {
+        break missingId;
+      }
+
+      id = R.id.cardStatDonors;
+      MaterialCardView cardStatDonors = ViewBindings.findChildViewById(rootView, id);
+      if (cardStatDonors == null) {
+        break missingId;
+      }
+
+      id = R.id.cardStatFulfilledReq;
+      MaterialCardView cardStatFulfilledReq = ViewBindings.findChildViewById(rootView, id);
+      if (cardStatFulfilledReq == null) {
+        break missingId;
+      }
+
+      id = R.id.cardStatHospitals;
+      MaterialCardView cardStatHospitals = ViewBindings.findChildViewById(rootView, id);
+      if (cardStatHospitals == null) {
+        break missingId;
+      }
+
+      id = R.id.cardStatPendingDel;
+      MaterialCardView cardStatPendingDel = ViewBindings.findChildViewById(rootView, id);
+      if (cardStatPendingDel == null) {
+        break missingId;
+      }
+
+      id = R.id.cardStatPendingReq;
+      MaterialCardView cardStatPendingReq = ViewBindings.findChildViewById(rootView, id);
+      if (cardStatPendingReq == null) {
+        break missingId;
+      }
+
       id = R.id.ivAdminIcon;
       ImageView ivAdminIcon = ViewBindings.findChildViewById(rootView, id);
       if (ivAdminIcon == null) {
+        break missingId;
+      }
+
+      id = R.id.tvAdminActiveDelCount;
+      TextView tvAdminActiveDelCount = ViewBindings.findChildViewById(rootView, id);
+      if (tvAdminActiveDelCount == null) {
+        break missingId;
+      }
+
+      id = R.id.tvAdminActiveReqCount;
+      TextView tvAdminActiveReqCount = ViewBindings.findChildViewById(rootView, id);
+      if (tvAdminActiveReqCount == null) {
+        break missingId;
+      }
+
+      id = R.id.tvAdminAvailOrgansCount;
+      TextView tvAdminAvailOrgansCount = ViewBindings.findChildViewById(rootView, id);
+      if (tvAdminAvailOrgansCount == null) {
+        break missingId;
+      }
+
+      id = R.id.tvAdminCompletedDelCount;
+      TextView tvAdminCompletedDelCount = ViewBindings.findChildViewById(rootView, id);
+      if (tvAdminCompletedDelCount == null) {
+        break missingId;
+      }
+
+      id = R.id.tvAdminDelayedDelCount;
+      TextView tvAdminDelayedDelCount = ViewBindings.findChildViewById(rootView, id);
+      if (tvAdminDelayedDelCount == null) {
         break missingId;
       }
 
@@ -124,21 +297,27 @@ public final class FragmentAdminStatsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvAdminFulfilledReqCount;
+      TextView tvAdminFulfilledReqCount = ViewBindings.findChildViewById(rootView, id);
+      if (tvAdminFulfilledReqCount == null) {
+        break missingId;
+      }
+
       id = R.id.tvAdminHospitalsCount;
       TextView tvAdminHospitalsCount = ViewBindings.findChildViewById(rootView, id);
       if (tvAdminHospitalsCount == null) {
         break missingId;
       }
 
-      id = R.id.tvAdminInventoryCount;
-      TextView tvAdminInventoryCount = ViewBindings.findChildViewById(rootView, id);
-      if (tvAdminInventoryCount == null) {
+      id = R.id.tvAdminPendingDelCount;
+      TextView tvAdminPendingDelCount = ViewBindings.findChildViewById(rootView, id);
+      if (tvAdminPendingDelCount == null) {
         break missingId;
       }
 
-      id = R.id.tvAdminRequestsCount;
-      TextView tvAdminRequestsCount = ViewBindings.findChildViewById(rootView, id);
-      if (tvAdminRequestsCount == null) {
+      id = R.id.tvAdminPendingReqCount;
+      TextView tvAdminPendingReqCount = ViewBindings.findChildViewById(rootView, id);
+      if (tvAdminPendingReqCount == null) {
         break missingId;
       }
 
@@ -149,8 +328,13 @@ public final class FragmentAdminStatsBinding implements ViewBinding {
       }
 
       return new FragmentAdminStatsBinding((ScrollView) rootView, btnAdminManageUsers,
-          btnAdminViewAuditLogs, btnLogoutAdmin, ivAdminIcon, tvAdminDonorsCount,
-          tvAdminHospitalsCount, tvAdminInventoryCount, tvAdminRequestsCount, tvAdminWelcome);
+          btnAdminReports, btnAdminViewAuditLogs, btnLogoutAdmin, cardStatActiveDel,
+          cardStatActiveReq, cardStatAvailOrgans, cardStatCompletedDel, cardStatDelayedDel,
+          cardStatDonors, cardStatFulfilledReq, cardStatHospitals, cardStatPendingDel,
+          cardStatPendingReq, ivAdminIcon, tvAdminActiveDelCount, tvAdminActiveReqCount,
+          tvAdminAvailOrgansCount, tvAdminCompletedDelCount, tvAdminDelayedDelCount,
+          tvAdminDonorsCount, tvAdminFulfilledReqCount, tvAdminHospitalsCount,
+          tvAdminPendingDelCount, tvAdminPendingReqCount, tvAdminWelcome);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

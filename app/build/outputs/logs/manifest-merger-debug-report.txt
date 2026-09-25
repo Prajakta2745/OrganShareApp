@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:2:1-135:12
-INJECTED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:2:1-135:12
-INJECTED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:2:1-135:12
-INJECTED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:2:1-135:12
+ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:2:1-192:12
+INJECTED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:2:1-192:12
+INJECTED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:2:1-192:12
+INJECTED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:2:1-192:12
 MERGED from [androidx.databinding:viewbinding:8.2.2] C:\Users\Dell\.gradle\caches\transforms-3\91ca4d3eea457dff5511232efbb98b7c\transformed\jetified-viewbinding-8.2.2\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-common:2.7.7] C:\Users\Dell\.gradle\caches\transforms-3\fbb5ede173edf8c0946681a14368ba82\transformed\navigation-common-2.7.7\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-runtime:2.7.7] C:\Users\Dell\.gradle\caches\transforms-3\01d16e19e6bd9b16041082a6c8d3f37c\transformed\navigation-runtime-2.7.7\AndroidManifest.xml:17:1-22:12
@@ -172,8 +172,8 @@ ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d
 	android:name
 		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:12:22-66
 application
-ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:14:5-133:19
-INJECTED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:14:5-133:19
+ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:14:5-190:19
+INJECTED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:14:5-190:19
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\Dell\.gradle\caches\transforms-3\4d7116b043dde5eda7ede9c5e49a344c\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\Dell\.gradle\caches\transforms-3\4d7116b043dde5eda7ede9c5e49a344c\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Dell\.gradle\caches\transforms-3\bd2950784a1b0e648450f94fbfc7910b\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -420,18 +420,126 @@ ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d
 		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:122:13-37
 	android:name
 		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:121:13-68
-service#com.example.organshare.notifications.AppFirebaseMessagingService
-ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:125:9-131:19
+activity#com.example.organshare.activities.common.CommonHomeActivity
+ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:125:9-127:40
 	android:exported
 		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:127:13-37
 	android:name
-		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:126:13-70
-intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:128:13-130:29
-action#com.google.firebase.MESSAGING_EVENT
-ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:129:17-78
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:126:13-65
+activity#com.example.organshare.activities.common.AvailableOrgansActivity
+ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:128:9-130:40
+	android:exported
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:130:13-37
 	android:name
-		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:129:25-75
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:129:13-70
+activity#com.example.organshare.activities.hospital.PendingRequestsActivity
+ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:131:9-133:40
+	android:exported
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:133:13-37
+	android:name
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:132:13-72
+activity#com.example.organshare.activities.hospital.ActiveRequestsActivity
+ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:134:9-136:40
+	android:exported
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:136:13-37
+	android:name
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:135:13-71
+activity#com.example.organshare.activities.hospital.FulfilledRequestsActivity
+ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:137:9-139:40
+	android:exported
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:139:13-37
+	android:name
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:138:13-74
+activity#com.example.organshare.activities.hospital.OrganRequestsHubActivity
+ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:140:9-142:40
+	android:exported
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:142:13-37
+	android:name
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:141:13-73
+activity#com.example.organshare.activities.admin.AdminDeliveryManagementActivity
+ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:143:9-145:40
+	android:exported
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:145:13-37
+	android:name
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:144:13-77
+activity#com.example.organshare.activities.admin.AssignDeliveryPersonActivity
+ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:146:9-148:40
+	android:exported
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:148:13-37
+	android:name
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:147:13-74
+activity#com.example.organshare.activities.admin.AdminReportsActivity
+ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:149:9-151:40
+	android:exported
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:151:13-37
+	android:name
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:150:13-66
+activity#com.example.organshare.activities.common.SettingsActivity
+ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:152:9-154:40
+	android:exported
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:154:13-37
+	android:name
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:153:13-63
+activity#com.example.organshare.activities.common.EditProfileActivity
+ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:155:9-157:40
+	android:exported
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:157:13-37
+	android:name
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:156:13-66
+activity#com.example.organshare.activities.common.ChangePasswordActivity
+ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:158:9-160:40
+	android:exported
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:160:13-37
+	android:name
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:159:13-69
+activity#com.example.organshare.activities.donor.DigitalDonorCardActivity
+ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:161:9-163:40
+	android:exported
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:163:13-37
+	android:name
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:162:13-70
+activity#com.example.organshare.activities.donor.OrganPledgeActivity
+ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:164:9-166:40
+	android:exported
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:166:13-37
+	android:name
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:165:13-65
+activity#com.example.organshare.activities.donor.BloodDonorRegistrationActivity
+ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:167:9-169:40
+	android:exported
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:169:13-37
+	android:name
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:168:13-76
+activity#com.example.organshare.activities.donor.EligibilityScreenerActivity
+ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:170:9-172:40
+	android:exported
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:172:13-37
+	android:name
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:171:13-73
+activity#com.example.organshare.activities.donor.FamilyDonationActivity
+ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:173:9-175:40
+	android:exported
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:175:13-37
+	android:name
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:174:13-68
+activity#com.example.organshare.activities.hospital.CreateBloodRequestActivity
+ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:176:9-178:40
+	android:exported
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:178:13-37
+	android:name
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:177:13-75
+service#com.example.organshare.notifications.AppFirebaseMessagingService
+ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:182:9-188:19
+	android:exported
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:184:13-37
+	android:name
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:183:13-70
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:185:13-187:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:186:17-78
+	android:name
+		ADDED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:186:25-75
 uses-sdk
 INJECTED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml

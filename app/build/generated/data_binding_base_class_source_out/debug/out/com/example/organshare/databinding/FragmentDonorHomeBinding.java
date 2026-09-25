@@ -4,7 +4,6 @@ package com.example.organshare.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -13,6 +12,8 @@ import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.organshare.R;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.card.MaterialCardView;
 import com.google.android.material.chip.ChipGroup;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -23,13 +24,40 @@ public final class FragmentDonorHomeBinding implements ViewBinding {
   private final ScrollView rootView;
 
   @NonNull
-  public final ImageButton btnLogoutDonor;
+  public final MaterialButton btnDonorLogout;
+
+  @NonNull
+  public final MaterialButton btnDonorSettings;
+
+  @NonNull
+  public final MaterialCardView cardBloodDonation;
+
+  @NonNull
+  public final MaterialCardView cardDigitalDonorCard;
+
+  @NonNull
+  public final MaterialCardView cardDonationHistory;
+
+  @NonNull
+  public final MaterialCardView cardDonorProfile;
+
+  @NonNull
+  public final MaterialCardView cardEligibilityScreener;
+
+  @NonNull
+  public final MaterialCardView cardFamilyDonation;
+
+  @NonNull
+  public final MaterialCardView cardNotifications;
+
+  @NonNull
+  public final MaterialCardView cardOrganPledge;
 
   @NonNull
   public final ChipGroup chipGroupOrgans;
 
   @NonNull
-  public final ImageView ivHeart;
+  public final ImageView ivDonorHeaderLogo;
 
   @NonNull
   public final TextView tvDonorBloodBadge;
@@ -44,14 +72,28 @@ public final class FragmentDonorHomeBinding implements ViewBinding {
   public final TextView tvPledgeStatus;
 
   private FragmentDonorHomeBinding(@NonNull ScrollView rootView,
-      @NonNull ImageButton btnLogoutDonor, @NonNull ChipGroup chipGroupOrgans,
-      @NonNull ImageView ivHeart, @NonNull TextView tvDonorBloodBadge,
+      @NonNull MaterialButton btnDonorLogout, @NonNull MaterialButton btnDonorSettings,
+      @NonNull MaterialCardView cardBloodDonation, @NonNull MaterialCardView cardDigitalDonorCard,
+      @NonNull MaterialCardView cardDonationHistory, @NonNull MaterialCardView cardDonorProfile,
+      @NonNull MaterialCardView cardEligibilityScreener,
+      @NonNull MaterialCardView cardFamilyDonation, @NonNull MaterialCardView cardNotifications,
+      @NonNull MaterialCardView cardOrganPledge, @NonNull ChipGroup chipGroupOrgans,
+      @NonNull ImageView ivDonorHeaderLogo, @NonNull TextView tvDonorBloodBadge,
       @NonNull TextView tvDonorIdDisplay, @NonNull TextView tvDonorWelcome,
       @NonNull TextView tvPledgeStatus) {
     this.rootView = rootView;
-    this.btnLogoutDonor = btnLogoutDonor;
+    this.btnDonorLogout = btnDonorLogout;
+    this.btnDonorSettings = btnDonorSettings;
+    this.cardBloodDonation = cardBloodDonation;
+    this.cardDigitalDonorCard = cardDigitalDonorCard;
+    this.cardDonationHistory = cardDonationHistory;
+    this.cardDonorProfile = cardDonorProfile;
+    this.cardEligibilityScreener = cardEligibilityScreener;
+    this.cardFamilyDonation = cardFamilyDonation;
+    this.cardNotifications = cardNotifications;
+    this.cardOrganPledge = cardOrganPledge;
     this.chipGroupOrgans = chipGroupOrgans;
-    this.ivHeart = ivHeart;
+    this.ivDonorHeaderLogo = ivDonorHeaderLogo;
     this.tvDonorBloodBadge = tvDonorBloodBadge;
     this.tvDonorIdDisplay = tvDonorIdDisplay;
     this.tvDonorWelcome = tvDonorWelcome;
@@ -85,9 +127,63 @@ public final class FragmentDonorHomeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnLogoutDonor;
-      ImageButton btnLogoutDonor = ViewBindings.findChildViewById(rootView, id);
-      if (btnLogoutDonor == null) {
+      id = R.id.btnDonorLogout;
+      MaterialButton btnDonorLogout = ViewBindings.findChildViewById(rootView, id);
+      if (btnDonorLogout == null) {
+        break missingId;
+      }
+
+      id = R.id.btnDonorSettings;
+      MaterialButton btnDonorSettings = ViewBindings.findChildViewById(rootView, id);
+      if (btnDonorSettings == null) {
+        break missingId;
+      }
+
+      id = R.id.cardBloodDonation;
+      MaterialCardView cardBloodDonation = ViewBindings.findChildViewById(rootView, id);
+      if (cardBloodDonation == null) {
+        break missingId;
+      }
+
+      id = R.id.cardDigitalDonorCard;
+      MaterialCardView cardDigitalDonorCard = ViewBindings.findChildViewById(rootView, id);
+      if (cardDigitalDonorCard == null) {
+        break missingId;
+      }
+
+      id = R.id.cardDonationHistory;
+      MaterialCardView cardDonationHistory = ViewBindings.findChildViewById(rootView, id);
+      if (cardDonationHistory == null) {
+        break missingId;
+      }
+
+      id = R.id.cardDonorProfile;
+      MaterialCardView cardDonorProfile = ViewBindings.findChildViewById(rootView, id);
+      if (cardDonorProfile == null) {
+        break missingId;
+      }
+
+      id = R.id.cardEligibilityScreener;
+      MaterialCardView cardEligibilityScreener = ViewBindings.findChildViewById(rootView, id);
+      if (cardEligibilityScreener == null) {
+        break missingId;
+      }
+
+      id = R.id.cardFamilyDonation;
+      MaterialCardView cardFamilyDonation = ViewBindings.findChildViewById(rootView, id);
+      if (cardFamilyDonation == null) {
+        break missingId;
+      }
+
+      id = R.id.cardNotifications;
+      MaterialCardView cardNotifications = ViewBindings.findChildViewById(rootView, id);
+      if (cardNotifications == null) {
+        break missingId;
+      }
+
+      id = R.id.cardOrganPledge;
+      MaterialCardView cardOrganPledge = ViewBindings.findChildViewById(rootView, id);
+      if (cardOrganPledge == null) {
         break missingId;
       }
 
@@ -97,9 +193,9 @@ public final class FragmentDonorHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.ivHeart;
-      ImageView ivHeart = ViewBindings.findChildViewById(rootView, id);
-      if (ivHeart == null) {
+      id = R.id.ivDonorHeaderLogo;
+      ImageView ivDonorHeaderLogo = ViewBindings.findChildViewById(rootView, id);
+      if (ivDonorHeaderLogo == null) {
         break missingId;
       }
 
@@ -127,8 +223,11 @@ public final class FragmentDonorHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentDonorHomeBinding((ScrollView) rootView, btnLogoutDonor, chipGroupOrgans,
-          ivHeart, tvDonorBloodBadge, tvDonorIdDisplay, tvDonorWelcome, tvPledgeStatus);
+      return new FragmentDonorHomeBinding((ScrollView) rootView, btnDonorLogout, btnDonorSettings,
+          cardBloodDonation, cardDigitalDonorCard, cardDonationHistory, cardDonorProfile,
+          cardEligibilityScreener, cardFamilyDonation, cardNotifications, cardOrganPledge,
+          chipGroupOrgans, ivDonorHeaderLogo, tvDonorBloodBadge, tvDonorIdDisplay, tvDonorWelcome,
+          tvPledgeStatus);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

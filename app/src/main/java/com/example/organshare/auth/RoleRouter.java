@@ -13,6 +13,11 @@ public class RoleRouter {
 
     public static void navigateToDashboard(Context context, String role) {
         if (role == null) return;
+        navigateToRoleSpecificDashboard(context, role);
+    }
+
+    public static void navigateToRoleSpecificDashboard(Context context, String role) {
+        if (role == null) return;
         Intent intent;
         switch (role.toUpperCase()) {
             case Constants.ROLE_DONOR:
@@ -34,7 +39,6 @@ public class RoleRouter {
                 intent = new Intent(context, DonorDashboardActivity.class);
                 break;
         }
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         context.startActivity(intent);
     }
 }

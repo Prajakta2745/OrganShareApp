@@ -21,9 +21,18 @@ public class DonorProfile implements Serializable {
     private String generalLocation;
     private String emergencyContact;
     private List<String> organsWillingToDonate = new ArrayList<>();
+    private boolean fullBodyDonation;
     private String donationStatus; // PLEDGED, ACTIVE, MATCHED, DONATED, INACTIVE
     private boolean consentGiven;
     private boolean verified;
+
+    // Blood Donation Registration Fields
+    private boolean bloodDonorRegistered;
+    private boolean availableForEmergencyBlood;
+    private String lastBloodDonationDate;
+    private String preferredBloodDonationLocation;
+    private String bloodDonorStatus; // ACTIVE, INACTIVE
+    private String bloodDonorConsentDate;
 
     @ServerTimestamp
     private Date createdAt;
@@ -85,6 +94,9 @@ public class DonorProfile implements Serializable {
     public List<String> getOrgansWillingToDonate() { return organsWillingToDonate; }
     public void setOrgansWillingToDonate(List<String> organsWillingToDonate) { this.organsWillingToDonate = organsWillingToDonate; }
 
+    public boolean isFullBodyDonation() { return fullBodyDonation; }
+    public void setFullBodyDonation(boolean fullBodyDonation) { this.fullBodyDonation = fullBodyDonation; }
+
     public String getDonationStatus() { return donationStatus; }
     public void setDonationStatus(String donationStatus) { this.donationStatus = donationStatus; }
 
@@ -93,6 +105,24 @@ public class DonorProfile implements Serializable {
 
     public boolean isVerified() { return verified; }
     public void setVerified(boolean verified) { this.verified = verified; }
+
+    public boolean isBloodDonorRegistered() { return bloodDonorRegistered; }
+    public void setBloodDonorRegistered(boolean bloodDonorRegistered) { this.bloodDonorRegistered = bloodDonorRegistered; }
+
+    public boolean isAvailableForEmergencyBlood() { return availableForEmergencyBlood; }
+    public void setAvailableForEmergencyBlood(boolean availableForEmergencyBlood) { this.availableForEmergencyBlood = availableForEmergencyBlood; }
+
+    public String getLastBloodDonationDate() { return lastBloodDonationDate; }
+    public void setLastBloodDonationDate(String lastBloodDonationDate) { this.lastBloodDonationDate = lastBloodDonationDate; }
+
+    public String getPreferredBloodDonationLocation() { return preferredBloodDonationLocation; }
+    public void setPreferredBloodDonationLocation(String preferredBloodDonationLocation) { this.preferredBloodDonationLocation = preferredBloodDonationLocation; }
+
+    public String getBloodDonorStatus() { return bloodDonorStatus; }
+    public void setBloodDonorStatus(String bloodDonorStatus) { this.bloodDonorStatus = bloodDonorStatus; }
+
+    public String getBloodDonorConsentDate() { return bloodDonorConsentDate; }
+    public void setBloodDonorConsentDate(String bloodDonorConsentDate) { this.bloodDonorConsentDate = bloodDonorConsentDate; }
 
     public Date getCreatedAt() { return createdAt; }
     public void setCreatedAt(Date createdAt) { this.createdAt = createdAt; }

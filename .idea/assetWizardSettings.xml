@@ -328,6 +328,28 @@
             </PersistentState>
           </value>
         </entry>
+        <entry key="vectorWizard">
+          <value>
+            <PersistentState>
+              <option name="children">
+                <map>
+                  <entry key="vectorAssetStep">
+                    <value>
+                      <PersistentState>
+                        <option name="values">
+                          <map>
+                            <entry key="outputName" value="ic_order" />
+                            <entry key="sourceFile" value="C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp" />
+                          </map>
+                        </option>
+                      </PersistentState>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </PersistentState>
+          </value>
+        </entry>
       </map>
     </option>
   </component>

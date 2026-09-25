@@ -7,18 +7,22 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.organshare.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class ActivityHospitalDashboardBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final DrawerLayout rootView;
+
+  @NonNull
+  public final DrawerLayout drawerLayout;
 
   @NonNull
   public final BottomNavigationView hospitalBottomNav;
@@ -26,17 +30,27 @@ public final class ActivityHospitalDashboardBinding implements ViewBinding {
   @NonNull
   public final FrameLayout hospitalFragmentContainer;
 
-  private ActivityHospitalDashboardBinding(@NonNull ConstraintLayout rootView,
-      @NonNull BottomNavigationView hospitalBottomNav,
-      @NonNull FrameLayout hospitalFragmentContainer) {
+  @NonNull
+  public final LayoutCommonToolbarBinding includedToolbar;
+
+  @NonNull
+  public final NavigationView navigationView;
+
+  private ActivityHospitalDashboardBinding(@NonNull DrawerLayout rootView,
+      @NonNull DrawerLayout drawerLayout, @NonNull BottomNavigationView hospitalBottomNav,
+      @NonNull FrameLayout hospitalFragmentContainer,
+      @NonNull LayoutCommonToolbarBinding includedToolbar, @NonNull NavigationView navigationView) {
     this.rootView = rootView;
+    this.drawerLayout = drawerLayout;
     this.hospitalBottomNav = hospitalBottomNav;
     this.hospitalFragmentContainer = hospitalFragmentContainer;
+    this.includedToolbar = includedToolbar;
+    this.navigationView = navigationView;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public DrawerLayout getRoot() {
     return rootView;
   }
 
@@ -61,6 +75,8 @@ public final class ActivityHospitalDashboardBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      DrawerLayout drawerLayout = (DrawerLayout) rootView;
+
       id = R.id.hospitalBottomNav;
       BottomNavigationView hospitalBottomNav = ViewBindings.findChildViewById(rootView, id);
       if (hospitalBottomNav == null) {
@@ -73,8 +89,21 @@ public final class ActivityHospitalDashboardBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityHospitalDashboardBinding((ConstraintLayout) rootView, hospitalBottomNav,
-          hospitalFragmentContainer);
+      id = R.id.includedToolbar;
+      View includedToolbar = ViewBindings.findChildViewById(rootView, id);
+      if (includedToolbar == null) {
+        break missingId;
+      }
+      LayoutCommonToolbarBinding binding_includedToolbar = LayoutCommonToolbarBinding.bind(includedToolbar);
+
+      id = R.id.navigationView;
+      NavigationView navigationView = ViewBindings.findChildViewById(rootView, id);
+      if (navigationView == null) {
+        break missingId;
+      }
+
+      return new ActivityHospitalDashboardBinding((DrawerLayout) rootView, drawerLayout,
+          hospitalBottomNav, hospitalFragmentContainer, binding_includedToolbar, navigationView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -1,0 +1,80 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="300dp"
+    android:height="300dp"
+    android:viewportWidth="300"
+    android:viewportHeight="300">
+
+    <!-- Outer Card Background -->
+    <path
+        android:fillColor="#F2FAF5"
+        android:pathData="M50,10 L250,10 A40,40 0 0,1 290,50 L290,250 A40,40 0 0,1 250,290 L50,290 A40,40 0 0,1 10,250 L10,50 A40,40 0 0,1 50,10 Z" />
+
+    <!-- Outer Green Heart & Hands (Embracing Structure) -->
+    <!-- Left Green Hand/Heart Leaf -->
+    <path
+        android:fillColor="#15803D"
+        android:pathData="M150,205 C115,185 60,150 60,95 C60,65 85,45 115,45 C132,45 145,55 150,65 C155,55 168,45 185,45 C215,45 240,65 240,95 C240,150 185,185 150,205 Z" />
+
+    <!-- Inner Heart Cutout -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M150,190 C125,170 80,140 80,95 C80,72 98,58 120,58 C135,58 145,68 150,75 C155,68 165,58 180,58 C202,58 220,72 220,95 C220,140 175,170 150,190 Z" />
+
+    <!-- Supporting Hands in Dark Teal at Base -->
+    <path
+        android:fillColor="#044E32"
+        android:pathData="M150,205 C130,195 90,165 60,120 C56,140 70,175 105,195 C125,206 145,210 150,210 C155,210 175,206 195,195 C230,175 244,140 240,120 C210,165 170,195 150,205 Z" />
+
+    <!-- ORGANS CLUSTER IN CENTER -->
+
+    <!-- 1. Heart (Top Center) -->
+    <path
+        android:fillColor="#DC2626"
+        android:pathData="M150,108 C145,100 135,90 135,80 C135,72 140,66 148,66 C152,66 156,69 158,73 C160,69 164,66 168,66 C176,66 181,72 181,80 C181,90 171,100 166,108 L158,114 Z" />
+    <path
+        android:fillColor="#B91C1C"
+        android:pathData="M152,66 L152,60 L156,60 L156,66 Z" />
+    <path
+        android:fillColor="#B91C1C"
+        android:pathData="M160,66 L160,58 L165,58 L165,66 Z" />
+
+    <!-- 2. Kidneys (Left and Right) -->
+    <!-- Left Kidney -->
+    <path
+        android:fillColor="#EA580C"
+        android:pathData="M115,82 C108,82 102,88 102,96 C102,106 109,114 117,114 C123,114 127,108 126,102 C125,98 121,96 121,92 C121,88 125,86 123,83 C121,82 118,82 115,82 Z" />
+
+    <!-- Right Kidney -->
+    <path
+        android:fillColor="#EA580C"
+        android:pathData="M185,82 C192,82 198,88 198,96 C198,106 191,114 183,114 C177,114 173,108 174,102 C175,98 179,96 179,92 C179,88 175,86 177,83 C179,82 182,82 185,82 Z" />
+
+    <!-- 3. Lungs (Center Middle) -->
+    <!-- Left Lung Lobe -->
+    <path
+        android:fillColor="#F87171"
+        android:pathData="M147,120 L147,144 C140,146 125,145 125,130 C125,120 135,116 147,120 Z" />
+    <!-- Right Lung Lobe -->
+    <path
+        android:fillColor="#F87171"
+        android:pathData="M153,120 L153,144 C160,146 175,145 175,130 C175,120 165,116 153,120 Z" />
+    <!-- Trachea / Airway -->
+    <path
+        android:fillColor="#EF4444"
+        android:pathData="M149,114 L151,114 L151,122 L149,122 Z" />
+
+    <!-- 4. Liver (Bottom Center) -->
+    <path
+        android:fillColor="#831843"
+        android:pathData="M132,148 C140,146 160,146 168,150 C170,154 165,166 156,168 C145,170 135,164 132,156 Z" />
+
+    <!-- BRAND TYPOGRAPHY -->
+    <!-- OrganShare Title Base Shape -->
+    <path
+        android:fillColor="#064E3B"
+        android:pathData="M45,248 C45,232 58,220 74,220 C90,220 103,232 103,248 C103,264 90,276 74,276 C58,276 45,264 45,248 Z" />
+    <path
+        android:fillColor="#F2FAF5"
+        android:pathData="M55,248 C55,238 63,228 74,228 C85,228 93,238 93,248 C93,258 85,268 74,268 C63,268 55,258 55,248 Z" />
+
+</vector>

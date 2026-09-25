@@ -24,6 +24,9 @@ public final class ItemDonorSearchBinding implements ViewBinding {
   public final MaterialButton btnContactCoordinator;
 
   @NonNull
+  public final MaterialButton btnMarkCollected;
+
+  @NonNull
   public final TextView tvBloodBadge;
 
   @NonNull
@@ -39,11 +42,13 @@ public final class ItemDonorSearchBinding implements ViewBinding {
   public final TextView tvPledgedOrgans;
 
   private ItemDonorSearchBinding(@NonNull MaterialCardView rootView,
-      @NonNull MaterialButton btnContactCoordinator, @NonNull TextView tvBloodBadge,
-      @NonNull TextView tvDonorIdAndGender, @NonNull TextView tvDonorMaskedName,
-      @NonNull TextView tvLocation, @NonNull TextView tvPledgedOrgans) {
+      @NonNull MaterialButton btnContactCoordinator, @NonNull MaterialButton btnMarkCollected,
+      @NonNull TextView tvBloodBadge, @NonNull TextView tvDonorIdAndGender,
+      @NonNull TextView tvDonorMaskedName, @NonNull TextView tvLocation,
+      @NonNull TextView tvPledgedOrgans) {
     this.rootView = rootView;
     this.btnContactCoordinator = btnContactCoordinator;
+    this.btnMarkCollected = btnMarkCollected;
     this.tvBloodBadge = tvBloodBadge;
     this.tvDonorIdAndGender = tvDonorIdAndGender;
     this.tvDonorMaskedName = tvDonorMaskedName;
@@ -84,6 +89,12 @@ public final class ItemDonorSearchBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btnMarkCollected;
+      MaterialButton btnMarkCollected = ViewBindings.findChildViewById(rootView, id);
+      if (btnMarkCollected == null) {
+        break missingId;
+      }
+
       id = R.id.tvBloodBadge;
       TextView tvBloodBadge = ViewBindings.findChildViewById(rootView, id);
       if (tvBloodBadge == null) {
@@ -115,7 +126,8 @@ public final class ItemDonorSearchBinding implements ViewBinding {
       }
 
       return new ItemDonorSearchBinding((MaterialCardView) rootView, btnContactCoordinator,
-          tvBloodBadge, tvDonorIdAndGender, tvDonorMaskedName, tvLocation, tvPledgedOrgans);
+          btnMarkCollected, tvBloodBadge, tvDonorIdAndGender, tvDonorMaskedName, tvLocation,
+          tvPledgedOrgans);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

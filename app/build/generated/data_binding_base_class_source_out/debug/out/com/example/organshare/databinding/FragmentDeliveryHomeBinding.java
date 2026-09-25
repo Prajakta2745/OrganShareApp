@@ -14,6 +14,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.organshare.R;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.card.MaterialCardView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -23,30 +25,88 @@ public final class FragmentDeliveryHomeBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final MaterialButton btnCourierTabActive;
+
+  @NonNull
+  public final MaterialButton btnCourierTabAll;
+
+  @NonNull
+  public final MaterialButton btnCourierTabDelayed;
+
+  @NonNull
+  public final MaterialButton btnCourierTabDone;
+
+  @NonNull
+  public final MaterialButton btnCourierTabPending;
+
+  @NonNull
   public final ImageButton btnLogoutDelivery;
 
   @NonNull
-  public final ImageView ivDelivIcon;
+  public final MaterialCardView cardCourierActive;
+
+  @NonNull
+  public final MaterialCardView cardCourierCompleted;
+
+  @NonNull
+  public final MaterialCardView cardCourierDelayed;
+
+  @NonNull
+  public final MaterialCardView cardCourierPending;
+
+  @NonNull
+  public final ImageView ivCourierIcon;
 
   @NonNull
   public final RecyclerView rvAssignedDeliveries;
 
   @NonNull
-  public final TextView tvCourierVehicleBadge;
+  public final TextView tvCourierActiveCount;
+
+  @NonNull
+  public final TextView tvCourierCompletedCount;
+
+  @NonNull
+  public final TextView tvCourierDelayedCount;
+
+  @NonNull
+  public final TextView tvCourierPendingCount;
 
   @NonNull
   public final TextView tvDeliveryWelcome;
 
+  @NonNull
+  public final TextView tvEmptyCourierDeliveries;
+
   private FragmentDeliveryHomeBinding(@NonNull LinearLayout rootView,
-      @NonNull ImageButton btnLogoutDelivery, @NonNull ImageView ivDelivIcon,
-      @NonNull RecyclerView rvAssignedDeliveries, @NonNull TextView tvCourierVehicleBadge,
-      @NonNull TextView tvDeliveryWelcome) {
+      @NonNull MaterialButton btnCourierTabActive, @NonNull MaterialButton btnCourierTabAll,
+      @NonNull MaterialButton btnCourierTabDelayed, @NonNull MaterialButton btnCourierTabDone,
+      @NonNull MaterialButton btnCourierTabPending, @NonNull ImageButton btnLogoutDelivery,
+      @NonNull MaterialCardView cardCourierActive, @NonNull MaterialCardView cardCourierCompleted,
+      @NonNull MaterialCardView cardCourierDelayed, @NonNull MaterialCardView cardCourierPending,
+      @NonNull ImageView ivCourierIcon, @NonNull RecyclerView rvAssignedDeliveries,
+      @NonNull TextView tvCourierActiveCount, @NonNull TextView tvCourierCompletedCount,
+      @NonNull TextView tvCourierDelayedCount, @NonNull TextView tvCourierPendingCount,
+      @NonNull TextView tvDeliveryWelcome, @NonNull TextView tvEmptyCourierDeliveries) {
     this.rootView = rootView;
+    this.btnCourierTabActive = btnCourierTabActive;
+    this.btnCourierTabAll = btnCourierTabAll;
+    this.btnCourierTabDelayed = btnCourierTabDelayed;
+    this.btnCourierTabDone = btnCourierTabDone;
+    this.btnCourierTabPending = btnCourierTabPending;
     this.btnLogoutDelivery = btnLogoutDelivery;
-    this.ivDelivIcon = ivDelivIcon;
+    this.cardCourierActive = cardCourierActive;
+    this.cardCourierCompleted = cardCourierCompleted;
+    this.cardCourierDelayed = cardCourierDelayed;
+    this.cardCourierPending = cardCourierPending;
+    this.ivCourierIcon = ivCourierIcon;
     this.rvAssignedDeliveries = rvAssignedDeliveries;
-    this.tvCourierVehicleBadge = tvCourierVehicleBadge;
+    this.tvCourierActiveCount = tvCourierActiveCount;
+    this.tvCourierCompletedCount = tvCourierCompletedCount;
+    this.tvCourierDelayedCount = tvCourierDelayedCount;
+    this.tvCourierPendingCount = tvCourierPendingCount;
     this.tvDeliveryWelcome = tvDeliveryWelcome;
+    this.tvEmptyCourierDeliveries = tvEmptyCourierDeliveries;
   }
 
   @Override
@@ -76,15 +136,69 @@ public final class FragmentDeliveryHomeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnCourierTabActive;
+      MaterialButton btnCourierTabActive = ViewBindings.findChildViewById(rootView, id);
+      if (btnCourierTabActive == null) {
+        break missingId;
+      }
+
+      id = R.id.btnCourierTabAll;
+      MaterialButton btnCourierTabAll = ViewBindings.findChildViewById(rootView, id);
+      if (btnCourierTabAll == null) {
+        break missingId;
+      }
+
+      id = R.id.btnCourierTabDelayed;
+      MaterialButton btnCourierTabDelayed = ViewBindings.findChildViewById(rootView, id);
+      if (btnCourierTabDelayed == null) {
+        break missingId;
+      }
+
+      id = R.id.btnCourierTabDone;
+      MaterialButton btnCourierTabDone = ViewBindings.findChildViewById(rootView, id);
+      if (btnCourierTabDone == null) {
+        break missingId;
+      }
+
+      id = R.id.btnCourierTabPending;
+      MaterialButton btnCourierTabPending = ViewBindings.findChildViewById(rootView, id);
+      if (btnCourierTabPending == null) {
+        break missingId;
+      }
+
       id = R.id.btnLogoutDelivery;
       ImageButton btnLogoutDelivery = ViewBindings.findChildViewById(rootView, id);
       if (btnLogoutDelivery == null) {
         break missingId;
       }
 
-      id = R.id.ivDelivIcon;
-      ImageView ivDelivIcon = ViewBindings.findChildViewById(rootView, id);
-      if (ivDelivIcon == null) {
+      id = R.id.cardCourierActive;
+      MaterialCardView cardCourierActive = ViewBindings.findChildViewById(rootView, id);
+      if (cardCourierActive == null) {
+        break missingId;
+      }
+
+      id = R.id.cardCourierCompleted;
+      MaterialCardView cardCourierCompleted = ViewBindings.findChildViewById(rootView, id);
+      if (cardCourierCompleted == null) {
+        break missingId;
+      }
+
+      id = R.id.cardCourierDelayed;
+      MaterialCardView cardCourierDelayed = ViewBindings.findChildViewById(rootView, id);
+      if (cardCourierDelayed == null) {
+        break missingId;
+      }
+
+      id = R.id.cardCourierPending;
+      MaterialCardView cardCourierPending = ViewBindings.findChildViewById(rootView, id);
+      if (cardCourierPending == null) {
+        break missingId;
+      }
+
+      id = R.id.ivCourierIcon;
+      ImageView ivCourierIcon = ViewBindings.findChildViewById(rootView, id);
+      if (ivCourierIcon == null) {
         break missingId;
       }
 
@@ -94,9 +208,27 @@ public final class FragmentDeliveryHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tvCourierVehicleBadge;
-      TextView tvCourierVehicleBadge = ViewBindings.findChildViewById(rootView, id);
-      if (tvCourierVehicleBadge == null) {
+      id = R.id.tvCourierActiveCount;
+      TextView tvCourierActiveCount = ViewBindings.findChildViewById(rootView, id);
+      if (tvCourierActiveCount == null) {
+        break missingId;
+      }
+
+      id = R.id.tvCourierCompletedCount;
+      TextView tvCourierCompletedCount = ViewBindings.findChildViewById(rootView, id);
+      if (tvCourierCompletedCount == null) {
+        break missingId;
+      }
+
+      id = R.id.tvCourierDelayedCount;
+      TextView tvCourierDelayedCount = ViewBindings.findChildViewById(rootView, id);
+      if (tvCourierDelayedCount == null) {
+        break missingId;
+      }
+
+      id = R.id.tvCourierPendingCount;
+      TextView tvCourierPendingCount = ViewBindings.findChildViewById(rootView, id);
+      if (tvCourierPendingCount == null) {
         break missingId;
       }
 
@@ -106,8 +238,18 @@ public final class FragmentDeliveryHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentDeliveryHomeBinding((LinearLayout) rootView, btnLogoutDelivery,
-          ivDelivIcon, rvAssignedDeliveries, tvCourierVehicleBadge, tvDeliveryWelcome);
+      id = R.id.tvEmptyCourierDeliveries;
+      TextView tvEmptyCourierDeliveries = ViewBindings.findChildViewById(rootView, id);
+      if (tvEmptyCourierDeliveries == null) {
+        break missingId;
+      }
+
+      return new FragmentDeliveryHomeBinding((LinearLayout) rootView, btnCourierTabActive,
+          btnCourierTabAll, btnCourierTabDelayed, btnCourierTabDone, btnCourierTabPending,
+          btnLogoutDelivery, cardCourierActive, cardCourierCompleted, cardCourierDelayed,
+          cardCourierPending, ivCourierIcon, rvAssignedDeliveries, tvCourierActiveCount,
+          tvCourierCompletedCount, tvCourierDelayedCount, tvCourierPendingCount, tvDeliveryWelcome,
+          tvEmptyCourierDeliveries);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

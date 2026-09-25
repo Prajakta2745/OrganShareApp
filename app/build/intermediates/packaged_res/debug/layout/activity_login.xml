@@ -17,7 +17,7 @@
             android:layout_height="64dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="32dp"
-            android:src="@drawable/ic_heart" />
+            android:src="@drawable/ic_organshare_logo" />
 
         <TextView
             android:layout_width="wrap_content"

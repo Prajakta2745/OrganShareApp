@@ -9,6 +9,6 @@ public class DonationInfoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_donation_info);
+        setContentView(R.layout.activity_organ_donation_info);
     }
 }

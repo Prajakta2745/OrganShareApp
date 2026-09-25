@@ -3,20 +3,31 @@ package com.example.organshare.activities.donor;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import com.example.organshare.R;
 import com.example.organshare.activities.common.NotificationsActivity;
 import com.example.organshare.fragments.DonorHomeFragment;
+import com.example.organshare.utils.NavigationDrawerHelper;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationView;
 
 public class DonorDashboardActivity extends AppCompatActivity {
 
+    private DrawerLayout drawerLayout;
+    private NavigationView navigationView;
     private BottomNavigationView donorBottomNav;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_donor_dashboard);
+
+        drawerLayout = findViewById(R.id.drawerLayout);
+        navigationView = findViewById(R.id.navigationView);
+        if (drawerLayout != null && navigationView != null) {
+            NavigationDrawerHelper.setupDrawer(this, drawerLayout, navigationView);
+        }
 
         donorBottomNav = findViewById(R.id.donorBottomNav);
         loadFragment(new DonorHomeFragment());

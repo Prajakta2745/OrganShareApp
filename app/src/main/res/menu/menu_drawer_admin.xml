@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group_admin_main">
+        <item
+            android:id="@+id/drawer_admin_dashboard"
+            android:icon="@drawable/ic_hospital"
+            android:title="Admin Dashboard" />
+        <item
+            android:id="@+id/drawer_admin_user_approvals"
+            android:icon="@drawable/ic_profile"
+            android:title="User &amp; Role Management" />
+        <item
+            android:id="@+id/drawer_admin_inventory"
+            android:icon="@drawable/ic_inventory"
+            android:title="Inventory &amp; Organs" />
+        <item
+            android:id="@+id/drawer_admin_requests"
+            android:icon="@drawable/ic_request"
+            android:title="All Requests Hub" />
+        <item
+            android:id="@+id/drawer_admin_delivery"
+            android:icon="@drawable/ic_delivery"
+            android:title="Delivery Management" />
+        <item
+            android:id="@+id/drawer_admin_reports"
+            android:icon="@drawable/ic_analytics"
+            android:title="Analytics &amp; Reports" />
+        <item
+            android:id="@+id/drawer_admin_audit"
+            android:icon="@drawable/ic_card"
+            android:title="Audit Logs" />
+        <item
+            android:id="@+id/drawer_notifications"
+            android:icon="@drawable/ic_notification"
+            android:title="Notifications" />
+    </group>
+
+    <group android:id="@+id/group_admin_preferences">
+        <item
+            android:id="@+id/drawer_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="System Settings" />
+        <item
+            android:id="@+id/drawer_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+    </group>
+</menu>

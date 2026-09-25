@@ -66,7 +66,7 @@
 37-->[androidx.core:core:1.9.0] C:\Users\Dell\.gradle\caches\transforms-3\ae40bdb6962cb59519050deb91df3f8a\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 38
 39    <application
-39-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:14:5-133:19
+39-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:14:5-190:19
 40        android:allowBackup="true"
 40-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:15:9-35
 41        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -85,555 +85,666 @@
 48-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:20:9-54
 49        android:supportsRtl="true"
 49-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:21:9-35
-50        android:testOnly="true"
-51        android:theme="@style/Theme.OrganShare" >
-51-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:22:9-48
-52
-53        <!-- Google Maps API Key Placeholder -->
-54        <meta-data
-54-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:26:9-28:55
-55            android:name="com.google.android.geo.API_KEY"
-55-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:27:13-58
-56            android:value="@string/google_maps_key" />
-56-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:28:13-52
-57
-58        <!-- Splash / Launcher -->
-59        <activity
-59-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:31:9-39:20
-60            android:name="com.example.organshare.activities.auth.SplashActivity"
-60-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:32:13-59
-61            android:exported="true"
-61-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:33:13-36
-62            android:theme="@style/Theme.OrganShare.Splash" >
-62-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:34:13-59
-63            <intent-filter>
-63-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:35:13-38:29
-64                <action android:name="android.intent.action.MAIN" />
-64-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:36:17-69
-64-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:36:25-66
-65
-66                <category android:name="android.intent.category.LAUNCHER" />
-66-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:37:17-77
-66-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:37:27-74
-67            </intent-filter>
-68        </activity>
-69
-70        <!-- Auth Activities -->
-71        <activity
-71-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:42:9-44:40
-72            android:name="com.example.organshare.activities.auth.LoginActivity"
-72-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:43:13-58
-73            android:exported="false" />
-73-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:44:13-37
-74        <activity
-74-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:45:9-47:40
-75            android:name="com.example.organshare.activities.auth.RegisterActivity"
-75-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:46:13-61
-76            android:exported="false" />
-76-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:47:13-37
-77        <activity
-77-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:48:9-50:40
-78            android:name="com.example.organshare.activities.auth.ForgotPasswordActivity"
-78-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:49:13-67
-79            android:exported="false" />
-79-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:50:13-37
-80
-81        <!-- Donor Activities -->
-82        <activity
-82-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:53:9-55:40
-83            android:name="com.example.organshare.activities.donor.DonorDashboardActivity"
-83-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:54:13-68
-84            android:exported="false" />
-84-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:55:13-37
-85        <activity
-85-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:56:9-58:40
-86            android:name="com.example.organshare.activities.donor.DonorProfileActivity"
-86-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:57:13-66
-87            android:exported="false" />
-87-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:58:13-37
-88        <activity
-88-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:59:9-61:40
-89            android:name="com.example.organshare.activities.donor.DonationInfoActivity"
-89-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:60:13-66
-90            android:exported="false" />
-90-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:61:13-37
-91
-92        <!-- Hospital Activities -->
-93        <activity
-93-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:64:9-66:40
-94            android:name="com.example.organshare.activities.hospital.HospitalDashboardActivity"
-94-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:65:13-74
-95            android:exported="false" />
-95-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:66:13-37
-96        <activity
-96-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:67:9-69:40
-97            android:name="com.example.organshare.activities.hospital.CreateRequestActivity"
-97-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:68:13-70
-98            android:exported="false" />
-98-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:69:13-37
-99        <activity
-99-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:70:9-72:40
-100            android:name="com.example.organshare.activities.hospital.RequestDetailsActivity"
-100-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:71:13-71
-101            android:exported="false" />
-101-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:72:13-37
-102        <activity
-102-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:73:9-75:40
-103            android:name="com.example.organshare.activities.hospital.SearchDonorsActivity"
-103-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:74:13-69
-104            android:exported="false" />
-104-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:75:13-37
-105        <activity
-105-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:76:9-78:40
-106            android:name="com.example.organshare.activities.hospital.HospitalOrderDetailsActivity"
-106-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:77:13-77
-107            android:exported="false" />
-107-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:78:13-37
-108        <activity
-108-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:79:9-81:40
-109            android:name="com.example.organshare.activities.hospital.TrackDeliveryMapActivity"
-109-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:80:13-73
-110            android:exported="false" />
-110-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:81:13-37
-111
-112        <!-- Organ Bank Activities -->
-113        <activity
-113-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:84:9-86:40
-114            android:name="com.example.organshare.activities.organbank.OrganBankDashboardActivity"
-114-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:85:13-76
-115            android:exported="false" />
-115-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:86:13-37
-116        <activity
-116-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:87:9-89:40
-117            android:name="com.example.organshare.activities.organbank.AddEditInventoryActivity"
-117-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:88:13-74
-118            android:exported="false" />
-118-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:89:13-37
-119        <activity
-119-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:90:9-92:40
-120            android:name="com.example.organshare.activities.organbank.AllocateOrganActivity"
-120-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:91:13-71
-121            android:exported="false" />
-121-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:92:13-37
-122        <activity
-122-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:93:9-95:40
-123            android:name="com.example.organshare.activities.organbank.AssignDeliveryActivity"
-123-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:94:13-72
-124            android:exported="false" />
-124-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:95:13-37
-125
-126        <!-- Delivery Personnel Activities -->
-127        <activity
-127-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:98:9-100:40
-128            android:name="com.example.organshare.activities.delivery.DeliveryDashboardActivity"
-128-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:99:13-74
-129            android:exported="false" />
-129-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:100:13-37
-130        <activity
-130-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:101:9-103:40
-131            android:name="com.example.organshare.activities.delivery.DeliveryDetailsActivity"
-131-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:102:13-72
-132            android:exported="false" />
-132-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:103:13-37
-133        <activity
-133-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:104:9-106:40
-134            android:name="com.example.organshare.activities.delivery.UpdateCheckpointActivity"
-134-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:105:13-73
-135            android:exported="false" />
-135-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:106:13-37
-136
-137        <!-- Admin Activities -->
-138        <activity
-138-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:109:9-111:40
-139            android:name="com.example.organshare.activities.admin.AdminDashboardActivity"
-139-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:110:13-68
-140            android:exported="false" />
-140-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:111:13-37
-141        <activity
-141-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:112:9-114:40
-142            android:name="com.example.organshare.activities.admin.UserManagementActivity"
-142-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:113:13-68
-143            android:exported="false" />
-143-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:114:13-37
-144        <activity
-144-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:115:9-117:40
-145            android:name="com.example.organshare.activities.admin.AuditLogsActivity"
-145-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:116:13-63
-146            android:exported="false" />
-146-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:117:13-37
-147
-148        <!-- Common Activities -->
-149        <activity
-149-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:120:9-122:40
-150            android:name="com.example.organshare.activities.common.NotificationsActivity"
-150-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:121:13-68
-151            android:exported="false" />
-151-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:122:13-37
-152
-153        <!-- Firebase Cloud Messaging Service -->
-154        <service
-154-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:125:9-131:19
-155            android:name="com.example.organshare.notifications.AppFirebaseMessagingService"
-155-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:126:13-70
-156            android:exported="false" >
-156-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:127:13-37
-157            <intent-filter>
-157-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:128:13-130:29
-158                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-158-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:129:17-78
-158-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:129:25-75
-159            </intent-filter>
-160        </service>
-161
+50        android:theme="@style/Theme.OrganShare" >
+50-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:22:9-48
+51
+52        <!-- Google Maps API Key Placeholder -->
+53        <meta-data
+53-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:26:9-28:55
+54            android:name="com.google.android.geo.API_KEY"
+54-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:27:13-58
+55            android:value="@string/google_maps_key" />
+55-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:28:13-52
+56
+57        <!-- Splash / Launcher -->
+58        <activity
+58-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:31:9-39:20
+59            android:name="com.example.organshare.activities.auth.SplashActivity"
+59-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:32:13-59
+60            android:exported="true"
+60-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:33:13-36
+61            android:theme="@style/Theme.OrganShare.Splash" >
+61-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:34:13-59
+62            <intent-filter>
+62-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:35:13-38:29
+63                <action android:name="android.intent.action.MAIN" />
+63-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:36:17-69
+63-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:36:25-66
+64
+65                <category android:name="android.intent.category.LAUNCHER" />
+65-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:37:17-77
+65-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:37:27-74
+66            </intent-filter>
+67        </activity>
+68
+69        <!-- Auth Activities -->
+70        <activity
+70-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:42:9-44:40
+71            android:name="com.example.organshare.activities.auth.LoginActivity"
+71-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:43:13-58
+72            android:exported="false" />
+72-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:44:13-37
+73        <activity
+73-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:45:9-47:40
+74            android:name="com.example.organshare.activities.auth.RegisterActivity"
+74-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:46:13-61
+75            android:exported="false" />
+75-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:47:13-37
+76        <activity
+76-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:48:9-50:40
+77            android:name="com.example.organshare.activities.auth.ForgotPasswordActivity"
+77-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:49:13-67
+78            android:exported="false" />
+78-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:50:13-37
+79
+80        <!-- Donor Activities -->
+81        <activity
+81-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:53:9-55:40
+82            android:name="com.example.organshare.activities.donor.DonorDashboardActivity"
+82-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:54:13-68
+83            android:exported="false" />
+83-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:55:13-37
+84        <activity
+84-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:56:9-58:40
+85            android:name="com.example.organshare.activities.donor.DonorProfileActivity"
+85-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:57:13-66
+86            android:exported="false" />
+86-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:58:13-37
+87        <activity
+87-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:59:9-61:40
+88            android:name="com.example.organshare.activities.donor.DonationInfoActivity"
+88-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:60:13-66
+89            android:exported="false" />
+89-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:61:13-37
+90
+91        <!-- Hospital Activities -->
+92        <activity
+92-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:64:9-66:40
+93            android:name="com.example.organshare.activities.hospital.HospitalDashboardActivity"
+93-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:65:13-74
+94            android:exported="false" />
+94-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:66:13-37
+95        <activity
+95-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:67:9-69:40
+96            android:name="com.example.organshare.activities.hospital.CreateRequestActivity"
+96-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:68:13-70
+97            android:exported="false" />
+97-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:69:13-37
+98        <activity
+98-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:70:9-72:40
+99            android:name="com.example.organshare.activities.hospital.RequestDetailsActivity"
+99-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:71:13-71
+100            android:exported="false" />
+100-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:72:13-37
+101        <activity
+101-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:73:9-75:40
+102            android:name="com.example.organshare.activities.hospital.SearchDonorsActivity"
+102-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:74:13-69
+103            android:exported="false" />
+103-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:75:13-37
+104        <activity
+104-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:76:9-78:40
+105            android:name="com.example.organshare.activities.hospital.HospitalOrderDetailsActivity"
+105-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:77:13-77
+106            android:exported="false" />
+106-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:78:13-37
+107        <activity
+107-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:79:9-81:40
+108            android:name="com.example.organshare.activities.hospital.TrackDeliveryMapActivity"
+108-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:80:13-73
+109            android:exported="false" />
+109-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:81:13-37
+110
+111        <!-- Organ Bank Activities -->
+112        <activity
+112-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:84:9-86:40
+113            android:name="com.example.organshare.activities.organbank.OrganBankDashboardActivity"
+113-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:85:13-76
+114            android:exported="false" />
+114-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:86:13-37
+115        <activity
+115-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:87:9-89:40
+116            android:name="com.example.organshare.activities.organbank.AddEditInventoryActivity"
+116-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:88:13-74
+117            android:exported="false" />
+117-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:89:13-37
+118        <activity
+118-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:90:9-92:40
+119            android:name="com.example.organshare.activities.organbank.AllocateOrganActivity"
+119-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:91:13-71
+120            android:exported="false" />
+120-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:92:13-37
+121        <activity
+121-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:93:9-95:40
+122            android:name="com.example.organshare.activities.organbank.AssignDeliveryActivity"
+122-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:94:13-72
+123            android:exported="false" />
+123-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:95:13-37
+124
+125        <!-- Delivery Personnel Activities -->
+126        <activity
+126-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:98:9-100:40
+127            android:name="com.example.organshare.activities.delivery.DeliveryDashboardActivity"
+127-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:99:13-74
+128            android:exported="false" />
+128-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:100:13-37
+129        <activity
+129-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:101:9-103:40
+130            android:name="com.example.organshare.activities.delivery.DeliveryDetailsActivity"
+130-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:102:13-72
+131            android:exported="false" />
+131-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:103:13-37
+132        <activity
+132-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:104:9-106:40
+133            android:name="com.example.organshare.activities.delivery.UpdateCheckpointActivity"
+133-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:105:13-73
+134            android:exported="false" />
+134-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:106:13-37
+135
+136        <!-- Admin Activities -->
+137        <activity
+137-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:109:9-111:40
+138            android:name="com.example.organshare.activities.admin.AdminDashboardActivity"
+138-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:110:13-68
+139            android:exported="false" />
+139-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:111:13-37
+140        <activity
+140-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:112:9-114:40
+141            android:name="com.example.organshare.activities.admin.UserManagementActivity"
+141-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:113:13-68
+142            android:exported="false" />
+142-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:114:13-37
+143        <activity
+143-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:115:9-117:40
+144            android:name="com.example.organshare.activities.admin.AuditLogsActivity"
+144-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:116:13-63
+145            android:exported="false" />
+145-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:117:13-37
+146
+147        <!-- Common Activities -->
+148        <activity
+148-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:120:9-122:40
+149            android:name="com.example.organshare.activities.common.NotificationsActivity"
+149-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:121:13-68
+150            android:exported="false" />
+150-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:122:13-37
+151
+152        <!-- ORGANSHARE NEW ACTIVITIES START -->
+153        <activity
+153-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:125:9-127:40
+154            android:name="com.example.organshare.activities.common.CommonHomeActivity"
+154-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:126:13-65
+155            android:exported="false" />
+155-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:127:13-37
+156        <activity
+156-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:128:9-130:40
+157            android:name="com.example.organshare.activities.common.AvailableOrgansActivity"
+157-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:129:13-70
+158            android:exported="false" />
+158-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:130:13-37
+159        <activity
+159-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:131:9-133:40
+160            android:name="com.example.organshare.activities.hospital.PendingRequestsActivity"
+160-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:132:13-72
+161            android:exported="false" />
+161-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:133:13-37
 162        <activity
-162-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:29:9-46:20
-163            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-163-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:30:13-80
-164            android:excludeFromRecents="true"
-164-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:31:13-46
-165            android:exported="true"
-165-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:32:13-36
-166            android:launchMode="singleTask"
-166-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:33:13-44
-167            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-167-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:34:13-72
-168            <intent-filter>
-168-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:35:13-45:29
-169                <action android:name="android.intent.action.VIEW" />
-169-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:36:17-69
-169-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:36:25-66
-170
-171                <category android:name="android.intent.category.DEFAULT" />
-171-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:38:17-76
-171-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:38:27-73
-172                <category android:name="android.intent.category.BROWSABLE" />
-172-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:39:17-78
-172-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:39:27-75
-173
-174                <data
-174-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:41:17-44:51
-175                    android:host="firebase.auth"
-175-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:42:21-49
-176                    android:path="/"
-176-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:43:21-37
-177                    android:scheme="genericidp" />
-177-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:44:21-48
-178            </intent-filter>
-179        </activity>
+162-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:134:9-136:40
+163            android:name="com.example.organshare.activities.hospital.ActiveRequestsActivity"
+163-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:135:13-71
+164            android:exported="false" />
+164-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:136:13-37
+165        <activity
+165-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:137:9-139:40
+166            android:name="com.example.organshare.activities.hospital.FulfilledRequestsActivity"
+166-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:138:13-74
+167            android:exported="false" />
+167-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:139:13-37
+168        <activity
+168-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:140:9-142:40
+169            android:name="com.example.organshare.activities.hospital.OrganRequestsHubActivity"
+169-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:141:13-73
+170            android:exported="false" />
+170-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:142:13-37
+171        <activity
+171-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:143:9-145:40
+172            android:name="com.example.organshare.activities.admin.AdminDeliveryManagementActivity"
+172-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:144:13-77
+173            android:exported="false" />
+173-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:145:13-37
+174        <activity
+174-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:146:9-148:40
+175            android:name="com.example.organshare.activities.admin.AssignDeliveryPersonActivity"
+175-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:147:13-74
+176            android:exported="false" />
+176-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:148:13-37
+177        <activity
+177-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:149:9-151:40
+178            android:name="com.example.organshare.activities.admin.AdminReportsActivity"
+178-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:150:13-66
+179            android:exported="false" />
+179-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:151:13-37
 180        <activity
-180-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:47:9-64:20
-181            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-181-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:48:13-79
-182            android:excludeFromRecents="true"
-182-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:49:13-46
-183            android:exported="true"
-183-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:50:13-36
-184            android:launchMode="singleTask"
-184-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:51:13-44
-185            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-185-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:52:13-72
-186            <intent-filter>
-186-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:53:13-63:29
-187                <action android:name="android.intent.action.VIEW" />
-187-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:36:17-69
-187-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:36:25-66
-188
-189                <category android:name="android.intent.category.DEFAULT" />
-189-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:38:17-76
-189-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:38:27-73
-190                <category android:name="android.intent.category.BROWSABLE" />
-190-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:39:17-78
-190-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:39:27-75
-191
-192                <data
-192-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:41:17-44:51
-193                    android:host="firebase.auth"
-193-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:42:21-49
-194                    android:path="/"
-194-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:43:21-37
-195                    android:scheme="recaptcha" />
-195-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:44:21-48
-196            </intent-filter>
-197        </activity>
-198
-199        <service
-199-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:66:9-72:19
-200            android:name="com.google.firebase.components.ComponentDiscoveryService"
-200-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:67:13-84
-201            android:directBootAware="true"
-201-->[com.google.firebase:firebase-common:20.4.3] C:\Users\Dell\.gradle\caches\transforms-3\c341913690e33c4955f490ddfd1a994b\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:32:13-43
-202            android:exported="false" >
-202-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:68:13-37
-203            <meta-data
-203-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:69:13-71:85
-204                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-204-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:70:17-109
-205                android:value="com.google.firebase.components.ComponentRegistrar" />
-205-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:71:17-82
-206            <meta-data
-206-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\Dell\.gradle\caches\transforms-3\917327907f68ea22771086ed2f4c079e\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:17:13-19:85
-207                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
-207-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\Dell\.gradle\caches\transforms-3\917327907f68ea22771086ed2f4c079e\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:18:17-122
-208                android:value="com.google.firebase.components.ComponentRegistrar" />
-208-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\Dell\.gradle\caches\transforms-3\917327907f68ea22771086ed2f4c079e\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:19:17-82
-209            <meta-data
-209-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\Dell\.gradle\caches\transforms-3\917327907f68ea22771086ed2f4c079e\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:20:13-22:85
-210                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-210-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\Dell\.gradle\caches\transforms-3\917327907f68ea22771086ed2f4c079e\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:21:17-111
-211                android:value="com.google.firebase.components.ComponentRegistrar" />
-211-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\Dell\.gradle\caches\transforms-3\917327907f68ea22771086ed2f4c079e\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:22:17-82
-212            <meta-data
-212-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\Dell\.gradle\caches\transforms-3\5f058b8fba9861623566659b0889ceb9\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:30:13-32:85
-213                android:name="com.google.firebase.components:com.google.firebase.storage.FirebaseStorageKtxRegistrar"
-213-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\Dell\.gradle\caches\transforms-3\5f058b8fba9861623566659b0889ceb9\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:31:17-118
-214                android:value="com.google.firebase.components.ComponentRegistrar" />
-214-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\Dell\.gradle\caches\transforms-3\5f058b8fba9861623566659b0889ceb9\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:32:17-82
-215            <meta-data
-215-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\Dell\.gradle\caches\transforms-3\5f058b8fba9861623566659b0889ceb9\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:33:13-35:85
-216                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-216-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\Dell\.gradle\caches\transforms-3\5f058b8fba9861623566659b0889ceb9\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:34:17-107
-217                android:value="com.google.firebase.components.ComponentRegistrar" />
-217-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\Dell\.gradle\caches\transforms-3\5f058b8fba9861623566659b0889ceb9\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:35:17-82
-218            <meta-data
-218-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:57:13-59:85
-219                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
-219-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:58:17-122
-220                android:value="com.google.firebase.components.ComponentRegistrar" />
-220-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:59:17-82
-221            <meta-data
-221-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:60:13-62:85
-222                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-222-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:61:17-119
-223                android:value="com.google.firebase.components.ComponentRegistrar" />
-223-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:62:17-82
-224            <meta-data
-224-->[com.google.firebase:firebase-appcheck:17.1.2] C:\Users\Dell\.gradle\caches\transforms-3\5cc928197661e5acf3bfeca9c5180d3c\transformed\jetified-firebase-appcheck-17.1.2\AndroidManifest.xml:25:13-27:85
-225                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckKtxRegistrar"
-225-->[com.google.firebase:firebase-appcheck:17.1.2] C:\Users\Dell\.gradle\caches\transforms-3\5cc928197661e5acf3bfeca9c5180d3c\transformed\jetified-firebase-appcheck-17.1.2\AndroidManifest.xml:26:17-120
-226                android:value="com.google.firebase.components.ComponentRegistrar" />
-226-->[com.google.firebase:firebase-appcheck:17.1.2] C:\Users\Dell\.gradle\caches\transforms-3\5cc928197661e5acf3bfeca9c5180d3c\transformed\jetified-firebase-appcheck-17.1.2\AndroidManifest.xml:27:17-82
-227            <meta-data
-227-->[com.google.firebase:firebase-appcheck:17.1.2] C:\Users\Dell\.gradle\caches\transforms-3\5cc928197661e5acf3bfeca9c5180d3c\transformed\jetified-firebase-appcheck-17.1.2\AndroidManifest.xml:28:13-30:85
-228                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar"
-228-->[com.google.firebase:firebase-appcheck:17.1.2] C:\Users\Dell\.gradle\caches\transforms-3\5cc928197661e5acf3bfeca9c5180d3c\transformed\jetified-firebase-appcheck-17.1.2\AndroidManifest.xml:29:17-117
-229                android:value="com.google.firebase.components.ComponentRegistrar" />
-229-->[com.google.firebase:firebase-appcheck:17.1.2] C:\Users\Dell\.gradle\caches\transforms-3\5cc928197661e5acf3bfeca9c5180d3c\transformed\jetified-firebase-appcheck-17.1.2\AndroidManifest.xml:30:17-82
-230            <meta-data
-230-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Dell\.gradle\caches\transforms-3\6f40e9b7b871066cbf4ae325ddaa330a\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
-231                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
-231-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Dell\.gradle\caches\transforms-3\6f40e9b7b871066cbf4ae325ddaa330a\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
-232                android:value="com.google.firebase.components.ComponentRegistrar" />
-232-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Dell\.gradle\caches\transforms-3\6f40e9b7b871066cbf4ae325ddaa330a\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
-233            <meta-data
-233-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Dell\.gradle\caches\transforms-3\3a6374a4063ce158cc37a3467012036f\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:15:13-17:85
-234                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
-234-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Dell\.gradle\caches\transforms-3\3a6374a4063ce158cc37a3467012036f\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:16:17-130
-235                android:value="com.google.firebase.components.ComponentRegistrar" />
-235-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Dell\.gradle\caches\transforms-3\3a6374a4063ce158cc37a3467012036f\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:17:17-82
-236            <meta-data
-236-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Dell\.gradle\caches\transforms-3\3a6374a4063ce158cc37a3467012036f\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:18:13-20:85
-237                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-237-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Dell\.gradle\caches\transforms-3\3a6374a4063ce158cc37a3467012036f\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:19:17-127
-238                android:value="com.google.firebase.components.ComponentRegistrar" />
-238-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Dell\.gradle\caches\transforms-3\3a6374a4063ce158cc37a3467012036f\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:20:17-82
-239            <meta-data
-239-->[com.google.firebase:firebase-common-ktx:20.4.3] C:\Users\Dell\.gradle\caches\transforms-3\74e5f079ddf716f3252b48c70fea8468\transformed\jetified-firebase-common-ktx-20.4.3\AndroidManifest.xml:12:13-14:85
-240                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
-240-->[com.google.firebase:firebase-common-ktx:20.4.3] C:\Users\Dell\.gradle\caches\transforms-3\74e5f079ddf716f3252b48c70fea8468\transformed\jetified-firebase-common-ktx-20.4.3\AndroidManifest.xml:13:17-116
-241                android:value="com.google.firebase.components.ComponentRegistrar" />
-241-->[com.google.firebase:firebase-common-ktx:20.4.3] C:\Users\Dell\.gradle\caches\transforms-3\74e5f079ddf716f3252b48c70fea8468\transformed\jetified-firebase-common-ktx-20.4.3\AndroidManifest.xml:14:17-82
-242            <meta-data
-242-->[com.google.firebase:firebase-common:20.4.3] C:\Users\Dell\.gradle\caches\transforms-3\c341913690e33c4955f490ddfd1a994b\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:35:13-37:85
-243                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
-243-->[com.google.firebase:firebase-common:20.4.3] C:\Users\Dell\.gradle\caches\transforms-3\c341913690e33c4955f490ddfd1a994b\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:36:17-109
-244                android:value="com.google.firebase.components.ComponentRegistrar" />
-244-->[com.google.firebase:firebase-common:20.4.3] C:\Users\Dell\.gradle\caches\transforms-3\c341913690e33c4955f490ddfd1a994b\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:37:17-82
-245        </service>
-246
-247        <receiver
-247-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:29:9-40:20
-248            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-248-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:30:13-78
-249            android:exported="true"
-249-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:31:13-36
-250            android:permission="com.google.android.c2dm.permission.SEND" >
-250-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:32:13-73
-251            <intent-filter>
-251-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:33:13-35:29
-252                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-252-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:34:17-81
-252-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:34:25-78
+180-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:152:9-154:40
+181            android:name="com.example.organshare.activities.common.SettingsActivity"
+181-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:153:13-63
+182            android:exported="false" />
+182-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:154:13-37
+183        <activity
+183-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:155:9-157:40
+184            android:name="com.example.organshare.activities.common.EditProfileActivity"
+184-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:156:13-66
+185            android:exported="false" />
+185-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:157:13-37
+186        <activity
+186-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:158:9-160:40
+187            android:name="com.example.organshare.activities.common.ChangePasswordActivity"
+187-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:159:13-69
+188            android:exported="false" />
+188-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:160:13-37
+189        <activity
+189-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:161:9-163:40
+190            android:name="com.example.organshare.activities.donor.DigitalDonorCardActivity"
+190-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:162:13-70
+191            android:exported="false" />
+191-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:163:13-37
+192        <activity
+192-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:164:9-166:40
+193            android:name="com.example.organshare.activities.donor.OrganPledgeActivity"
+193-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:165:13-65
+194            android:exported="false" />
+194-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:166:13-37
+195        <activity
+195-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:167:9-169:40
+196            android:name="com.example.organshare.activities.donor.BloodDonorRegistrationActivity"
+196-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:168:13-76
+197            android:exported="false" />
+197-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:169:13-37
+198        <activity
+198-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:170:9-172:40
+199            android:name="com.example.organshare.activities.donor.EligibilityScreenerActivity"
+199-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:171:13-73
+200            android:exported="false" />
+200-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:172:13-37
+201        <activity
+201-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:173:9-175:40
+202            android:name="com.example.organshare.activities.donor.FamilyDonationActivity"
+202-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:174:13-68
+203            android:exported="false" />
+203-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:175:13-37
+204        <activity
+204-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:176:9-178:40
+205            android:name="com.example.organshare.activities.hospital.CreateBloodRequestActivity"
+205-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:177:13-75
+206            android:exported="false" />
+206-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:178:13-37
+207        <!-- ORGANSHARE NEW ACTIVITIES END -->
+208
+209
+210        <!-- Firebase Cloud Messaging Service -->
+211        <service
+211-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:182:9-188:19
+212            android:name="com.example.organshare.notifications.AppFirebaseMessagingService"
+212-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:183:13-70
+213            android:exported="false" >
+213-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:184:13-37
+214            <intent-filter>
+214-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:185:13-187:29
+215                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+215-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:186:17-78
+215-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:186:25-75
+216            </intent-filter>
+217        </service>
+218
+219        <activity
+219-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:29:9-46:20
+220            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+220-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:30:13-80
+221            android:excludeFromRecents="true"
+221-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:31:13-46
+222            android:exported="true"
+222-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:32:13-36
+223            android:launchMode="singleTask"
+223-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:33:13-44
+224            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+224-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:34:13-72
+225            <intent-filter>
+225-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:35:13-45:29
+226                <action android:name="android.intent.action.VIEW" />
+226-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:36:17-69
+226-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:36:25-66
+227
+228                <category android:name="android.intent.category.DEFAULT" />
+228-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:38:17-76
+228-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:38:27-73
+229                <category android:name="android.intent.category.BROWSABLE" />
+229-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:39:17-78
+229-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:39:27-75
+230
+231                <data
+231-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:41:17-44:51
+232                    android:host="firebase.auth"
+232-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:42:21-49
+233                    android:path="/"
+233-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:43:21-37
+234                    android:scheme="genericidp" />
+234-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:44:21-48
+235            </intent-filter>
+236        </activity>
+237        <activity
+237-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:47:9-64:20
+238            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+238-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:48:13-79
+239            android:excludeFromRecents="true"
+239-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:49:13-46
+240            android:exported="true"
+240-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:50:13-36
+241            android:launchMode="singleTask"
+241-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:51:13-44
+242            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+242-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:52:13-72
+243            <intent-filter>
+243-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:53:13-63:29
+244                <action android:name="android.intent.action.VIEW" />
+244-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:36:17-69
+244-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:36:25-66
+245
+246                <category android:name="android.intent.category.DEFAULT" />
+246-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:38:17-76
+246-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:38:27-73
+247                <category android:name="android.intent.category.BROWSABLE" />
+247-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:39:17-78
+247-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:39:27-75
+248
+249                <data
+249-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:41:17-44:51
+250                    android:host="firebase.auth"
+250-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:42:21-49
+251                    android:path="/"
+251-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:43:21-37
+252                    android:scheme="recaptcha" />
+252-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:44:21-48
 253            </intent-filter>
-254
-255            <meta-data
-255-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:37:13-39:40
-256                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
-256-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:38:17-92
-257                android:value="true" />
-257-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:39:17-37
-258        </receiver>
-259        <!--
-260             FirebaseMessagingService performs security checks at runtime,
-261             but set to not exported to explicitly avoid allowing another app to call it.
-262        -->
-263        <service
-263-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:46:9-53:19
-264            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-264-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:47:13-82
-265            android:directBootAware="true"
-265-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:48:13-43
-266            android:exported="false" >
-266-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:49:13-37
-267            <intent-filter android:priority="-500" >
-267-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:128:13-130:29
-268                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-268-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:129:17-78
-268-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:129:25-75
-269            </intent-filter>
-270        </service> <!-- Needs to be explicitly declared on P+ -->
-271        <uses-library
-271-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Dell\.gradle\caches\transforms-3\fc722b78ab35fc1a8e4c51c613d8cf15\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:39:9-41:40
-272            android:name="org.apache.http.legacy"
-272-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Dell\.gradle\caches\transforms-3\fc722b78ab35fc1a8e4c51c613d8cf15\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:40:13-50
-273            android:required="false" />
-273-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Dell\.gradle\caches\transforms-3\fc722b78ab35fc1a8e4c51c613d8cf15\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:41:13-37
-274
-275        <service
-275-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\d05322591f41a73a732c748aad44398f\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
-276            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-276-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\d05322591f41a73a732c748aad44398f\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
-277            android:exported="false" >
-277-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\d05322591f41a73a732c748aad44398f\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
+254        </activity>
+255
+256        <service
+256-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:66:9-72:19
+257            android:name="com.google.firebase.components.ComponentDiscoveryService"
+257-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:67:13-84
+258            android:directBootAware="true"
+258-->[com.google.firebase:firebase-common:20.4.3] C:\Users\Dell\.gradle\caches\transforms-3\c341913690e33c4955f490ddfd1a994b\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:32:13-43
+259            android:exported="false" >
+259-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:68:13-37
+260            <meta-data
+260-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:69:13-71:85
+261                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+261-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:70:17-109
+262                android:value="com.google.firebase.components.ComponentRegistrar" />
+262-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Dell\.gradle\caches\transforms-3\d54bcc29f48ccc12f0a85b2a0318219e\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:71:17-82
+263            <meta-data
+263-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\Dell\.gradle\caches\transforms-3\917327907f68ea22771086ed2f4c079e\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:17:13-19:85
+264                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+264-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\Dell\.gradle\caches\transforms-3\917327907f68ea22771086ed2f4c079e\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:18:17-122
+265                android:value="com.google.firebase.components.ComponentRegistrar" />
+265-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\Dell\.gradle\caches\transforms-3\917327907f68ea22771086ed2f4c079e\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:19:17-82
+266            <meta-data
+266-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\Dell\.gradle\caches\transforms-3\917327907f68ea22771086ed2f4c079e\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:20:13-22:85
+267                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+267-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\Dell\.gradle\caches\transforms-3\917327907f68ea22771086ed2f4c079e\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:21:17-111
+268                android:value="com.google.firebase.components.ComponentRegistrar" />
+268-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\Dell\.gradle\caches\transforms-3\917327907f68ea22771086ed2f4c079e\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:22:17-82
+269            <meta-data
+269-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\Dell\.gradle\caches\transforms-3\5f058b8fba9861623566659b0889ceb9\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:30:13-32:85
+270                android:name="com.google.firebase.components:com.google.firebase.storage.FirebaseStorageKtxRegistrar"
+270-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\Dell\.gradle\caches\transforms-3\5f058b8fba9861623566659b0889ceb9\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:31:17-118
+271                android:value="com.google.firebase.components.ComponentRegistrar" />
+271-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\Dell\.gradle\caches\transforms-3\5f058b8fba9861623566659b0889ceb9\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:32:17-82
+272            <meta-data
+272-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\Dell\.gradle\caches\transforms-3\5f058b8fba9861623566659b0889ceb9\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:33:13-35:85
+273                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+273-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\Dell\.gradle\caches\transforms-3\5f058b8fba9861623566659b0889ceb9\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:34:17-107
+274                android:value="com.google.firebase.components.ComponentRegistrar" />
+274-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\Dell\.gradle\caches\transforms-3\5f058b8fba9861623566659b0889ceb9\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:35:17-82
+275            <meta-data
+275-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:57:13-59:85
+276                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+276-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:58:17-122
+277                android:value="com.google.firebase.components.ComponentRegistrar" />
+277-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:59:17-82
 278            <meta-data
-278-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\d05322591f41a73a732c748aad44398f\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
-279                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-279-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\d05322591f41a73a732c748aad44398f\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
-280                android:value="cct" />
-280-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\d05322591f41a73a732c748aad44398f\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
-281        </service>
-282        <service
-282-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\7a4218ce088e51e54d1d9f4ff1a9fb88\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
-283            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-283-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\7a4218ce088e51e54d1d9f4ff1a9fb88\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
-284            android:exported="false"
-284-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\7a4218ce088e51e54d1d9f4ff1a9fb88\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
-285            android:permission="android.permission.BIND_JOB_SERVICE" >
-285-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\7a4218ce088e51e54d1d9f4ff1a9fb88\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
-286        </service>
-287
-288        <receiver
-288-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\7a4218ce088e51e54d1d9f4ff1a9fb88\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
-289            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-289-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\7a4218ce088e51e54d1d9f4ff1a9fb88\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
-290            android:exported="false" />
-290-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\7a4218ce088e51e54d1d9f4ff1a9fb88\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
-291
-292        <provider
-292-->[com.google.firebase:firebase-common:20.4.3] C:\Users\Dell\.gradle\caches\transforms-3\c341913690e33c4955f490ddfd1a994b\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:23:9-28:39
-293            android:name="com.google.firebase.provider.FirebaseInitProvider"
-293-->[com.google.firebase:firebase-common:20.4.3] C:\Users\Dell\.gradle\caches\transforms-3\c341913690e33c4955f490ddfd1a994b\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:24:13-77
-294            android:authorities="com.example.organshare.firebaseinitprovider"
-294-->[com.google.firebase:firebase-common:20.4.3] C:\Users\Dell\.gradle\caches\transforms-3\c341913690e33c4955f490ddfd1a994b\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:25:13-72
-295            android:directBootAware="true"
-295-->[com.google.firebase:firebase-common:20.4.3] C:\Users\Dell\.gradle\caches\transforms-3\c341913690e33c4955f490ddfd1a994b\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:26:13-43
-296            android:exported="false"
-296-->[com.google.firebase:firebase-common:20.4.3] C:\Users\Dell\.gradle\caches\transforms-3\c341913690e33c4955f490ddfd1a994b\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:27:13-37
-297            android:initOrder="100" />
-297-->[com.google.firebase:firebase-common:20.4.3] C:\Users\Dell\.gradle\caches\transforms-3\c341913690e33c4955f490ddfd1a994b\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:28:13-36
-298        <provider
-298-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dell\.gradle\caches\transforms-3\d16073676d9c0afce466752e704c99b9\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-299            android:name="androidx.startup.InitializationProvider"
-299-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dell\.gradle\caches\transforms-3\d16073676d9c0afce466752e704c99b9\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
-300            android:authorities="com.example.organshare.androidx-startup"
-300-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dell\.gradle\caches\transforms-3\d16073676d9c0afce466752e704c99b9\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
-301            android:exported="false" >
-301-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dell\.gradle\caches\transforms-3\d16073676d9c0afce466752e704c99b9\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
-302            <meta-data
-302-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dell\.gradle\caches\transforms-3\d16073676d9c0afce466752e704c99b9\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-303                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-303-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dell\.gradle\caches\transforms-3\d16073676d9c0afce466752e704c99b9\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
-304                android:value="androidx.startup" />
-304-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dell\.gradle\caches\transforms-3\d16073676d9c0afce466752e704c99b9\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
-305            <meta-data
-305-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Dell\.gradle\caches\transforms-3\3796ccd12ca54561e53a28f3797fd030\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
-306                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-306-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Dell\.gradle\caches\transforms-3\3796ccd12ca54561e53a28f3797fd030\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
-307                android:value="androidx.startup" />
-307-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Dell\.gradle\caches\transforms-3\3796ccd12ca54561e53a28f3797fd030\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
-308            <meta-data
-308-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
-309                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-309-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
-310                android:value="androidx.startup" />
-310-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
-311        </provider>
-312
-313        <activity
-313-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\Dell\.gradle\caches\transforms-3\95d31467ba43b280dc398958cce538bc\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
-314            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-314-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\Dell\.gradle\caches\transforms-3\95d31467ba43b280dc398958cce538bc\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:20:19-85
-315            android:exported="false"
-315-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\Dell\.gradle\caches\transforms-3\95d31467ba43b280dc398958cce538bc\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:22:19-43
-316            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-316-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\Dell\.gradle\caches\transforms-3\95d31467ba43b280dc398958cce538bc\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:21:19-78
-317
-318        <uses-library
-318-->[androidx.window:window:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\2e440a3386021870e9ed27a08be29db3\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
-319            android:name="androidx.window.extensions"
-319-->[androidx.window:window:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\2e440a3386021870e9ed27a08be29db3\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
-320            android:required="false" />
-320-->[androidx.window:window:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\2e440a3386021870e9ed27a08be29db3\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
-321        <uses-library
-321-->[androidx.window:window:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\2e440a3386021870e9ed27a08be29db3\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
-322            android:name="androidx.window.sidecar"
-322-->[androidx.window:window:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\2e440a3386021870e9ed27a08be29db3\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
-323            android:required="false" />
-323-->[androidx.window:window:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\2e440a3386021870e9ed27a08be29db3\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
-324
-325        <meta-data
-325-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Dell\.gradle\caches\transforms-3\22580f5927120c16372f1636d302abc2\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
-326            android:name="com.google.android.gms.version"
-326-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Dell\.gradle\caches\transforms-3\22580f5927120c16372f1636d302abc2\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
-327            android:value="@integer/google_play_services_version" />
-327-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Dell\.gradle\caches\transforms-3\22580f5927120c16372f1636d302abc2\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
-328
-329        <receiver
-329-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
-330            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-330-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
-331            android:directBootAware="false"
-331-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
-332            android:enabled="true"
-332-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
-333            android:exported="true"
-333-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
-334            android:permission="android.permission.DUMP" >
-334-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
-335            <intent-filter>
-335-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
-336                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-336-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-336-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
-337            </intent-filter>
-338            <intent-filter>
-338-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
-339                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-339-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-339-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
-340            </intent-filter>
-341            <intent-filter>
-341-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
-342                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-342-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-342-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
-343            </intent-filter>
-344            <intent-filter>
-344-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
-345                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-345-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-345-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
-346            </intent-filter>
-347        </receiver>
-348    </application>
-349
-350</manifest>
+278-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:60:13-62:85
+279                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+279-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:61:17-119
+280                android:value="com.google.firebase.components.ComponentRegistrar" />
+280-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:62:17-82
+281            <meta-data
+281-->[com.google.firebase:firebase-appcheck:17.1.2] C:\Users\Dell\.gradle\caches\transforms-3\5cc928197661e5acf3bfeca9c5180d3c\transformed\jetified-firebase-appcheck-17.1.2\AndroidManifest.xml:25:13-27:85
+282                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckKtxRegistrar"
+282-->[com.google.firebase:firebase-appcheck:17.1.2] C:\Users\Dell\.gradle\caches\transforms-3\5cc928197661e5acf3bfeca9c5180d3c\transformed\jetified-firebase-appcheck-17.1.2\AndroidManifest.xml:26:17-120
+283                android:value="com.google.firebase.components.ComponentRegistrar" />
+283-->[com.google.firebase:firebase-appcheck:17.1.2] C:\Users\Dell\.gradle\caches\transforms-3\5cc928197661e5acf3bfeca9c5180d3c\transformed\jetified-firebase-appcheck-17.1.2\AndroidManifest.xml:27:17-82
+284            <meta-data
+284-->[com.google.firebase:firebase-appcheck:17.1.2] C:\Users\Dell\.gradle\caches\transforms-3\5cc928197661e5acf3bfeca9c5180d3c\transformed\jetified-firebase-appcheck-17.1.2\AndroidManifest.xml:28:13-30:85
+285                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar"
+285-->[com.google.firebase:firebase-appcheck:17.1.2] C:\Users\Dell\.gradle\caches\transforms-3\5cc928197661e5acf3bfeca9c5180d3c\transformed\jetified-firebase-appcheck-17.1.2\AndroidManifest.xml:29:17-117
+286                android:value="com.google.firebase.components.ComponentRegistrar" />
+286-->[com.google.firebase:firebase-appcheck:17.1.2] C:\Users\Dell\.gradle\caches\transforms-3\5cc928197661e5acf3bfeca9c5180d3c\transformed\jetified-firebase-appcheck-17.1.2\AndroidManifest.xml:30:17-82
+287            <meta-data
+287-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Dell\.gradle\caches\transforms-3\6f40e9b7b871066cbf4ae325ddaa330a\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
+288                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+288-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Dell\.gradle\caches\transforms-3\6f40e9b7b871066cbf4ae325ddaa330a\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
+289                android:value="com.google.firebase.components.ComponentRegistrar" />
+289-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Dell\.gradle\caches\transforms-3\6f40e9b7b871066cbf4ae325ddaa330a\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
+290            <meta-data
+290-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Dell\.gradle\caches\transforms-3\3a6374a4063ce158cc37a3467012036f\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:15:13-17:85
+291                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+291-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Dell\.gradle\caches\transforms-3\3a6374a4063ce158cc37a3467012036f\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:16:17-130
+292                android:value="com.google.firebase.components.ComponentRegistrar" />
+292-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Dell\.gradle\caches\transforms-3\3a6374a4063ce158cc37a3467012036f\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:17:17-82
+293            <meta-data
+293-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Dell\.gradle\caches\transforms-3\3a6374a4063ce158cc37a3467012036f\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:18:13-20:85
+294                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+294-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Dell\.gradle\caches\transforms-3\3a6374a4063ce158cc37a3467012036f\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:19:17-127
+295                android:value="com.google.firebase.components.ComponentRegistrar" />
+295-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Dell\.gradle\caches\transforms-3\3a6374a4063ce158cc37a3467012036f\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:20:17-82
+296            <meta-data
+296-->[com.google.firebase:firebase-common-ktx:20.4.3] C:\Users\Dell\.gradle\caches\transforms-3\74e5f079ddf716f3252b48c70fea8468\transformed\jetified-firebase-common-ktx-20.4.3\AndroidManifest.xml:12:13-14:85
+297                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+297-->[com.google.firebase:firebase-common-ktx:20.4.3] C:\Users\Dell\.gradle\caches\transforms-3\74e5f079ddf716f3252b48c70fea8468\transformed\jetified-firebase-common-ktx-20.4.3\AndroidManifest.xml:13:17-116
+298                android:value="com.google.firebase.components.ComponentRegistrar" />
+298-->[com.google.firebase:firebase-common-ktx:20.4.3] C:\Users\Dell\.gradle\caches\transforms-3\74e5f079ddf716f3252b48c70fea8468\transformed\jetified-firebase-common-ktx-20.4.3\AndroidManifest.xml:14:17-82
+299            <meta-data
+299-->[com.google.firebase:firebase-common:20.4.3] C:\Users\Dell\.gradle\caches\transforms-3\c341913690e33c4955f490ddfd1a994b\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:35:13-37:85
+300                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+300-->[com.google.firebase:firebase-common:20.4.3] C:\Users\Dell\.gradle\caches\transforms-3\c341913690e33c4955f490ddfd1a994b\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:36:17-109
+301                android:value="com.google.firebase.components.ComponentRegistrar" />
+301-->[com.google.firebase:firebase-common:20.4.3] C:\Users\Dell\.gradle\caches\transforms-3\c341913690e33c4955f490ddfd1a994b\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:37:17-82
+302        </service>
+303
+304        <receiver
+304-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:29:9-40:20
+305            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+305-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:30:13-78
+306            android:exported="true"
+306-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:31:13-36
+307            android:permission="com.google.android.c2dm.permission.SEND" >
+307-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:32:13-73
+308            <intent-filter>
+308-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:33:13-35:29
+309                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+309-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:34:17-81
+309-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:34:25-78
+310            </intent-filter>
+311
+312            <meta-data
+312-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:37:13-39:40
+313                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+313-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:38:17-92
+314                android:value="true" />
+314-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:39:17-37
+315        </receiver>
+316        <!--
+317             FirebaseMessagingService performs security checks at runtime,
+318             but set to not exported to explicitly avoid allowing another app to call it.
+319        -->
+320        <service
+320-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:46:9-53:19
+321            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+321-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:47:13-82
+322            android:directBootAware="true"
+322-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:48:13-43
+323            android:exported="false" >
+323-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Dell\.gradle\caches\transforms-3\d149612a52dc34a45984d41040da7465\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:49:13-37
+324            <intent-filter android:priority="-500" >
+324-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:185:13-187:29
+325                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+325-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:186:17-78
+325-->C:\Users\Dell\.gemini\antigravity\brain\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\OrganShareApp\app\src\main\AndroidManifest.xml:186:25-75
+326            </intent-filter>
+327        </service> <!-- Needs to be explicitly declared on P+ -->
+328        <uses-library
+328-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Dell\.gradle\caches\transforms-3\fc722b78ab35fc1a8e4c51c613d8cf15\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:39:9-41:40
+329            android:name="org.apache.http.legacy"
+329-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Dell\.gradle\caches\transforms-3\fc722b78ab35fc1a8e4c51c613d8cf15\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:40:13-50
+330            android:required="false" />
+330-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Dell\.gradle\caches\transforms-3\fc722b78ab35fc1a8e4c51c613d8cf15\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:41:13-37
+331
+332        <service
+332-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\d05322591f41a73a732c748aad44398f\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
+333            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+333-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\d05322591f41a73a732c748aad44398f\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
+334            android:exported="false" >
+334-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\d05322591f41a73a732c748aad44398f\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
+335            <meta-data
+335-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\d05322591f41a73a732c748aad44398f\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
+336                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+336-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\d05322591f41a73a732c748aad44398f\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
+337                android:value="cct" />
+337-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\d05322591f41a73a732c748aad44398f\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
+338        </service>
+339        <service
+339-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\7a4218ce088e51e54d1d9f4ff1a9fb88\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
+340            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+340-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\7a4218ce088e51e54d1d9f4ff1a9fb88\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
+341            android:exported="false"
+341-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\7a4218ce088e51e54d1d9f4ff1a9fb88\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
+342            android:permission="android.permission.BIND_JOB_SERVICE" >
+342-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\7a4218ce088e51e54d1d9f4ff1a9fb88\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
+343        </service>
+344
+345        <receiver
+345-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\7a4218ce088e51e54d1d9f4ff1a9fb88\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
+346            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+346-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\7a4218ce088e51e54d1d9f4ff1a9fb88\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
+347            android:exported="false" />
+347-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Dell\.gradle\caches\transforms-3\7a4218ce088e51e54d1d9f4ff1a9fb88\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
+348
+349        <provider
+349-->[com.google.firebase:firebase-common:20.4.3] C:\Users\Dell\.gradle\caches\transforms-3\c341913690e33c4955f490ddfd1a994b\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:23:9-28:39
+350            android:name="com.google.firebase.provider.FirebaseInitProvider"
+350-->[com.google.firebase:firebase-common:20.4.3] C:\Users\Dell\.gradle\caches\transforms-3\c341913690e33c4955f490ddfd1a994b\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:24:13-77
+351            android:authorities="com.example.organshare.firebaseinitprovider"
+351-->[com.google.firebase:firebase-common:20.4.3] C:\Users\Dell\.gradle\caches\transforms-3\c341913690e33c4955f490ddfd1a994b\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:25:13-72
+352            android:directBootAware="true"
+352-->[com.google.firebase:firebase-common:20.4.3] C:\Users\Dell\.gradle\caches\transforms-3\c341913690e33c4955f490ddfd1a994b\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:26:13-43
+353            android:exported="false"
+353-->[com.google.firebase:firebase-common:20.4.3] C:\Users\Dell\.gradle\caches\transforms-3\c341913690e33c4955f490ddfd1a994b\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:27:13-37
+354            android:initOrder="100" />
+354-->[com.google.firebase:firebase-common:20.4.3] C:\Users\Dell\.gradle\caches\transforms-3\c341913690e33c4955f490ddfd1a994b\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:28:13-36
+355        <provider
+355-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dell\.gradle\caches\transforms-3\d16073676d9c0afce466752e704c99b9\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+356            android:name="androidx.startup.InitializationProvider"
+356-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dell\.gradle\caches\transforms-3\d16073676d9c0afce466752e704c99b9\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+357            android:authorities="com.example.organshare.androidx-startup"
+357-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dell\.gradle\caches\transforms-3\d16073676d9c0afce466752e704c99b9\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+358            android:exported="false" >
+358-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dell\.gradle\caches\transforms-3\d16073676d9c0afce466752e704c99b9\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+359            <meta-data
+359-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dell\.gradle\caches\transforms-3\d16073676d9c0afce466752e704c99b9\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+360                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+360-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dell\.gradle\caches\transforms-3\d16073676d9c0afce466752e704c99b9\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+361                android:value="androidx.startup" />
+361-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dell\.gradle\caches\transforms-3\d16073676d9c0afce466752e704c99b9\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+362            <meta-data
+362-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Dell\.gradle\caches\transforms-3\3796ccd12ca54561e53a28f3797fd030\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+363                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+363-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Dell\.gradle\caches\transforms-3\3796ccd12ca54561e53a28f3797fd030\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+364                android:value="androidx.startup" />
+364-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Dell\.gradle\caches\transforms-3\3796ccd12ca54561e53a28f3797fd030\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+365            <meta-data
+365-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+366                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+366-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+367                android:value="androidx.startup" />
+367-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+368        </provider>
+369
+370        <activity
+370-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\Dell\.gradle\caches\transforms-3\95d31467ba43b280dc398958cce538bc\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
+371            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+371-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\Dell\.gradle\caches\transforms-3\95d31467ba43b280dc398958cce538bc\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:20:19-85
+372            android:exported="false"
+372-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\Dell\.gradle\caches\transforms-3\95d31467ba43b280dc398958cce538bc\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:22:19-43
+373            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+373-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\Dell\.gradle\caches\transforms-3\95d31467ba43b280dc398958cce538bc\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:21:19-78
+374
+375        <uses-library
+375-->[androidx.window:window:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\2e440a3386021870e9ed27a08be29db3\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+376            android:name="androidx.window.extensions"
+376-->[androidx.window:window:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\2e440a3386021870e9ed27a08be29db3\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+377            android:required="false" />
+377-->[androidx.window:window:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\2e440a3386021870e9ed27a08be29db3\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+378        <uses-library
+378-->[androidx.window:window:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\2e440a3386021870e9ed27a08be29db3\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+379            android:name="androidx.window.sidecar"
+379-->[androidx.window:window:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\2e440a3386021870e9ed27a08be29db3\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+380            android:required="false" />
+380-->[androidx.window:window:1.0.0] C:\Users\Dell\.gradle\caches\transforms-3\2e440a3386021870e9ed27a08be29db3\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+381
+382        <meta-data
+382-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Dell\.gradle\caches\transforms-3\22580f5927120c16372f1636d302abc2\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+383            android:name="com.google.android.gms.version"
+383-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Dell\.gradle\caches\transforms-3\22580f5927120c16372f1636d302abc2\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+384            android:value="@integer/google_play_services_version" />
+384-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Dell\.gradle\caches\transforms-3\22580f5927120c16372f1636d302abc2\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+385
+386        <receiver
+386-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+387            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+387-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+388            android:directBootAware="false"
+388-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+389            android:enabled="true"
+389-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+390            android:exported="true"
+390-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+391            android:permission="android.permission.DUMP" >
+391-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+392            <intent-filter>
+392-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+393                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+393-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+393-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+394            </intent-filter>
+395            <intent-filter>
+395-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+396                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+396-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+396-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+397            </intent-filter>
+398            <intent-filter>
+398-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+399                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+399-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+399-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+400            </intent-filter>
+401            <intent-filter>
+401-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+402                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+402-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+402-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dell\.gradle\caches\transforms-3\4501a7d30d44783bf9a8e38fcb6e0923\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+403            </intent-filter>
+404        </receiver>
+405    </application>
+406
+407</manifest>

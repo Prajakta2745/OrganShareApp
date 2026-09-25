@@ -673,6 +673,7 @@
     <color name="common_google_signin_btn_text_light_disabled">#1F000000</color>
     <color name="common_google_signin_btn_text_light_focused">#90000000</color>
     <color name="common_google_signin_btn_text_light_pressed">#DE000000</color>
+    <color name="critical_red">#D32F2F</color>
     <color name="design_bottom_navigation_shadow_color">#14000000</color>
     <color name="design_dark_default_color_background">#121212</color>
     <color name="design_dark_default_color_error">#CF6679</color>
@@ -978,6 +979,7 @@
     <color name="primary_dark_material_light">@color/material_grey_600</color>
     <color name="primary_material_dark">@color/material_grey_900</color>
     <color name="primary_material_light">@color/material_grey_100</color>
+    <color name="primary_teal">#00897B</color>
     <color name="primary_text_default_material_dark">#ffffffff</color>
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4Dffffff</color>
@@ -2066,7 +2068,7 @@
     <string name="already_have_account">Already have an account? Login</string>
     <string name="androidx_startup" translatable="false">androidx.startup</string>
     <string name="app_name">OrganShare</string>
-    <string name="app_tagline">Secure Organ Donation &amp; Allocation Management</string>
+    <string name="app_tagline">Give Life • Share Hope</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
     <string name="approve">Approve</string>
     <string name="audit_logs">System Audit Logs</string>

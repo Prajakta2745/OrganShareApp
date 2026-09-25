@@ -9,11 +9,15 @@ public class Constants {
     public static final String ROLE_ADMIN = "ADMIN";
 
     // Request Statuses
+    // Request Statuses
     public static final String STATUS_PENDING = "PENDING";
     public static final String STATUS_UNDER_REVIEW = "UNDER_REVIEW";
     public static final String STATUS_APPROVED = "APPROVED";
     public static final String STATUS_REJECTED = "REJECTED";
     public static final String STATUS_ALLOCATED = "ALLOCATED";
+    public static final String STATUS_ACTIVE = "ACTIVE";
+    public static final String STATUS_PARTIALLY_FULFILLED = "PARTIALLY_FULFILLED";
+    public static final String STATUS_FULFILLED = "FULFILLED";
     public static final String STATUS_IN_TRANSIT = "IN_TRANSIT";
     public static final String STATUS_DELIVERED = "DELIVERED";
     public static final String STATUS_COMPLETED = "COMPLETED";

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group_hospital_main">
+        <item
+            android:id="@+id/drawer_hospital_dashboard"
+            android:icon="@drawable/ic_hospital"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/drawer_hospital_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Hospital Profile" />
+        <item
+            android:id="@+id/drawer_hospital_request_organ"
+            android:icon="@drawable/ic_heart"
+            android:title="Request Organ" />
+        <item
+            android:id="@+id/drawer_hospital_request_blood"
+            android:icon="@drawable/ic_blood_drop"
+            android:title="Request Blood" />
+        <item
+            android:id="@+id/drawer_hospital_pending_requests"
+            android:icon="@drawable/ic_clock"
+            android:title="Pending Requests" />
+        <item
+            android:id="@+id/drawer_hospital_active_requests"
+            android:icon="@drawable/ic_request"
+            android:title="Active Requests" />
+        <item
+            android:id="@+id/drawer_hospital_fulfilled_requests"
+            android:icon="@drawable/ic_check_circle"
+            android:title="Fulfilled Requests" />
+        <item
+            android:id="@+id/drawer_hospital_orders"
+            android:icon="@drawable/ic_inventory"
+            android:title="Orders &amp; Hub" />
+        <item
+            android:id="@+id/drawer_hospital_verification"
+            android:icon="@drawable/ic_search"
+            android:title="Search Donors / Verification" />
+        <item
+            android:id="@+id/drawer_hospital_schedule_delivery"
+            android:icon="@drawable/ic_delivery"
+            android:title="Delivery Schedule &amp; Tracking" />
+        <item
+            android:id="@+id/drawer_notifications"
+            android:icon="@drawable/ic_notification"
+            android:title="Notifications" />
+    </group>
+
+    <group android:id="@+id/group_hospital_preferences">
+        <item
+            android:id="@+id/drawer_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings" />
+        <item
+            android:id="@+id/drawer_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+    </group>
+</menu>

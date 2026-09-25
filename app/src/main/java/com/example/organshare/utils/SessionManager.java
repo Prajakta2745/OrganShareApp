@@ -41,6 +41,12 @@ public class SessionManager {
         return pref.getString(Constants.KEY_USER_ROLE, "");
     }
 
+    // Added to update the user's role
+    public void setUserRole(String role) {
+        editor.putString(Constants.KEY_USER_ROLE, role);
+        editor.apply();
+    }
+
     public void clearSession() {
         editor.clear();
         editor.apply();

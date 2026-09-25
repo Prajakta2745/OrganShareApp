@@ -1,0 +1,66 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- OrganShare Official Brand Emblem: Dual Embracing Hands Forming Heart Enclosing Central Kidneys -->
+
+    <!-- Left Embracing Hand (Deep Emerald Green) -->
+    <path
+        android:fillColor="#0E8345"
+        android:pathData="M100,175 C85,160 55,135 42,105 C32,82 36,55 58,40 C75,28 92,35 100,52 C98,38 88,24 68,26 C42,28 22,54 22,86 C22,122 55,158 100,185 Z" />
+
+    <!-- Left Hand Palm & Thumb Sweep (Emerald Green) -->
+    <path
+        android:fillColor="#0E8345"
+        android:pathData="M100,175 C92,168 76,150 68,132 C62,118 64,102 74,92 C82,84 94,88 98,98 C95,90 88,82 78,84 C66,86 52,105 58,126 C66,152 86,168 100,175 Z" />
+
+    <!-- Left Arm/Cuff Line -->
+    <path
+        android:fillColor="#0B6B38"
+        android:pathData="M35,100 C32,115 38,135 52,150 C40,135 32,115 35,100 Z" />
+
+    <!-- Right Embracing Hand (Vibrant Coral Red) -->
+    <path
+        android:fillColor="#E53935"
+        android:pathData="M100,175 C115,160 145,135 158,105 C168,82 164,55 142,40 C125,28 108,35 100,52 C102,38 112,24 132,26 C158,28 178,54 178,86 C178,122 145,158 100,185 Z" />
+
+    <!-- Right Hand Palm & Thumb Sweep (Vibrant Coral Red) -->
+    <path
+        android:fillColor="#E53935"
+        android:pathData="M100,175 C108,168 124,150 132,132 C138,118 136,102 126,92 C118,84 106,88 102,98 C105,90 112,82 122,84 C134,86 148,105 142,126 C134,152 114,168 100,175 Z" />
+
+    <!-- Right Arm/Cuff Line -->
+    <path
+        android:fillColor="#C62828"
+        android:pathData="M165,100 C168,115 162,135 148,150 C160,135 168,115 165,100 Z" />
+
+    <!-- CENTRAL ORGANS: Twin Kidneys in Coral Red with Ureters -->
+    <!-- Left Kidney -->
+    <path
+        android:fillColor="#E53935"
+        android:pathData="M88,68 C76,68 68,78 68,92 C68,106 77,118 88,118 C95,118 99,112 97,104 C95,96 90,94 90,88 C90,82 95,80 94,74 C93,70 91,68 88,68 Z" />
+
+    <!-- Right Kidney -->
+    <path
+        android:fillColor="#E53935"
+        android:pathData="M112,68 C124,68 132,78 132,92 C132,106 123,118 112,118 C105,118 101,112 103,104 C105,96 110,94 110,88 C110,82 105,80 106,74 C107,70 109,68 112,68 Z" />
+
+    <!-- Renal Pelvis & Ureters (Connecting Tubes) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M88,88 C86,88 84,92 84,96 C84,100 87,103 89,103 C87,99 87,92 88,88 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M112,88 C114,88 116,92 116,96 C116,100 113,103 111,103 C113,99 113,92 112,88 Z" />
+
+    <!-- Central Ureter Lines in Red descending -->
+    <path
+        android:fillColor="#E53935"
+        android:pathData="M93,105 C93,115 97,125 97,135 L99,135 C99,124 95,115 95,105 Z" />
+    <path
+        android:fillColor="#E53935"
+        android:pathData="M107,105 C107,115 103,125 103,135 L101,135 C101,124 105,115 105,105 Z" />
+
+</vector>

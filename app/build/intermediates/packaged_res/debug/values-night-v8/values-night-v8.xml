@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.OrganShare" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#6FF7F6</item>
+        <item name="colorOnPrimary">#003737</item>
+        <item name="colorPrimaryContainer">#004F4F</item>
+        <item name="colorOnPrimaryContainer">#8CFBF9</item>
+        <item name="colorSecondary">#B0CCCB</item>
+        <item name="colorOnSecondary">#1B3534</item>
+        <item name="colorTertiary">#B2C8E8</item>
+        <item name="android:statusBarColor">#191C1C</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:colorBackground">#191C1C</item>
+    </style>
+</resources>

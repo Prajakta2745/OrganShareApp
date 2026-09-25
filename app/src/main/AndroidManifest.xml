@@ -121,6 +121,63 @@
             android:name=".activities.common.NotificationsActivity"
             android:exported="false" />
 
+        <!-- ORGANSHARE NEW ACTIVITIES START -->
+        <activity
+            android:name=".activities.common.CommonHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.common.AvailableOrgansActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.hospital.PendingRequestsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.hospital.ActiveRequestsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.hospital.FulfilledRequestsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.hospital.OrganRequestsHubActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.admin.AdminDeliveryManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.admin.AssignDeliveryPersonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.admin.AdminReportsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.common.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.common.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.common.ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.donor.DigitalDonorCardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.donor.OrganPledgeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.donor.BloodDonorRegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.donor.EligibilityScreenerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.donor.FamilyDonationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.hospital.CreateBloodRequestActivity"
+            android:exported="false" />
+        <!-- ORGANSHARE NEW ACTIVITIES END -->
+
         <!-- Firebase Cloud Messaging Service -->
         <service
             android:name=".notifications.AppFirebaseMessagingService"

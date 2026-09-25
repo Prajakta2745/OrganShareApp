@@ -146,7 +146,10 @@ public class SampleDataSeeder {
         req1.setHospitalContact("+1-555-300-8800");
         req1.setOrganRequired("Kidney");
         req1.setBloodGroup("O+");
-        req1.setQuantity(1);
+        req1.setQuantity(2);
+        req1.setRequestedQuantity(2);
+        req1.setFulfilledQuantity(0);
+        req1.setRemainingQuantity(2);
         req1.setEmergencyLevel(Constants.EMERGENCY_URGENT);
         req1.setPatientRefId("PAT-TX-8821");
         req1.setRequiredDate(DateTimeUtils.getCurrentDate());
@@ -185,7 +188,54 @@ public class SampleDataSeeder {
         checkpoints.add(new Checkpoint("CP-02", delivery.getDeliveryId(), "Express Corridor Mile 4", 40.7300, -73.9950, DateTimeUtils.getCurrentTime(), "IN_TRANSIT", "Green corridor clearance active"));
         delivery.setCheckpoints(checkpoints);
 
-        batch.set(db.collection(FirestoreCollections.DELIVERIES).document(delivery.getDeliveryId()), delivery);
+        // 7. Seed Blood Inventory
+        com.example.organshare.models.BloodInventory bldInv = new com.example.organshare.models.BloodInventory();
+        bldInv.setUnitId("BLD-5001");
+        bldInv.setBloodGroup("O+");
+        bldInv.setUnitsCount(4);
+        bldInv.setCollectionDate(DateTimeUtils.getCurrentDate());
+        bldInv.setExpiryDate(DateTimeUtils.getCurrentDate());
+        bldInv.setOrganBankId("BANK-001");
+        bldInv.setOrganBankName("National Organ Preservation & Distribution Bank");
+        bldInv.setStorageLocation("Blood Bank Refrigerated Vault Bay 1");
+        bldInv.setStatus("AVAILABLE");
+        bldInv.setVerified(true);
+        batch.set(db.collection(FirestoreCollections.BLOOD_INVENTORY).document(bldInv.getUnitId()), bldInv);
+
+        // 8. Seed Blood Request
+        com.example.organshare.models.BloodRequest bldReq = new com.example.organshare.models.BloodRequest();
+        bldReq.setRequestId("REQ-BLD-2026-9021");
+        bldReq.setHospitalId("HOSP-001");
+        bldReq.setHospitalName("St. Jude Memorial Transplant Center");
+        bldReq.setHospitalAddress("100 Hospital Avenue, North Wing");
+        bldReq.setHospitalContact("+1-555-300-8800");
+        bldReq.setBloodGroup("O+");
+        bldReq.setUnitsRequested(2);
+        bldReq.setUnitsFulfilled(0);
+        bldReq.setUnitsRemaining(2);
+        bldReq.setPatientRefId("PAT-EMG-441");
+        bldReq.setRequiredDate(DateTimeUtils.getCurrentDate());
+        bldReq.setRequiredTime("20:00");
+        bldReq.setEmergencyLevel(Constants.EMERGENCY_CRITICAL);
+        bldReq.setStatus(Constants.STATUS_PENDING);
+        bldReq.setAdditionalNotes("Emergency trauma surgery requiring immediate whole blood.");
+        batch.set(db.collection(FirestoreCollections.BLOOD_REQUESTS).document(bldReq.getRequestId()), bldReq);
+
+        // 9. Seed Family Post-Mortem Donation
+        com.example.organshare.models.FamilyDonation famDon = new com.example.organshare.models.FamilyDonation();
+        famDon.setDonationId("FMD-2026-3001");
+        famDon.setDeceasedName("Robert Vance");
+        famDon.setDeathDateTime(DateTimeUtils.getCurrentDate() + " 08:30");
+        famDon.setHospitalName("St. Jude Memorial Transplant Center");
+        famDon.setFamilyMemberName("Sarah Vance");
+        famDon.setRelationship("Spouse");
+        famDon.setContactPhone("+1-555-222-7711");
+        famDon.setSelectedOrgans(Arrays.asList("Corneas", "Kidneys", "Liver"));
+        famDon.setConsentStatus("CONSENT_ATTACHED");
+        famDon.setVerificationStatus("UNDER_VERIFICATION");
+        famDon.setRegisteredByUserId("donor1_user");
+        famDon.setNotes("Family registered voluntary post-mortem pledge. Coordinator verification in progress.");
+        batch.set(db.collection(FirestoreCollections.FAMILY_DONATIONS).document(famDon.getDonationId()), famDon);
 
         batch.commit()
                 .addOnSuccessListener(aVoid -> callback.onSuccess("Sample demo data seeded successfully!"))

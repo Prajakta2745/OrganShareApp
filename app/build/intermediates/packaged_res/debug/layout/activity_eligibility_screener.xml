@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card_gradient_teal"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medical Eligibility Screener"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="A quick preliminary self-assessment questionnaire to understand general donation guidance."
+                    android:textColor="#E0F2FE"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Advisory Notice -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="#FEF3C7"
+            app:cardCornerRadius="12dp"
+            app:strokeColor="#FCD34D"
+            app:strokeWidth="1dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="⚠️ PRELIMINARY / SELF-ASSESSMENT ONLY: This questionnaire is for educational guidance only and is NOT a medical diagnosis. Final eligibility is determined by licensed healthcare professionals."
+                android:textColor="#92400E"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Question 1: Age Range -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="1. What is your age range?"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <RadioButton
+                android:id="@+id/rbAgeAdult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="18 – 65 years old"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rbAgeSenior"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="65+ years old"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rbAgeMinor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Under 18 years old (requires parental consent)"
+                android:textSize="14sp" />
+        </RadioGroup>
+
+        <!-- Question 2: Chronic Illness -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="2. Do you have active chronic illnesses (uncontrolled diabetes, active hepatitis, kidney disease)?"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgChronic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <RadioButton
+                android:id="@+id/rbChronicNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="No, I am in good general health"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rbChronicYes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yes, currently undergoing active treatment"
+                android:textSize="14sp" />
+        </RadioGroup>
+
+        <!-- Question 3: Recent Surgeries or Infections -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="3. Have you had major surgery or serious infection in the last 6 months?"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgSurgery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <RadioButton
+                android:id="@+id/rbSurgeryNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="No"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rbSurgeryYes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:textSize="14sp" />
+        </RadioGroup>
+
+        <!-- Question 4: Blood Donation in last 90 days -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="4. Have you donated blood in the last 90 days?"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgBloodInterval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <RadioButton
+                android:id="@+id/rbBloodIntervalNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="No (Eligible for fresh blood donation)"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rbBloodIntervalYes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yes (Wait until 90-day cooldown expires for blood)"
+                android:textSize="14sp" />
+        </RadioGroup>
+
+        <!-- Result Card (Initially hidden until evaluated) -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardScreenerResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="#F0FDF4"
+            app:cardCornerRadius="14dp"
+            app:strokeColor="#86EFAC"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvResultTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Assessment Result"
+                    android:textColor="#166534"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvResultBody"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:lineSpacingExtra="2dp"
+                    android:text="Based on your answers, you may be eligible for further professional evaluation. Final decision remains with authorized clinical physicians."
+                    android:textColor="#14532D"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Evaluate Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEvaluateScreener"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:text="Evaluate Self-Assessment"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:backgroundTint="@color/primary_teal"
+            app:cornerRadius="12dp" />
+
+    </LinearLayout>
+
+</ScrollView>

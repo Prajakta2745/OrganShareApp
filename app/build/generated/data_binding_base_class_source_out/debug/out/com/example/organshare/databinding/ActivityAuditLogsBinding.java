@@ -4,33 +4,47 @@ package com.example.organshare.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.organshare.R;
+import com.google.android.material.navigation.NavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class ActivityAuditLogsBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final DrawerLayout rootView;
+
+  @NonNull
+  public final DrawerLayout drawerLayout;
+
+  @NonNull
+  public final LayoutCommonToolbarBinding includedToolbar;
+
+  @NonNull
+  public final NavigationView navigationView;
 
   @NonNull
   public final RecyclerView rvAuditLogs;
 
-  private ActivityAuditLogsBinding(@NonNull LinearLayout rootView,
-      @NonNull RecyclerView rvAuditLogs) {
+  private ActivityAuditLogsBinding(@NonNull DrawerLayout rootView,
+      @NonNull DrawerLayout drawerLayout, @NonNull LayoutCommonToolbarBinding includedToolbar,
+      @NonNull NavigationView navigationView, @NonNull RecyclerView rvAuditLogs) {
     this.rootView = rootView;
+    this.drawerLayout = drawerLayout;
+    this.includedToolbar = includedToolbar;
+    this.navigationView = navigationView;
     this.rvAuditLogs = rvAuditLogs;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public DrawerLayout getRoot() {
     return rootView;
   }
 
@@ -55,13 +69,29 @@ public final class ActivityAuditLogsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      DrawerLayout drawerLayout = (DrawerLayout) rootView;
+
+      id = R.id.includedToolbar;
+      View includedToolbar = ViewBindings.findChildViewById(rootView, id);
+      if (includedToolbar == null) {
+        break missingId;
+      }
+      LayoutCommonToolbarBinding binding_includedToolbar = LayoutCommonToolbarBinding.bind(includedToolbar);
+
+      id = R.id.navigationView;
+      NavigationView navigationView = ViewBindings.findChildViewById(rootView, id);
+      if (navigationView == null) {
+        break missingId;
+      }
+
       id = R.id.rvAuditLogs;
       RecyclerView rvAuditLogs = ViewBindings.findChildViewById(rootView, id);
       if (rvAuditLogs == null) {
         break missingId;
       }
 
-      return new ActivityAuditLogsBinding((LinearLayout) rootView, rvAuditLogs);
+      return new ActivityAuditLogsBinding((DrawerLayout) rootView, drawerLayout,
+          binding_includedToolbar, navigationView, rvAuditLogs);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

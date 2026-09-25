@@ -10,22 +10,22 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.organshare.R;
 import com.example.organshare.models.DonorProfile;
-import com.example.organshare.utils.SecurityUtils;
 import com.google.android.material.button.MaterialButton;
 
 import java.util.List;
 
 public class DonorSearchAdapter extends RecyclerView.Adapter<DonorSearchAdapter.ViewHolder> {
 
-    public interface OnDonorContactListener {
+    public interface OnDonorActionListener {
         void onRequestContact(DonorProfile donor);
+        void onMarkCollected(DonorProfile donor);
     }
 
     private final Context context;
     private final List<DonorProfile> donorList;
-    private final OnDonorContactListener listener;
+    private final OnDonorActionListener listener;
 
-    public DonorSearchAdapter(Context context, List<DonorProfile> donorList, OnDonorContactListener listener) {
+    public DonorSearchAdapter(Context context, List<DonorProfile> donorList, OnDonorActionListener listener) {
         this.context = context;
         this.donorList = donorList;
         this.listener = listener;
@@ -43,7 +43,7 @@ public class DonorSearchAdapter extends RecyclerView.Adapter<DonorSearchAdapter.
         DonorProfile donor = donorList.get(position);
 
         holder.tvDonorMaskedName.setText(donor.getMaskedName());
-        holder.tvBloodBadge.setText("Blood: " + donor.getBloodGroup());
+        holder.tvBloodBadge.setText("Blood: " + (donor.getBloodGroup() != null ? donor.getBloodGroup() : "N/A"));
         holder.tvDonorIdAndGender.setText("Donor ID: " + donor.getDonorId() + " | Gender: " + (donor.getGender() != null ? donor.getGender() : "N/A"));
         holder.tvLocation.setText("Location: " + (donor.getCity() != null ? donor.getCity() : "") + ", " + (donor.getState() != null ? donor.getState() : ""));
 
@@ -56,6 +56,10 @@ public class DonorSearchAdapter extends RecyclerView.Adapter<DonorSearchAdapter.
         holder.btnContactCoordinator.setOnClickListener(v -> {
             if (listener != null) listener.onRequestContact(donor);
         });
+
+        holder.btnMarkCollected.setOnClickListener(v -> {
+            if (listener != null) listener.onMarkCollected(donor);
+        });
     }
 
     @Override
@@ -65,7 +69,7 @@ public class DonorSearchAdapter extends RecyclerView.Adapter<DonorSearchAdapter.
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         TextView tvDonorMaskedName, tvBloodBadge, tvDonorIdAndGender, tvLocation, tvPledgedOrgans;
-        MaterialButton btnContactCoordinator;
+        MaterialButton btnContactCoordinator, btnMarkCollected;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -75,6 +79,7 @@ public class DonorSearchAdapter extends RecyclerView.Adapter<DonorSearchAdapter.
             tvLocation = itemView.findViewById(R.id.tvLocation);
             tvPledgedOrgans = itemView.findViewById(R.id.tvPledgedOrgans);
             btnContactCoordinator = itemView.findViewById(R.id.btnContactCoordinator);
+            btnMarkCollected = itemView.findViewById(R.id.btnMarkCollected);
         }
     }
 }

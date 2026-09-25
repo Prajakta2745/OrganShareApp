@@ -1,5 +1,265 @@
 [
     {
+        "merged": "com.example.organshare.app-merged_res-5:/menu_menu_drawer_delivery.xml.flat",
+        "source": "com.example.organshare.app-main-7:/menu/menu_drawer_delivery.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_organshare_logo.xml.flat",
+        "source": "com.example.organshare.app-main-7:/drawable/ic_organshare_logo.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_hospital_order_details.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/activity_hospital_order_details.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_item_hospital_request.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/item_hospital_request.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_blood_donor_registration.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/activity_blood_donor_registration.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_family_donation.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/activity_family_donation.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_inventory.xml.flat",
+        "source": "com.example.organshare.app-main-7:/drawable/ic_inventory.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_organ_bank.xml.flat",
+        "source": "com.example.organshare.app-main-7:/drawable/ic_organ_bank.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_update_checkpoint.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/activity_update_checkpoint.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_fulfilled_requests.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/activity_fulfilled_requests.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_register.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.organshare.app-main-7:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_request_details.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/activity_request_details.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_map_pin.xml.flat",
+        "source": "com.example.organshare.app-main-7:/drawable/ic_map_pin.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_organ_donation_info.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/activity_organ_donation_info.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/drawable_bg_edit_text.xml.flat",
+        "source": "com.example.organshare.app-main-7:/drawable/bg_edit_text.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_delivery_dashboard.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/activity_delivery_dashboard.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_active_requests.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/activity_active_requests.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_request.xml.flat",
+        "source": "com.example.organshare.app-main-7:/drawable/ic_request.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_eligibility_screener.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/activity_eligibility_screener.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/menu_menu_hospital_nav.xml.flat",
+        "source": "com.example.organshare.app-main-7:/menu/menu_hospital_nav.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.organshare.app-main-7:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_pending_requests.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/activity_pending_requests.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.organshare.app-main-7:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_check_circle.xml.flat",
+        "source": "com.example.organshare.app-main-7:/drawable/ic_check_circle.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_item_delivery.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/item_delivery.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_fragment_bank_orders.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/fragment_bank_orders.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_qr_placeholder.xml.flat",
+        "source": "com.example.organshare.app-main-7:/drawable/ic_qr_placeholder.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_fragment_donor_home.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/fragment_donor_home.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_refresh.xml.flat",
+        "source": "com.example.organshare.app-main-7:/drawable/ic_refresh.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_track_delivery_map.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/activity_track_delivery_map.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_family.xml.flat",
+        "source": "com.example.organshare.app-main-7:/drawable/ic_family.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/drawable_bg_badge_normal.xml.flat",
+        "source": "com.example.organshare.app-main-7:/drawable/bg_badge_normal.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/menu_menu_drawer_organ_bank.xml.flat",
+        "source": "com.example.organshare.app-main-7:/menu/menu_drawer_organ_bank.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_change_password.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/activity_change_password.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/menu_menu_donor_nav.xml.flat",
+        "source": "com.example.organshare.app-main-7:/menu/menu_donor_nav.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/menu_menu_drawer_donor.xml.flat",
+        "source": "com.example.organshare.app-main-7:/menu/menu_drawer_donor.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_hospital.xml.flat",
+        "source": "com.example.organshare.app-main-7:/drawable/ic_hospital.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_dialog_add_checkpoint.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/dialog_add_checkpoint.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_splash.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_available_organs.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/activity_available_organs.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_admin_reports.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/activity_admin_reports.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.organshare.app-main-7:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_add_edit_inventory.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/activity_add_edit_inventory.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_education.xml.flat",
+        "source": "com.example.organshare.app-main-7:/drawable/ic_education.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.organshare.app-main-7:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_item_donor_search.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/item_donor_search.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_admin_delivery_management.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/activity_admin_delivery_management.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_create_blood_request.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/activity_create_blood_request.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_donation_info.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/activity_donation_info.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_lock.xml.flat",
+        "source": "com.example.organshare.app-main-7:/drawable/ic_lock.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.organshare.app-main-7:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_organ_pledge.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/activity_organ_pledge.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_create_request.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/activity_create_request.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_item_audit_log.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/item_audit_log.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_item_fulfilled_request.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/item_fulfilled_request.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_water_drop.xml.flat",
+        "source": "com.example.organshare.app-main-7:/drawable/ic_water_drop.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.organshare.app-main-7:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_notification.xml.flat",
+        "source": "com.example.organshare.app-main-7:/drawable/ic_notification.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.organshare.app-main-7:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_clock.xml.flat",
+        "source": "com.example.organshare.app-main-7:/drawable/ic_clock.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/menu_menu_drawer_hospital.xml.flat",
+        "source": "com.example.organshare.app-main-7:/menu/menu_drawer_hospital.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_donor_profile.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/activity_donor_profile.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_fragment_bank_inventory.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/fragment_bank_inventory.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_fragment_hospital_orders.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/fragment_hospital_orders.xml"
+    },
+    {
         "merged": "com.example.organshare.app-merged_res-5:/drawable_bg_badge_urgent.xml.flat",
         "source": "com.example.organshare.app-main-7:/drawable/bg_badge_urgent.xml"
     },
@@ -20,6 +280,10 @@
         "source": "com.example.organshare.app-main-7:/layout/activity_audit_logs.xml"
     },
     {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_layout_navigation_drawer_header.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/layout_navigation_drawer_header.xml"
+    },
+    {
         "merged": "com.example.organshare.app-merged_res-5:/mipmap-hdpi_ic_launcher.webp.flat",
         "source": "com.example.organshare.app-main-7:/mipmap-hdpi/ic_launcher.webp"
     },
@@ -28,20 +292,24 @@
         "source": "com.example.organshare.app-main-7:/layout/fragment_bank_requests.xml"
     },
     {
+        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_blood_drop.xml.flat",
+        "source": "com.example.organshare.app-main-7:/drawable/ic_blood_drop.xml"
+    },
+    {
         "merged": "com.example.organshare.app-merged_res-5:/layout_item_hospital_order.xml.flat",
         "source": "com.example.organshare.app-main-7:/layout/item_hospital_order.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_settings.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/activity_settings.xml"
     },
     {
         "merged": "com.example.organshare.app-merged_res-5:/layout_activity_notifications.xml.flat",
         "source": "com.example.organshare.app-main-7:/layout/activity_notifications.xml"
     },
     {
-        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_hospital_order_details.xml.flat",
-        "source": "com.example.organshare.app-main-7:/layout/activity_hospital_order_details.xml"
-    },
-    {
-        "merged": "com.example.organshare.app-merged_res-5:/layout_item_hospital_request.xml.flat",
-        "source": "com.example.organshare.app-main-7:/layout/item_hospital_request.xml"
+        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_card.xml.flat",
+        "source": "com.example.organshare.app-main-7:/drawable/ic_card.xml"
     },
     {
         "merged": "com.example.organshare.app-merged_res-5:/drawable_bg_card_gradient_teal.xml.flat",
@@ -60,20 +328,16 @@
         "source": "com.example.organshare.app-main-7:/layout/activity_assign_delivery.xml"
     },
     {
-        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_inventory.xml.flat",
-        "source": "com.example.organshare.app-main-7:/drawable/ic_inventory.xml"
+        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_organshare_emblem.xml.flat",
+        "source": "com.example.organshare.app-main-7:/drawable/ic_organshare_emblem.xml"
     },
     {
-        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_organ_bank.xml.flat",
-        "source": "com.example.organshare.app-main-7:/drawable/ic_organ_bank.xml"
+        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_analytics.xml.flat",
+        "source": "com.example.organshare.app-main-7:/drawable/ic_analytics.xml"
     },
     {
         "merged": "com.example.organshare.app-merged_res-5:/layout_item_registered_organ.xml.flat",
         "source": "com.example.organshare.app-main-7:/layout/item_registered_organ.xml"
-    },
-    {
-        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_update_checkpoint.xml.flat",
-        "source": "com.example.organshare.app-main-7:/layout/activity_update_checkpoint.xml"
     },
     {
         "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_search.xml.flat",
@@ -88,28 +352,16 @@
         "source": "com.example.organshare.app-main-7:/layout/activity_delivery_details.xml"
     },
     {
-        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_register.xml.flat",
-        "source": "com.example.organshare.app-main-7:/layout/activity_register.xml"
-    },
-    {
-        "merged": "com.example.organshare.app-merged_res-5:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.organshare.app-main-7:/mipmap-mdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_request_details.xml.flat",
-        "source": "com.example.organshare.app-main-7:/layout/activity_request_details.xml"
-    },
-    {
         "merged": "com.example.organshare.app-merged_res-5:/layout_activity_hospital_dashboard.xml.flat",
         "source": "com.example.organshare.app-main-7:/layout/activity_hospital_dashboard.xml"
     },
     {
-        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_map_pin.xml.flat",
-        "source": "com.example.organshare.app-main-7:/drawable/ic_map_pin.xml"
+        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_edit_profile.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/activity_edit_profile.xml"
     },
     {
-        "merged": "com.example.organshare.app-merged_res-5:/drawable_bg_edit_text.xml.flat",
-        "source": "com.example.organshare.app-main-7:/drawable/bg_edit_text.xml"
+        "merged": "com.example.organshare.app-merged_res-5:/drawable_img_organshare_full_logo.xml.flat",
+        "source": "com.example.organshare.app-main-7:/drawable/img_organshare_full_logo.xml"
     },
     {
         "merged": "com.example.organshare.app-merged_res-5:/layout_item_checkpoint.xml.flat",
@@ -120,16 +372,20 @@
         "source": "com.example.organshare.app-main-7:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_delivery_dashboard.xml.flat",
-        "source": "com.example.organshare.app-main-7:/layout/activity_delivery_dashboard.xml"
+        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_digital_donor_card.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/activity_digital_donor_card.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_hamburger.xml.flat",
+        "source": "com.example.organshare.app-main-7:/drawable/ic_hamburger.xml"
     },
     {
         "merged": "com.example.organshare.app-merged_res-5:/layout_item_inventory.xml.flat",
         "source": "com.example.organshare.app-main-7:/layout/item_inventory.xml"
     },
     {
-        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_request.xml.flat",
-        "source": "com.example.organshare.app-main-7:/drawable/ic_request.xml"
+        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_settings.xml.flat",
+        "source": "com.example.organshare.app-main-7:/drawable/ic_settings.xml"
     },
     {
         "merged": "com.example.organshare.app-merged_res-5:/mipmap-mdpi_ic_launcher.webp.flat",
@@ -140,52 +396,40 @@
         "source": "com.example.organshare.app-main-7:/drawable/ic_admin.xml"
     },
     {
-        "merged": "com.example.organshare.app-merged_res-5:/menu_menu_hospital_nav.xml.flat",
-        "source": "com.example.organshare.app-main-7:/menu/menu_hospital_nav.xml"
+        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_order.xml.flat",
+        "source": "com.example.organshare.app-main-7:/drawable/ic_order.xml"
     },
     {
-        "merged": "com.example.organshare.app-merged_res-5:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.organshare.app-main-7:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "com.example.organshare.app-merged_res-5:/drawable_bg_card_gradient_red.xml.flat",
+        "source": "com.example.organshare.app-main-7:/drawable/bg_card_gradient_red.xml"
     },
     {
-        "merged": "com.example.organshare.app-merged_res-5:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.organshare.app-main-7:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_common_home.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/activity_common_home.xml"
     },
     {
-        "merged": "com.example.organshare.app-merged_res-5:/layout_item_delivery.xml.flat",
-        "source": "com.example.organshare.app-main-7:/layout/item_delivery.xml"
-    },
-    {
-        "merged": "com.example.organshare.app-merged_res-5:/layout_fragment_bank_orders.xml.flat",
-        "source": "com.example.organshare.app-main-7:/layout/fragment_bank_orders.xml"
+        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_assign_delivery_person.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/activity_assign_delivery_person.xml"
     },
     {
         "merged": "com.example.organshare.app-merged_res-5:/layout_activity_organ_bank_dashboard.xml.flat",
         "source": "com.example.organshare.app-main-7:/layout/activity_organ_bank_dashboard.xml"
     },
     {
-        "merged": "com.example.organshare.app-merged_res-5:/layout_fragment_donor_home.xml.flat",
-        "source": "com.example.organshare.app-main-7:/layout/fragment_donor_home.xml"
-    },
-    {
         "merged": "com.example.organshare.app-merged_res-5:/layout_dialog_compatibility_check.xml.flat",
         "source": "com.example.organshare.app-main-7:/layout/dialog_compatibility_check.xml"
-    },
-    {
-        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_track_delivery_map.xml.flat",
-        "source": "com.example.organshare.app-main-7:/layout/activity_track_delivery_map.xml"
     },
     {
         "merged": "com.example.organshare.app-merged_res-5:/layout_activity_forgot_password.xml.flat",
         "source": "com.example.organshare.app-main-7:/layout/activity_forgot_password.xml"
     },
     {
-        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_heart.xml.flat",
-        "source": "com.example.organshare.app-main-7:/drawable/ic_heart.xml"
+        "merged": "com.example.organshare.app-merged_res-5:/drawable_bg_splash_bottom_illustration.xml.flat",
+        "source": "com.example.organshare.app-main-7:/drawable/bg_splash_bottom_illustration.xml"
     },
     {
-        "merged": "com.example.organshare.app-merged_res-5:/drawable_bg_badge_normal.xml.flat",
-        "source": "com.example.organshare.app-main-7:/drawable/bg_badge_normal.xml"
+        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_heart.xml.flat",
+        "source": "com.example.organshare.app-main-7:/drawable/ic_heart.xml"
     },
     {
         "merged": "com.example.organshare.app-merged_res-5:/layout_activity_user_management.xml.flat",
@@ -196,64 +440,56 @@
         "source": "com.example.organshare.app-main-7:/menu/menu_admin_nav.xml"
     },
     {
-        "merged": "com.example.organshare.app-merged_res-5:/menu_menu_donor_nav.xml.flat",
-        "source": "com.example.organshare.app-main-7:/menu/menu_donor_nav.xml"
-    },
-    {
         "merged": "com.example.organshare.app-merged_res-5:/menu_menu_delivery_nav.xml.flat",
         "source": "com.example.organshare.app-main-7:/menu/menu_delivery_nav.xml"
-    },
-    {
-        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_hospital.xml.flat",
-        "source": "com.example.organshare.app-main-7:/drawable/ic_hospital.xml"
     },
     {
         "merged": "com.example.organshare.app-merged_res-5:/layout_item_bank_request.xml.flat",
         "source": "com.example.organshare.app-main-7:/layout/item_bank_request.xml"
     },
     {
-        "merged": "com.example.organshare.app-merged_res-5:/layout_dialog_add_checkpoint.xml.flat",
-        "source": "com.example.organshare.app-main-7:/layout/dialog_add_checkpoint.xml"
-    },
-    {
         "merged": "com.example.organshare.app-merged_res-5:/layout_activity_allocate_organ.xml.flat",
         "source": "com.example.organshare.app-main-7:/layout/activity_allocate_organ.xml"
-    },
-    {
-        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_splash.xml.flat",
-        "source": "com.example.organshare.app-main-7:/layout/activity_splash.xml"
     },
     {
         "merged": "com.example.organshare.app-merged_res-5:/layout_fragment_admin_stats.xml.flat",
         "source": "com.example.organshare.app-main-7:/layout/fragment_admin_stats.xml"
     },
     {
-        "merged": "com.example.organshare.app-merged_res-5:/layout_fragment_delivery_home.xml.flat",
-        "source": "com.example.organshare.app-main-7:/layout/fragment_delivery_home.xml"
+        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_info.xml.flat",
+        "source": "com.example.organshare.app-main-7:/drawable/ic_info.xml"
     },
     {
-        "merged": "com.example.organshare.app-merged_res-5:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.organshare.app-main-7:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "com.example.organshare.app-merged_res-5:/layout_fragment_delivery_home.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/fragment_delivery_home.xml"
     },
     {
         "merged": "com.example.organshare.app-merged_res-5:/mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "com.example.organshare.app-main-7:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_add_edit_inventory.xml.flat",
-        "source": "com.example.organshare.app-main-7:/layout/activity_add_edit_inventory.xml"
+        "merged": "com.example.organshare.app-merged_res-5:/menu_menu_drawer_admin.xml.flat",
+        "source": "com.example.organshare.app-main-7:/menu/menu_drawer_admin.xml"
     },
     {
         "merged": "com.example.organshare.app-merged_res-5:/layout_activity_login.xml.flat",
         "source": "com.example.organshare.app-main-7:/layout/activity_login.xml"
     },
     {
-        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.organshare.app-main-7:/drawable/ic_launcher_background.xml"
+        "merged": "com.example.organshare.app-merged_res-5:/layout_item_active_request.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/item_active_request.xml"
     },
     {
         "merged": "com.example.organshare.app-merged_res-5:/layout_item_user_management.xml.flat",
         "source": "com.example.organshare.app-main-7:/layout/item_user_management.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/layout_layout_common_toolbar.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/layout_common_toolbar.xml"
+    },
+    {
+        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.organshare.app-main-7:/drawable/ic_launcher_background.xml"
     },
     {
         "merged": "com.example.organshare.app-merged_res-5:/layout_activity_donor_dashboard.xml.flat",
@@ -264,28 +500,12 @@
         "source": "com.example.organshare.app-main-7:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.organshare.app-merged_res-5:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.organshare.app-main-7:/mipmap-xxxhdpi/ic_launcher.webp"
-    },
-    {
         "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_delivery.xml.flat",
         "source": "com.example.organshare.app-main-7:/drawable/ic_delivery.xml"
     },
     {
         "merged": "com.example.organshare.app-merged_res-5:/layout_fragment_hospital_home.xml.flat",
         "source": "com.example.organshare.app-main-7:/layout/fragment_hospital_home.xml"
-    },
-    {
-        "merged": "com.example.organshare.app-merged_res-5:/layout_item_donor_search.xml.flat",
-        "source": "com.example.organshare.app-main-7:/layout/item_donor_search.xml"
-    },
-    {
-        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_donation_info.xml.flat",
-        "source": "com.example.organshare.app-main-7:/layout/activity_donation_info.xml"
-    },
-    {
-        "merged": "com.example.organshare.app-merged_res-5:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.organshare.app-main-7:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
         "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_profile.xml.flat",
@@ -304,40 +524,16 @@
         "source": "com.example.organshare.app-main-7:/layout/fragment_hospital_requests.xml"
     },
     {
-        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_create_request.xml.flat",
-        "source": "com.example.organshare.app-main-7:/layout/activity_create_request.xml"
-    },
-    {
-        "merged": "com.example.organshare.app-merged_res-5:/layout_item_audit_log.xml.flat",
-        "source": "com.example.organshare.app-main-7:/layout/item_audit_log.xml"
-    },
-    {
         "merged": "com.example.organshare.app-merged_res-5:/layout_activity_admin_dashboard.xml.flat",
         "source": "com.example.organshare.app-main-7:/layout/activity_admin_dashboard.xml"
     },
     {
-        "merged": "com.example.organshare.app-merged_res-5:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.example.organshare.app-main-7:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_organ_requests_hub.xml.flat",
+        "source": "com.example.organshare.app-main-7:/layout/activity_organ_requests_hub.xml"
     },
     {
-        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_notification.xml.flat",
-        "source": "com.example.organshare.app-main-7:/drawable/ic_notification.xml"
-    },
-    {
-        "merged": "com.example.organshare.app-merged_res-5:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.organshare.app-main-7:/xml/data_extraction_rules.xml"
-    },
-    {
-        "merged": "com.example.organshare.app-merged_res-5:/layout_activity_donor_profile.xml.flat",
-        "source": "com.example.organshare.app-main-7:/layout/activity_donor_profile.xml"
-    },
-    {
-        "merged": "com.example.organshare.app-merged_res-5:/layout_fragment_bank_inventory.xml.flat",
-        "source": "com.example.organshare.app-main-7:/layout/fragment_bank_inventory.xml"
-    },
-    {
-        "merged": "com.example.organshare.app-merged_res-5:/layout_fragment_hospital_orders.xml.flat",
-        "source": "com.example.organshare.app-main-7:/layout/fragment_hospital_orders.xml"
+        "merged": "com.example.organshare.app-merged_res-5:/drawable_ic_logout.xml.flat",
+        "source": "com.example.organshare.app-main-7:/drawable/ic_logout.xml"
     },
     {
         "merged": "com.example.organshare.app-merged_res-5:/layout_fragment_bank_home.xml.flat",

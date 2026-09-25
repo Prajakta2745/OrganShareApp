@@ -5,6 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -12,6 +14,7 @@ import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.organshare.R;
+import com.google.android.material.button.MaterialButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -21,16 +24,57 @@ public final class ActivitySplashBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final ImageView ivSplashLogo;
+  public final MaterialButton btnSplashRetry;
 
   @NonNull
-  public final TextView tvAppTitle;
+  public final ImageView ivSplashEmblem;
 
-  private ActivitySplashBinding(@NonNull RelativeLayout rootView, @NonNull ImageView ivSplashLogo,
-      @NonNull TextView tvAppTitle) {
+  @NonNull
+  public final ImageView ivSplashIllustration;
+
+  @NonNull
+  public final LinearLayout layoutErrorRetry;
+
+  @NonNull
+  public final LinearLayout layoutLoading;
+
+  @NonNull
+  public final LinearLayout layoutTopBrand;
+
+  @NonNull
+  public final ProgressBar pbSplashLoading;
+
+  @NonNull
+  public final TextView tvErrorMessage;
+
+  @NonNull
+  public final TextView tvSplashLoadingStatus;
+
+  @NonNull
+  public final TextView tvSplashSubtitle;
+
+  @NonNull
+  public final TextView tvSplashTagline;
+
+  private ActivitySplashBinding(@NonNull RelativeLayout rootView,
+      @NonNull MaterialButton btnSplashRetry, @NonNull ImageView ivSplashEmblem,
+      @NonNull ImageView ivSplashIllustration, @NonNull LinearLayout layoutErrorRetry,
+      @NonNull LinearLayout layoutLoading, @NonNull LinearLayout layoutTopBrand,
+      @NonNull ProgressBar pbSplashLoading, @NonNull TextView tvErrorMessage,
+      @NonNull TextView tvSplashLoadingStatus, @NonNull TextView tvSplashSubtitle,
+      @NonNull TextView tvSplashTagline) {
     this.rootView = rootView;
-    this.ivSplashLogo = ivSplashLogo;
-    this.tvAppTitle = tvAppTitle;
+    this.btnSplashRetry = btnSplashRetry;
+    this.ivSplashEmblem = ivSplashEmblem;
+    this.ivSplashIllustration = ivSplashIllustration;
+    this.layoutErrorRetry = layoutErrorRetry;
+    this.layoutLoading = layoutLoading;
+    this.layoutTopBrand = layoutTopBrand;
+    this.pbSplashLoading = pbSplashLoading;
+    this.tvErrorMessage = tvErrorMessage;
+    this.tvSplashLoadingStatus = tvSplashLoadingStatus;
+    this.tvSplashSubtitle = tvSplashSubtitle;
+    this.tvSplashTagline = tvSplashTagline;
   }
 
   @Override
@@ -60,19 +104,75 @@ public final class ActivitySplashBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.ivSplashLogo;
-      ImageView ivSplashLogo = ViewBindings.findChildViewById(rootView, id);
-      if (ivSplashLogo == null) {
+      id = R.id.btnSplashRetry;
+      MaterialButton btnSplashRetry = ViewBindings.findChildViewById(rootView, id);
+      if (btnSplashRetry == null) {
         break missingId;
       }
 
-      id = R.id.tvAppTitle;
-      TextView tvAppTitle = ViewBindings.findChildViewById(rootView, id);
-      if (tvAppTitle == null) {
+      id = R.id.ivSplashEmblem;
+      ImageView ivSplashEmblem = ViewBindings.findChildViewById(rootView, id);
+      if (ivSplashEmblem == null) {
         break missingId;
       }
 
-      return new ActivitySplashBinding((RelativeLayout) rootView, ivSplashLogo, tvAppTitle);
+      id = R.id.ivSplashIllustration;
+      ImageView ivSplashIllustration = ViewBindings.findChildViewById(rootView, id);
+      if (ivSplashIllustration == null) {
+        break missingId;
+      }
+
+      id = R.id.layoutErrorRetry;
+      LinearLayout layoutErrorRetry = ViewBindings.findChildViewById(rootView, id);
+      if (layoutErrorRetry == null) {
+        break missingId;
+      }
+
+      id = R.id.layoutLoading;
+      LinearLayout layoutLoading = ViewBindings.findChildViewById(rootView, id);
+      if (layoutLoading == null) {
+        break missingId;
+      }
+
+      id = R.id.layoutTopBrand;
+      LinearLayout layoutTopBrand = ViewBindings.findChildViewById(rootView, id);
+      if (layoutTopBrand == null) {
+        break missingId;
+      }
+
+      id = R.id.pbSplashLoading;
+      ProgressBar pbSplashLoading = ViewBindings.findChildViewById(rootView, id);
+      if (pbSplashLoading == null) {
+        break missingId;
+      }
+
+      id = R.id.tvErrorMessage;
+      TextView tvErrorMessage = ViewBindings.findChildViewById(rootView, id);
+      if (tvErrorMessage == null) {
+        break missingId;
+      }
+
+      id = R.id.tvSplashLoadingStatus;
+      TextView tvSplashLoadingStatus = ViewBindings.findChildViewById(rootView, id);
+      if (tvSplashLoadingStatus == null) {
+        break missingId;
+      }
+
+      id = R.id.tvSplashSubtitle;
+      TextView tvSplashSubtitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvSplashSubtitle == null) {
+        break missingId;
+      }
+
+      id = R.id.tvSplashTagline;
+      TextView tvSplashTagline = ViewBindings.findChildViewById(rootView, id);
+      if (tvSplashTagline == null) {
+        break missingId;
+      }
+
+      return new ActivitySplashBinding((RelativeLayout) rootView, btnSplashRetry, ivSplashEmblem,
+          ivSplashIllustration, layoutErrorRetry, layoutLoading, layoutTopBrand, pbSplashLoading,
+          tvErrorMessage, tvSplashLoadingStatus, tvSplashSubtitle, tvSplashTagline);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

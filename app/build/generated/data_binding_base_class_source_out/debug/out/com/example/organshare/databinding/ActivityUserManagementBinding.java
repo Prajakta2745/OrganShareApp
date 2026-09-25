@@ -4,33 +4,58 @@ package com.example.organshare.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.organshare.R;
+import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.tabs.TabLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class ActivityUserManagementBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final DrawerLayout rootView;
+
+  @NonNull
+  public final DrawerLayout drawerLayout;
+
+  @NonNull
+  public final LayoutCommonToolbarBinding includedToolbar;
+
+  @NonNull
+  public final NavigationView navigationView;
 
   @NonNull
   public final RecyclerView rvUserManagement;
 
-  private ActivityUserManagementBinding(@NonNull LinearLayout rootView,
-      @NonNull RecyclerView rvUserManagement) {
+  @NonNull
+  public final TabLayout tabLayoutUserRoles;
+
+  @NonNull
+  public final TextView tvUserCountBadge;
+
+  private ActivityUserManagementBinding(@NonNull DrawerLayout rootView,
+      @NonNull DrawerLayout drawerLayout, @NonNull LayoutCommonToolbarBinding includedToolbar,
+      @NonNull NavigationView navigationView, @NonNull RecyclerView rvUserManagement,
+      @NonNull TabLayout tabLayoutUserRoles, @NonNull TextView tvUserCountBadge) {
     this.rootView = rootView;
+    this.drawerLayout = drawerLayout;
+    this.includedToolbar = includedToolbar;
+    this.navigationView = navigationView;
     this.rvUserManagement = rvUserManagement;
+    this.tabLayoutUserRoles = tabLayoutUserRoles;
+    this.tvUserCountBadge = tvUserCountBadge;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public DrawerLayout getRoot() {
     return rootView;
   }
 
@@ -55,13 +80,42 @@ public final class ActivityUserManagementBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      DrawerLayout drawerLayout = (DrawerLayout) rootView;
+
+      id = R.id.includedToolbar;
+      View includedToolbar = ViewBindings.findChildViewById(rootView, id);
+      if (includedToolbar == null) {
+        break missingId;
+      }
+      LayoutCommonToolbarBinding binding_includedToolbar = LayoutCommonToolbarBinding.bind(includedToolbar);
+
+      id = R.id.navigationView;
+      NavigationView navigationView = ViewBindings.findChildViewById(rootView, id);
+      if (navigationView == null) {
+        break missingId;
+      }
+
       id = R.id.rvUserManagement;
       RecyclerView rvUserManagement = ViewBindings.findChildViewById(rootView, id);
       if (rvUserManagement == null) {
         break missingId;
       }
 
-      return new ActivityUserManagementBinding((LinearLayout) rootView, rvUserManagement);
+      id = R.id.tabLayoutUserRoles;
+      TabLayout tabLayoutUserRoles = ViewBindings.findChildViewById(rootView, id);
+      if (tabLayoutUserRoles == null) {
+        break missingId;
+      }
+
+      id = R.id.tvUserCountBadge;
+      TextView tvUserCountBadge = ViewBindings.findChildViewById(rootView, id);
+      if (tvUserCountBadge == null) {
+        break missingId;
+      }
+
+      return new ActivityUserManagementBinding((DrawerLayout) rootView, drawerLayout,
+          binding_includedToolbar, navigationView, rvUserManagement, tabLayoutUserRoles,
+          tvUserCountBadge);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

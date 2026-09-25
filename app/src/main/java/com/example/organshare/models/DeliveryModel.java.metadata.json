@@ -1,4 +1,4 @@
 {
-  "summary": "DeliveryModel.java tracking transit states, checkpoints, delays, and coordinates.",
-  "updatedAt": "2026-09-01T01:48:20.784084900Z"
+  "summary":  "DeliveryModel.java - Extended model with priority, timestamps, notes, and completion tracking.",
+  "updatedAt":  "2026-09-24T05:30:33.212810600Z"
 }

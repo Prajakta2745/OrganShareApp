@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">OrganShare</string>
-    <string name="app_tagline">Secure Organ Donation &amp; Allocation Management</string>
+    <string name="app_tagline">Give Life • Share Hope</string>
 
     <!-- Google Maps Key Placeholder -->
     <string name="google_maps_key" translatable="false">AIzaSyAPYGS0LfuqC3LZI7p6cHsqwtKUow83yHQ</string>

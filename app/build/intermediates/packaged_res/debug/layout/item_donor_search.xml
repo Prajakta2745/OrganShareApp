@@ -34,6 +34,10 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:background="@drawable/bg_badge_normal"
+                android:paddingStart="8dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="2dp"
                 android:text="Blood: O+"
                 android:textColor="@color/normal_blue"
                 android:textSize="12sp"
@@ -68,28 +72,32 @@
             android:textSize="13sp"
             android:textStyle="bold" />
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:text="🔒 Contact Protected"
-                android:textColor="@color/text_muted"
-                android:textSize="12sp" />
+            android:layout_marginTop="12dp"
+            android:gravity="end"
+            android:orientation="horizontal">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnContactCoordinator"
                 style="@style/Widget.Material3.Button.TonalButton"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:text="Contact Coordinator"
-                android:textSize="12sp" />
-        </RelativeLayout>
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:text="Coordinator"
+                android:textSize="11sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMarkCollected"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Mark as Collected"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                app:backgroundTint="@color/primary_teal"
+                app:cornerRadius="8dp" />
+        </LinearLayout>
 
     </LinearLayout>
 

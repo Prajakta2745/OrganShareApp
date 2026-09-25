@@ -6,16 +6,22 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.organshare.R;
 import com.example.organshare.adapters.DonorSearchAdapter;
+import com.example.organshare.firebase.FirestoreCollections;
+import com.example.organshare.firebase.FirestoreHelper;
 import com.example.organshare.models.DonorProfile;
+import com.example.organshare.models.OrganInventory;
 import com.example.organshare.repositories.DonorRepository;
 import com.example.organshare.utils.Constants;
+import com.example.organshare.utils.DateTimeUtils;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -72,10 +78,63 @@ public class SearchDonorsActivity extends AppCompatActivity {
 
     private void setupRecyclerView() {
         rvDonorSearchResults.setLayoutManager(new LinearLayoutManager(this));
-        adapter = new DonorSearchAdapter(this, donorList, donor -> {
-            Toast.makeText(SearchDonorsActivity.this, "Request for Donor " + donor.getDonorId() + " forwarded to State Transplant Coordinator.", Toast.LENGTH_LONG).show();
+        adapter = new DonorSearchAdapter(this, donorList, new DonorSearchAdapter.OnDonorActionListener() {
+            @Override
+            public void onRequestContact(DonorProfile donor) {
+                Toast.makeText(SearchDonorsActivity.this, "Request for Donor " + donor.getDonorId() + " forwarded to State Coordinator.", Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onMarkCollected(DonorProfile donor) {
+                showMarkCollectedDialog(donor);
+            }
         });
         rvDonorSearchResults.setAdapter(adapter);
+    }
+
+    private void showMarkCollectedDialog(DonorProfile donor) {
+        List<String> organs = donor.getOrgansWillingToDonate();
+        String defaultOrgan = (organs != null && !organs.isEmpty()) ? organs.get(0) : "Kidney";
+
+        new AlertDialog.Builder(this)
+                .setTitle("Mark Pledged Organ as Collected")
+                .setMessage("Convert verified pledge from Donor (" + donor.getMaskedName() + ") into Available Organ Vault Inventory?")
+                .setPositiveButton("Confirm Collection", (dialog, which) -> {
+                    convertPledgeToAvailableStock(donor, defaultOrgan);
+                })
+                .setNegativeButton("Cancel", null)
+                .show();
+    }
+
+    private void convertPledgeToAvailableStock(DonorProfile donor, String organType) {
+        FirebaseFirestore db = FirestoreHelper.getFirestore();
+        String invId = "INV-" + (System.currentTimeMillis() % 100000);
+
+        OrganInventory item = new OrganInventory();
+        item.setInventoryId(invId);
+        item.setOrganType(organType);
+        item.setBloodGroup(donor.getBloodGroup() != null ? donor.getBloodGroup() : "O+");
+        item.setAvailabilityStatus(Constants.INV_AVAILABLE);
+        item.setDonorRefId(donor.getDonorId());
+        item.setDonorMaskedName(donor.getMaskedName());
+        item.setOrganBankId("BANK-001");
+        item.setOrganBankName("Central Organ Preservation Bank");
+        item.setCollectionDate(DateTimeUtils.getCurrentDate());
+        item.setExpiryDate(DateTimeUtils.getCurrentDate());
+        item.setPreservationLimitHours(24);
+        item.setStorageLocation("Preservation Suite Bay " + ((System.currentTimeMillis() % 5) + 1));
+        item.setStorageTemperature("4°C Hypothermic Perfusion");
+        item.setVerified(true);
+        item.setNotes("Pledge verified and registered into active vault inventory.");
+
+        db.collection(FirestoreCollections.INVENTORY).document(invId)
+                .set(item)
+                .addOnSuccessListener(aVoid -> {
+                    Toast.makeText(SearchDonorsActivity.this, "Pledge converted! Organ Inventory ID: " + invId + " is now AVAILABLE for Organ Bank allocation.", Toast.LENGTH_LONG).show();
+                })
+                .addOnFailureListener(e -> {
+                    Toast.makeText(SearchDonorsActivity.this, "Error converting pledge: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                });
     }
 
     private void performSearch() {

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group_delivery_main">
+        <item
+            android:id="@+id/drawer_delivery_dashboard"
+            android:icon="@drawable/ic_hospital"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/drawer_delivery_active"
+            android:icon="@drawable/ic_delivery"
+            android:title="Active Deliveries" />
+        <item
+            android:id="@+id/drawer_delivery_route_map"
+            android:icon="@drawable/ic_map_pin"
+            android:title="Route Map &amp; Tracking" />
+        <item
+            android:id="@+id/drawer_delivery_history"
+            android:icon="@drawable/ic_inventory"
+            android:title="Transit History" />
+        <item
+            android:id="@+id/drawer_notifications"
+            android:icon="@drawable/ic_notification"
+            android:title="Notifications" />
+    </group>
+
+    <group android:id="@+id/group_delivery_preferences">
+        <item
+            android:id="@+id/drawer_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings" />
+        <item
+            android:id="@+id/drawer_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+    </group>
+</menu>

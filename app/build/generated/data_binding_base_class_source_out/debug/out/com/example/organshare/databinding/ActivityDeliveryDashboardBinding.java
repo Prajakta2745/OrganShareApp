@@ -7,18 +7,19 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.organshare.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class ActivityDeliveryDashboardBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final DrawerLayout rootView;
 
   @NonNull
   public final BottomNavigationView deliveryBottomNav;
@@ -26,17 +27,30 @@ public final class ActivityDeliveryDashboardBinding implements ViewBinding {
   @NonNull
   public final FrameLayout deliveryFragmentContainer;
 
-  private ActivityDeliveryDashboardBinding(@NonNull ConstraintLayout rootView,
+  @NonNull
+  public final DrawerLayout drawerLayout;
+
+  @NonNull
+  public final LayoutCommonToolbarBinding includedToolbar;
+
+  @NonNull
+  public final NavigationView navigationView;
+
+  private ActivityDeliveryDashboardBinding(@NonNull DrawerLayout rootView,
       @NonNull BottomNavigationView deliveryBottomNav,
-      @NonNull FrameLayout deliveryFragmentContainer) {
+      @NonNull FrameLayout deliveryFragmentContainer, @NonNull DrawerLayout drawerLayout,
+      @NonNull LayoutCommonToolbarBinding includedToolbar, @NonNull NavigationView navigationView) {
     this.rootView = rootView;
     this.deliveryBottomNav = deliveryBottomNav;
     this.deliveryFragmentContainer = deliveryFragmentContainer;
+    this.drawerLayout = drawerLayout;
+    this.includedToolbar = includedToolbar;
+    this.navigationView = navigationView;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public DrawerLayout getRoot() {
     return rootView;
   }
 
@@ -73,8 +87,23 @@ public final class ActivityDeliveryDashboardBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityDeliveryDashboardBinding((ConstraintLayout) rootView, deliveryBottomNav,
-          deliveryFragmentContainer);
+      DrawerLayout drawerLayout = (DrawerLayout) rootView;
+
+      id = R.id.includedToolbar;
+      View includedToolbar = ViewBindings.findChildViewById(rootView, id);
+      if (includedToolbar == null) {
+        break missingId;
+      }
+      LayoutCommonToolbarBinding binding_includedToolbar = LayoutCommonToolbarBinding.bind(includedToolbar);
+
+      id = R.id.navigationView;
+      NavigationView navigationView = ViewBindings.findChildViewById(rootView, id);
+      if (navigationView == null) {
+        break missingId;
+      }
+
+      return new ActivityDeliveryDashboardBinding((DrawerLayout) rootView, deliveryBottomNav,
+          deliveryFragmentContainer, drawerLayout, binding_includedToolbar, navigationView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+  <!-- Circular Glow Base -->
+  <path
+      android:fillColor="#E0F2F1"
+      android:pathData="M24,24m-22,0a22,22 0,1 1,44 0a22,22 0,1 1,-44 0"/>
+  <!-- Organ Donation Heart Symbol -->
+  <path
+      android:fillColor="#006A6A"
+      android:pathData="M24,37.35l-2.9,-2.64C10.8,25.36 4,19.28 4,11.5 4,5.42 8.84,3 15,3c3.48,0 6.82,1.62 9,4.18C26.18,4.62 29.52,3 33,3c6.16,0 11,2.42 11,8.5c0,7.78 -6.8,13.86 -17.1,23.21L24,37.35z"/>
+  <!-- Medical Cross Accent in Center -->
+  <path
+      android:fillColor="#FFFFFF"
+      android:pathData="M22,12h4v6h6v4h-6v6h-4v-6h-6v-4h6z"/>
+</vector>

@@ -1,4 +1,4 @@
 {
-  "summary": "OrganRequest.java model with emergency levels, patient ref id, and compatibility metadata.",
-  "updatedAt": "2026-09-01T01:48:05.739866300Z"
+  "summary":  "OrganRequest.java - Extended data model with requested, fulfilled, and remaining quantities and timestamp tracking.",
+  "updatedAt":  "2026-09-24T05:30:24.305141900Z"
 }
