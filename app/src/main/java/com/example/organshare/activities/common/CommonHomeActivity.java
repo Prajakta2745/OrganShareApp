@@ -122,7 +122,11 @@ public class CommonHomeActivity extends AppCompatActivity {
         cardRequestOrgan.setOnClickListener(v -> startActivity(new Intent(this, CreateRequestActivity.class)));
 
         cardAvailableOrgans.setOnClickListener(v -> {
-            startActivity(new Intent(this, AvailableOrgansActivity.class));
+            if (Constants.ROLE_DONOR.equalsIgnoreCase(role)) {
+                startActivity(new Intent(this, com.example.organshare.activities.donor.AvailableHospitalsActivity.class));
+            } else {
+                startActivity(new Intent(this, AvailableOrgansActivity.class));
+            }
         });
 
         cardMyRequests.setOnClickListener(v -> {

@@ -27,11 +27,14 @@ import com.example.organshare.activities.donor.DonorProfileActivity;
 import com.example.organshare.activities.donor.EligibilityScreenerActivity;
 import com.example.organshare.activities.donor.FamilyDonationActivity;
 import com.example.organshare.activities.donor.OrganPledgeActivity;
+import com.example.organshare.activities.donor.AvailableHospitalsActivity;
+import com.example.organshare.activities.emergency.EmergencyCoordinatorDashboardActivity;
 import com.example.organshare.activities.hospital.ActiveRequestsActivity;
 import com.example.organshare.activities.hospital.CreateBloodRequestActivity;
 import com.example.organshare.activities.hospital.CreateRequestActivity;
 import com.example.organshare.activities.hospital.FulfilledRequestsActivity;
 import com.example.organshare.activities.hospital.HospitalDashboardActivity;
+import com.example.organshare.activities.hospital.HospitalResourcesManagementActivity;
 import com.example.organshare.activities.hospital.OrganRequestsHubActivity;
 import com.example.organshare.activities.hospital.PendingRequestsActivity;
 import com.example.organshare.activities.hospital.SearchDonorsActivity;
@@ -132,6 +135,9 @@ public class NavigationDrawerHelper {
             } else if (id == R.id.drawer_donor_eligibility) {
                 activity.startActivity(new Intent(activity, EligibilityScreenerActivity.class));
                 return true;
+            } else if (id == R.id.drawer_donor_available_hospitals) {
+                activity.startActivity(new Intent(activity, AvailableHospitalsActivity.class));
+                return true;
             }
 
             // Hospital Items
@@ -166,6 +172,9 @@ public class NavigationDrawerHelper {
                 return true;
             } else if (id == R.id.drawer_hospital_schedule_delivery) {
                 activity.startActivity(new Intent(activity, TrackDeliveryMapActivity.class));
+                return true;
+            } else if (id == R.id.drawer_hospital_manage_resources) {
+                activity.startActivity(new Intent(activity, HospitalResourcesManagementActivity.class));
                 return true;
             }
 
@@ -224,6 +233,9 @@ public class NavigationDrawerHelper {
                 return true;
             } else if (id == R.id.drawer_admin_audit) {
                 activity.startActivity(new Intent(activity, AuditLogsActivity.class));
+                return true;
+            } else if (id == R.id.drawer_admin_emergency_coordinator) {
+                activity.startActivity(new Intent(activity, EmergencyCoordinatorDashboardActivity.class));
                 return true;
             }
 

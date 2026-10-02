@@ -136,6 +136,7 @@
     <string name="role_organ_bank">Organ Bank / Coordinator</string>
     <string name="select_role">Select Your Role</string>
     <string name="send_reset_link">Send Reset Link</string>
+    <string name="sentry_dsn" translatable="false">https://4c3476a9d03470c8a695736583bcf956@o4512185980092416.ingest.us.sentry.io/4512185988022272</string>
     <string name="sign_in">Sign In</string>
     <string name="state_hint">State</string>
     <string name="submit_request">Submit Organ Request</string>

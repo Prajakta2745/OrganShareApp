@@ -15,6 +15,15 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        // Load Sentry DSN from local.properties or system environment variable, with fallback
+        Properties localProperties = new Properties()
+        File localPropertiesFile = rootProject.file("local.properties")
+        if (localPropertiesFile.exists()) {
+            localProperties.load(localPropertiesFile.newDataInputStream())
+        }
+        String sentryDsn = localProperties.getProperty("sentry.dsn", System.getenv("SENTRY_DSN") ?: "")
+        resValue "string", "sentry_dsn", sentryDsn
     }
 
     buildTypes {
@@ -29,6 +38,7 @@ android {
     }
     buildFeatures {
         viewBinding true
+        buildConfig true
     }
 }
 
@@ -39,6 +49,9 @@ dependencies {
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.3.2'
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+    // Sentry Android SDK
+    implementation 'io.sentry:sentry-android:7.18.0'
 
     // Navigation Component
     implementation 'androidx.navigation:navigation-fragment:2.7.7'

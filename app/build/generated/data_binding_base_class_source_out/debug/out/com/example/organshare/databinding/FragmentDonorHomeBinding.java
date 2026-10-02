@@ -30,6 +30,9 @@ public final class FragmentDonorHomeBinding implements ViewBinding {
   public final MaterialButton btnDonorSettings;
 
   @NonNull
+  public final MaterialCardView cardAvailableHospitals;
+
+  @NonNull
   public final MaterialCardView cardBloodDonation;
 
   @NonNull
@@ -73,9 +76,9 @@ public final class FragmentDonorHomeBinding implements ViewBinding {
 
   private FragmentDonorHomeBinding(@NonNull ScrollView rootView,
       @NonNull MaterialButton btnDonorLogout, @NonNull MaterialButton btnDonorSettings,
-      @NonNull MaterialCardView cardBloodDonation, @NonNull MaterialCardView cardDigitalDonorCard,
-      @NonNull MaterialCardView cardDonationHistory, @NonNull MaterialCardView cardDonorProfile,
-      @NonNull MaterialCardView cardEligibilityScreener,
+      @NonNull MaterialCardView cardAvailableHospitals, @NonNull MaterialCardView cardBloodDonation,
+      @NonNull MaterialCardView cardDigitalDonorCard, @NonNull MaterialCardView cardDonationHistory,
+      @NonNull MaterialCardView cardDonorProfile, @NonNull MaterialCardView cardEligibilityScreener,
       @NonNull MaterialCardView cardFamilyDonation, @NonNull MaterialCardView cardNotifications,
       @NonNull MaterialCardView cardOrganPledge, @NonNull ChipGroup chipGroupOrgans,
       @NonNull ImageView ivDonorHeaderLogo, @NonNull TextView tvDonorBloodBadge,
@@ -84,6 +87,7 @@ public final class FragmentDonorHomeBinding implements ViewBinding {
     this.rootView = rootView;
     this.btnDonorLogout = btnDonorLogout;
     this.btnDonorSettings = btnDonorSettings;
+    this.cardAvailableHospitals = cardAvailableHospitals;
     this.cardBloodDonation = cardBloodDonation;
     this.cardDigitalDonorCard = cardDigitalDonorCard;
     this.cardDonationHistory = cardDonationHistory;
@@ -136,6 +140,12 @@ public final class FragmentDonorHomeBinding implements ViewBinding {
       id = R.id.btnDonorSettings;
       MaterialButton btnDonorSettings = ViewBindings.findChildViewById(rootView, id);
       if (btnDonorSettings == null) {
+        break missingId;
+      }
+
+      id = R.id.cardAvailableHospitals;
+      MaterialCardView cardAvailableHospitals = ViewBindings.findChildViewById(rootView, id);
+      if (cardAvailableHospitals == null) {
         break missingId;
       }
 
@@ -224,10 +234,10 @@ public final class FragmentDonorHomeBinding implements ViewBinding {
       }
 
       return new FragmentDonorHomeBinding((ScrollView) rootView, btnDonorLogout, btnDonorSettings,
-          cardBloodDonation, cardDigitalDonorCard, cardDonationHistory, cardDonorProfile,
-          cardEligibilityScreener, cardFamilyDonation, cardNotifications, cardOrganPledge,
-          chipGroupOrgans, ivDonorHeaderLogo, tvDonorBloodBadge, tvDonorIdDisplay, tvDonorWelcome,
-          tvPledgeStatus);
+          cardAvailableHospitals, cardBloodDonation, cardDigitalDonorCard, cardDonationHistory,
+          cardDonorProfile, cardEligibilityScreener, cardFamilyDonation, cardNotifications,
+          cardOrganPledge, chipGroupOrgans, ivDonorHeaderLogo, tvDonorBloodBadge, tvDonorIdDisplay,
+          tvDonorWelcome, tvPledgeStatus);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

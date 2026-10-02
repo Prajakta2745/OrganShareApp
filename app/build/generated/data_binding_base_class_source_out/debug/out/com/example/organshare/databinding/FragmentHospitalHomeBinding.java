@@ -35,6 +35,9 @@ public final class FragmentHospitalHomeBinding implements ViewBinding {
   public final MaterialCardView cardHospitalDeliveryTracking;
 
   @NonNull
+  public final MaterialCardView cardHospitalManageBeds;
+
+  @NonNull
   public final MaterialCardView cardHospitalNotif;
 
   @NonNull
@@ -56,7 +59,7 @@ public final class FragmentHospitalHomeBinding implements ViewBinding {
       @NonNull ImageButton btnLogoutHospital, @NonNull MaterialCardView cardCreateBloodRequest,
       @NonNull MaterialCardView cardCreateRequest,
       @NonNull MaterialCardView cardHospitalDeliveryTracking,
-      @NonNull MaterialCardView cardHospitalNotif,
+      @NonNull MaterialCardView cardHospitalManageBeds, @NonNull MaterialCardView cardHospitalNotif,
       @NonNull MaterialCardView cardHospitalRequestsHub, @NonNull MaterialCardView cardSearchDonors,
       @NonNull ImageView ivHospIcon, @NonNull TextView tvHospitalWelcome,
       @NonNull TextView tvVerificationBadge) {
@@ -65,6 +68,7 @@ public final class FragmentHospitalHomeBinding implements ViewBinding {
     this.cardCreateBloodRequest = cardCreateBloodRequest;
     this.cardCreateRequest = cardCreateRequest;
     this.cardHospitalDeliveryTracking = cardHospitalDeliveryTracking;
+    this.cardHospitalManageBeds = cardHospitalManageBeds;
     this.cardHospitalNotif = cardHospitalNotif;
     this.cardHospitalRequestsHub = cardHospitalRequestsHub;
     this.cardSearchDonors = cardSearchDonors;
@@ -124,6 +128,12 @@ public final class FragmentHospitalHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.cardHospitalManageBeds;
+      MaterialCardView cardHospitalManageBeds = ViewBindings.findChildViewById(rootView, id);
+      if (cardHospitalManageBeds == null) {
+        break missingId;
+      }
+
       id = R.id.cardHospitalNotif;
       MaterialCardView cardHospitalNotif = ViewBindings.findChildViewById(rootView, id);
       if (cardHospitalNotif == null) {
@@ -162,8 +172,8 @@ public final class FragmentHospitalHomeBinding implements ViewBinding {
 
       return new FragmentHospitalHomeBinding((ScrollView) rootView, btnLogoutHospital,
           cardCreateBloodRequest, cardCreateRequest, cardHospitalDeliveryTracking,
-          cardHospitalNotif, cardHospitalRequestsHub, cardSearchDonors, ivHospIcon,
-          tvHospitalWelcome, tvVerificationBadge);
+          cardHospitalManageBeds, cardHospitalNotif, cardHospitalRequestsHub, cardSearchDonors,
+          ivHospIcon, tvHospitalWelcome, tvVerificationBadge);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

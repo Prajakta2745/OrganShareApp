@@ -15,6 +15,7 @@ import com.example.organshare.R;
 import com.example.organshare.activities.auth.LoginActivity;
 import com.example.organshare.activities.common.NotificationsActivity;
 import com.example.organshare.activities.common.SettingsActivity;
+import com.example.organshare.activities.donor.AvailableHospitalsActivity;
 import com.example.organshare.activities.donor.BloodDonorRegistrationActivity;
 import com.example.organshare.activities.donor.DigitalDonorCardActivity;
 import com.example.organshare.activities.donor.DonationInfoActivity;
@@ -35,7 +36,7 @@ public class DonorHomeFragment extends Fragment {
     private TextView tvDonorWelcome, tvDonorBloodBadge, tvPledgeStatus, tvDonorIdDisplay;
     private ChipGroup chipGroupOrgans;
     private MaterialCardView cardDonorProfile, cardOrganPledge, cardBloodDonation, cardDigitalDonorCard;
-    private MaterialCardView cardFamilyDonation, cardEligibilityScreener, cardDonationHistory, cardNotifications;
+    private MaterialCardView cardFamilyDonation, cardEligibilityScreener, cardDonationHistory, cardNotifications, cardAvailableHospitals;
     private MaterialButton btnDonorSettings, btnDonorLogout;
 
     private DonorRepository donorRepository;
@@ -69,6 +70,7 @@ public class DonorHomeFragment extends Fragment {
         cardEligibilityScreener = view.findViewById(R.id.cardEligibilityScreener);
         cardDonationHistory = view.findViewById(R.id.cardDonationHistory);
         cardNotifications = view.findViewById(R.id.cardNotifications);
+        cardAvailableHospitals = view.findViewById(R.id.cardAvailableHospitals);
 
         btnDonorSettings = view.findViewById(R.id.btnDonorSettings);
         btnDonorLogout = view.findViewById(R.id.btnDonorLogout);
@@ -83,6 +85,9 @@ public class DonorHomeFragment extends Fragment {
         cardEligibilityScreener.setOnClickListener(v -> startActivity(new Intent(requireContext(), EligibilityScreenerActivity.class)));
         cardDonationHistory.setOnClickListener(v -> startActivity(new Intent(requireContext(), DonationInfoActivity.class)));
         cardNotifications.setOnClickListener(v -> startActivity(new Intent(requireContext(), NotificationsActivity.class)));
+        if (cardAvailableHospitals != null) {
+            cardAvailableHospitals.setOnClickListener(v -> startActivity(new Intent(requireContext(), AvailableHospitalsActivity.class)));
+        }
 
         btnDonorSettings.setOnClickListener(v -> startActivity(new Intent(requireContext(), SettingsActivity.class)));
         btnDonorLogout.setOnClickListener(v -> showLogoutDialog());

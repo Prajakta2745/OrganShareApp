@@ -14,12 +14,29 @@
                         "endOffsets": "543,909"
                     },
                     "to": {
-                        "startLines": "2,9",
+                        "startLines": "3,10",
                         "startColumns": "4,4",
-                        "startOffsets": "55,427",
-                        "endLines": "8,15",
+                        "startOffsets": "211,583",
+                        "endLines": "9,16",
                         "endColumns": "8,8",
-                        "endOffsets": "422,792"
+                        "endOffsets": "578,948"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Dell\\.gemini\\antigravity\\brain\\32fe9b2a-e968-418c-9fcd-7e27d34d6d9e\\OrganShareApp\\app\\build\\generated\\res\\resValues\\androidTest\\debug\\values\\gradleResValues.xml",
+                    "from": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "159",
+                        "endColumns": "155",
+                        "endOffsets": "310"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "155",
+                        "endOffsets": "206"
                     }
                 }
             ]

@@ -1911,6 +1911,7 @@
     <item name="save_non_transition_alpha" type="id"/>
     <item name="save_overlay_view" type="id"/>
     <item name="selection_type" type="id"/>
+    <item format="string" name="sentry_privacy" type="id"/>
     <item name="sliding_pane_detail_container" type="id"/>
     <item name="sliding_pane_layout" type="id"/>
     <item name="snackbar_action" type="id"/>
@@ -2295,6 +2296,7 @@
     <string description="Content description for the navigation button to return to the previous screen [CHAR_LIMIT=NONE]" name="searchview_navigation_content_description">Back</string>
     <string name="select_role">Select Your Role</string>
     <string name="send_reset_link">Send Reset Link</string>
+    <string name="sentry_dsn" translatable="false">https://4c3476a9d03470c8a695736583bcf956@o4512185980092416.ingest.us.sentry.io/4512185988022272</string>
     <string description="Title of the side sheet&apos;s accessibility pane that is spoken by TalkBack when the side sheet appears on screen. [CHAR_LIMIT=NONE]" name="side_sheet_accessibility_pane_title">Side Sheet</string>
     <string name="side_sheet_behavior" translatable="false">com.google.android.material.sidesheet.SideSheetBehavior</string>
     <string name="sign_in">Sign In</string>

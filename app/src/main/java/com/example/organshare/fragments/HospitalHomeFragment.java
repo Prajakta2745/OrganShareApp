@@ -16,6 +16,7 @@ import com.example.organshare.activities.auth.LoginActivity;
 import com.example.organshare.activities.common.NotificationsActivity;
 import com.example.organshare.activities.hospital.CreateBloodRequestActivity;
 import com.example.organshare.activities.hospital.CreateRequestActivity;
+import com.example.organshare.activities.hospital.HospitalResourcesManagementActivity;
 import com.example.organshare.activities.hospital.OrganRequestsHubActivity;
 import com.example.organshare.activities.hospital.SearchDonorsActivity;
 import com.example.organshare.activities.hospital.TrackDeliveryMapActivity;
@@ -27,7 +28,7 @@ public class HospitalHomeFragment extends Fragment {
     private TextView tvHospitalWelcome, tvVerificationBadge;
     private ImageButton btnLogoutHospital;
     private MaterialCardView cardCreateRequest, cardCreateBloodRequest, cardHospitalRequestsHub;
-    private MaterialCardView cardHospitalDeliveryTracking, cardSearchDonors, cardHospitalNotif;
+    private MaterialCardView cardHospitalDeliveryTracking, cardSearchDonors, cardHospitalManageBeds, cardHospitalNotif;
 
     @Nullable
     @Override
@@ -51,6 +52,7 @@ public class HospitalHomeFragment extends Fragment {
         cardHospitalRequestsHub = view.findViewById(R.id.cardHospitalRequestsHub);
         cardHospitalDeliveryTracking = view.findViewById(R.id.cardHospitalDeliveryTracking);
         cardSearchDonors = view.findViewById(R.id.cardSearchDonors);
+        cardHospitalManageBeds = view.findViewById(R.id.cardHospitalManageBeds);
         cardHospitalNotif = view.findViewById(R.id.cardHospitalNotif);
     }
 
@@ -60,6 +62,9 @@ public class HospitalHomeFragment extends Fragment {
         cardHospitalRequestsHub.setOnClickListener(v -> startActivity(new Intent(requireContext(), OrganRequestsHubActivity.class)));
         cardHospitalDeliveryTracking.setOnClickListener(v -> startActivity(new Intent(requireContext(), TrackDeliveryMapActivity.class)));
         cardSearchDonors.setOnClickListener(v -> startActivity(new Intent(requireContext(), SearchDonorsActivity.class)));
+        if (cardHospitalManageBeds != null) {
+            cardHospitalManageBeds.setOnClickListener(v -> startActivity(new Intent(requireContext(), HospitalResourcesManagementActivity.class)));
+        }
         cardHospitalNotif.setOnClickListener(v -> startActivity(new Intent(requireContext(), NotificationsActivity.class)));
 
         btnLogoutHospital.setOnClickListener(v -> showLogoutDialog());

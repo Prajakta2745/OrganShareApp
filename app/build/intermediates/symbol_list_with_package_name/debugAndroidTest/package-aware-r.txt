@@ -1,3 +1,4 @@
 com.example.organshare.test
+string sentry_dsn
 style WhiteBackgroundDialogTheme
 style WhiteBackgroundTheme

@@ -39,6 +39,10 @@ public class SplashActivity extends AppCompatActivity {
         ThemeManager.applyTheme(this);
         setContentView(R.layout.activity_splash);
 
+        if (com.example.organshare.BuildConfig.DEBUG) {
+            com.example.organshare.OrganShareApplication.sendTestSentryEvent();
+        }
+
         initViews();
         startRealInitialization();
     }

@@ -42,6 +42,10 @@
             android:icon="@drawable/ic_delivery"
             android:title="Delivery Schedule &amp; Tracking" />
         <item
+            android:id="@+id/drawer_hospital_manage_resources"
+            android:icon="@drawable/ic_hospital_bed"
+            android:title="Manage Live Emergency Beds" />
+        <item
             android:id="@+id/drawer_notifications"
             android:icon="@drawable/ic_notification"
             android:title="Notifications" />

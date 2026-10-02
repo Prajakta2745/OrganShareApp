@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="sentry_dsn" translatable="false">https://4c3476a9d03470c8a695736583bcf956@o4512185980092416.ingest.us.sentry.io/4512185988022272</string>
     <style name="WhiteBackgroundDialogTheme" parent="@android:style/Theme.Holo.Dialog.NoActionBar">
 <item name="android:windowNoTitle">true</item>
 <item name="android:windowFullscreen">false</item>

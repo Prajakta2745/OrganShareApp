@@ -34,6 +34,10 @@
             android:icon="@drawable/ic_check_circle"
             android:title="Eligibility Screener" />
         <item
+            android:id="@+id/drawer_donor_available_hospitals"
+            android:icon="@drawable/ic_hospital_bed"
+            android:title="Available Hospitals &amp; Beds" />
+        <item
             android:id="@+id/drawer_notifications"
             android:icon="@drawable/ic_notification"
             android:title="Notifications" />

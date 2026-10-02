@@ -30,6 +30,10 @@
             android:icon="@drawable/ic_card"
             android:title="Audit Logs" />
         <item
+            android:id="@+id/drawer_admin_emergency_coordinator"
+            android:icon="@drawable/ic_emergency_siren"
+            android:title="Emergency Coordinator Hub" />
+        <item
             android:id="@+id/drawer_notifications"
             android:icon="@drawable/ic_notification"
             android:title="Notifications" />

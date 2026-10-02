@@ -12,6 +12,7 @@
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
+        android:name=".OrganShareApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -21,6 +22,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OrganShare"
         tools:targetApi="34">
+
+        <!-- Sentry Crash & Performance Monitoring -->
+        <meta-data
+            android:name="io.sentry.dsn"
+            android:value="@string/sentry_dsn" />
+        <meta-data
+            android:name="io.sentry.traces.sample-rate"
+            android:value="1.0" />
 
         <!-- Google Maps API Key Placeholder -->
         <meta-data
@@ -177,6 +186,47 @@
             android:name=".activities.hospital.CreateBloodRequestActivity"
             android:exported="false" />
         <!-- ORGANSHARE NEW ACTIVITIES END -->
+
+        <!-- EMERGENCY RESOURCE COORDINATOR & DONOR HOSPITAL SELECTION -->
+        <activity
+            android:name=".activities.emergency.EmergencyCoordinatorDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.emergency.HospitalBedsManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.emergency.BloodResourcesManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.emergency.EmergencyTransportManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.emergency.VolunteerManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.emergency.MedicalSuppliesManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.emergency.EmergencyRequestsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.emergency.ResourceAllocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.emergency.ResourceHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.donor.AvailableHospitalsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.donor.HospitalDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.donor.DonorTransportRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.hospital.HospitalResourcesManagementActivity"
+            android:exported="false" />
 
         <!-- Firebase Cloud Messaging Service -->
         <service

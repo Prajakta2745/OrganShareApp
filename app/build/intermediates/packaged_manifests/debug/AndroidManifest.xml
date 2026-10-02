@@ -37,6 +37,7 @@
     <uses-permission android:name="com.example.organshare.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
+        android:name="com.example.organshare.OrganShareApplication"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -47,7 +48,16 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/Theme.OrganShare" >
+
+        <!-- Sentry Crash & Performance Monitoring -->
+        <meta-data
+            android:name="io.sentry.dsn"
+            android:value="@string/sentry_dsn" />
+        <meta-data
+            android:name="io.sentry.traces.sample-rate"
+            android:value="1.0" />
 
         <!-- Google Maps API Key Placeholder -->
         <meta-data
@@ -206,6 +216,47 @@
             android:exported="false" />
         <!-- ORGANSHARE NEW ACTIVITIES END -->
 
+
+        <!-- EMERGENCY RESOURCE COORDINATOR & DONOR HOSPITAL SELECTION -->
+        <activity
+            android:name="com.example.organshare.activities.emergency.EmergencyCoordinatorDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.organshare.activities.emergency.HospitalBedsManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.organshare.activities.emergency.BloodResourcesManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.organshare.activities.emergency.EmergencyTransportManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.organshare.activities.emergency.VolunteerManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.organshare.activities.emergency.MedicalSuppliesManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.organshare.activities.emergency.EmergencyRequestsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.organshare.activities.emergency.ResourceAllocationActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.organshare.activities.emergency.ResourceHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.organshare.activities.donor.AvailableHospitalsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.organshare.activities.donor.HospitalDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.organshare.activities.donor.DonorTransportRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.organshare.activities.hospital.HospitalResourcesManagementActivity"
+            android:exported="false" />
 
         <!-- Firebase Cloud Messaging Service -->
         <service
@@ -370,7 +421,16 @@
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- 'android:authorities' must be unique in the device, across all apps -->
+        <provider
+            android:name="io.sentry.android.core.SentryInitProvider"
+            android:authorities="com.example.organshare.SentryInitProvider"
+            android:exported="false" />
+        <provider
+            android:name="io.sentry.android.core.SentryPerformanceProvider"
+            android:authorities="com.example.organshare.SentryPerformanceProvider"
+            android:exported="false"
+            android:initOrder="200" />
 
         <uses-library
             android:name="androidx.window.extensions"
