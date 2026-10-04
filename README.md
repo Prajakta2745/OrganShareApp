@@ -12,35 +12,6 @@ The application includes donor and hospital workflows, hospital-bed availability
 
 Here are some screenshots of the OrganShare Android application.
 
-### 🔐 Authentication
-
-<p align="center">
-  <img src="screenshots/app/01_organShare.jpeg" width="200">
-  <img src="screenshots/app/02_organShare.jpeg" width="200">
-</p>
-
-### 👤 Donor Dashboard & Organ Donation
-
-<p align="center">
-  <img src="screenshots/app/03_organShare.jpeg" width="200">
-  <img src="screenshots/app/04_organShare.jpeg" width="200">
-  <img src="screenshots/app/05_organShare.jpeg" width="200">
-</p>
-
-### 🏥 Hospital & Emergency Resources
-
-<p align="center">
-  <img src="screenshots/app/06_organShare.jpeg" width="200">
-  <img src="screenshots/app/07_organShare.jpeg" width="200">
-  <img src="screenshots/app/08_organShare.jpeg" width="200">
-</p>
-
-### 🚑 Emergency Coordination
-
-<p align="center">
-  <img src="screenshots/app/09_organShare.jpeg" width="200">
-  <img src="screenshots/app/10_organShare.jpeg" width="200">
-</p>
 
 > **Note:** The repository contains additional application and development screenshots in the [`screenshots`](screenshots/) folder.
 **More than 50 application and development screenshots are included in the repository.**
