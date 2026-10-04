@@ -12,10 +12,6 @@ The application includes donor and hospital workflows, hospital-bed availability
 
 Here are some screenshots of the OrganShare Android application.
 
-
-> **Note:** The repository contains additional application and development screenshots in the [`screenshots`](screenshots/) folder.
-**More than 50 application and development screenshots are included in the repository.**
-
 👉 [View all application screenshots](./screenshots/app)
 
 👉 [View development/code screenshots](./screenshots/developer)
